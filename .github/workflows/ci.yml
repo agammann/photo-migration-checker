@@ -47,7 +47,7 @@ jobs:
               env.pop('PYTHONPATH', None)
               subprocess.run([str(python), '-c', 'import pmc; assert "site-packages" in pmc.__file__; print(pmc.__version__)'], cwd=root, env=env, check=True)
               subprocess.run([str(python), '-m', 'pmc', '--help'], cwd=root, env=env, check=True)
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: wheel-${{ matrix.os }}-py${{ matrix.python }}
           path: dist/*.whl
