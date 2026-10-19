@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "type": "Full owned disposable database backup before repair",
+  "format": "pg_dump custom",
+  "bytes": 19063926,
+  "sha256": "53001dde4b80e9722e07b7f61f2f0f5d4027114f378793f04c14b9b80d338241",
+  "kept_private": true,
+  "original_media": "Existing owned media volume preserved; independent hashes recorded"
+}

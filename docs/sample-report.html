@@ -1,0 +1,607 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Photo Migration Checker — local report</title><style>
+body{font:16px/1.5 system-ui,sans-serif;color:#182620;background:#fff;max-width:1300px;margin:48px auto;padding:0 24px}
+h1{font-size:32px} .notice{padding:18px;background:#fff3d9;border:1px solid #e8c788} table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{text-align:left;vertical-align:top;border-bottom:1px solid #dce2df;padding:12px;overflow-wrap:anywhere}th{background:#f5f7f6}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} .stats{display:flex;gap:40px;flex-wrap:wrap;margin:24px 0} footer{margin:32px 0;color:#52645a}
+</style><h1>Photo Migration Checker</h1>
+<p>Independent read-only verification report. </p>
+<p class="notice">Deterministic sample fixture. This is not a real Immich validation. 
+Coverage: incomplete — unresolved evidence remains. This verifies only the supplied export. Keep your originals.</p>
+<div class="stats"><span>Source files: <strong>17</strong></span><span>Content matched: <strong>12</strong></span>
+<span>Attention findings: <strong>27</strong></span><span>Level: <strong>Verified original bytes</strong></span></div>
+<p>Supplied extracted folder against API-key-readable active, non-locked assets, including readable shared albums. No server-wide completeness claim.</p><p>Immich version: 3.3.3. Source timezone conversion is never guessed.</p>
+<p>Comparable capture dates: 8 / 17.
+Source occurrences with asserted album membership: 15 / 17.
+Only directories with recognizable album metadata assert membership; ordinary directory names are hints only.</p>
+<p>Paired media: 0 verified original relationships,
+0 stored checksum relationships,
+0 differences, 0 unresolved.
+Media types: 12 agree, 0 differ,
+0 unresolved, 3 unmatched source occurrences.</p>
+<table><thead><tr><th>Source file / scope</th><th>Evidence</th><th>Destination asset IDs</th><th>Explanation</th></tr></thead><tbody><tr><td>Family/broken.png</td><td>Verified original bytes</td><td>16535176-0996-54e8-abba-705d812b6e2d</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea&quot;,
+  &quot;source_sha1&quot;: &quot;c1f1c50479dcfe24bdb7a1c3ef57a105de06bd4c&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;16535176-0996-54e8-abba-705d812b6e2d&quot;: &quot;96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/broken.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/broken.png</td><td>Unresolved</td><td>16535176-0996-54e8-abba-705d812b6e2d</td><td>JSON metadata could not be parsed as an object.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/broken.png</td><td>Date evidence unavailable</td><td>16535176-0996-54e8-abba-705d812b6e2d</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/collision.png</td><td>Verified original bytes</td><td>559f60c1-d7b2-54ac-bce1-131fa4c9a100</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2&quot;,
+  &quot;source_sha1&quot;: &quot;98e7cbcd006e2f0b66682fa84bf9a91f8af9bbb8&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;559f60c1-d7b2-54ac-bce1-131fa4c9a100&quot;: &quot;d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/collision.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/portrait-edited.png</td><td>Missing</td><td></td><td>No destination original has matching SHA-256 bytes in the accessible inventory.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;c56738addcde0a7eebfa5f8698cab747edb236134d70b72c3b96cca98f881b5a&quot;,
+  &quot;source_sha1&quot;: &quot;f2d33ac33fd76d046b6813a3c6d3c3972e6f1fc3&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [
+    &quot;Family/portrait-edited.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/portrait.png</td><td>Missing</td><td></td><td>No destination original has matching SHA-256 bytes in the accessible inventory.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;8d8d44043ee8e8aa759800683be2355dcbc15e3ce7042038b5403c0536fe3cab&quot;,
+  &quot;source_sha1&quot;: &quot;77fdd9f02a773079fa308c12bd928a343d15bc46&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [
+    &quot;Family/portrait.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/sunrise.png</td><td>Verified original bytes</td><td>242ed368-e8d8-550c-9389-0989d7de0f07</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;,
+  &quot;source_sha1&quot;: &quot;1209212d1548dd202101350c2847905e7a0166bd&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;242ed368-e8d8-550c-9389-0989d7de0f07&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/sunrise.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 2
+}</pre></details></td></tr><tr><td>Family/tampered.png</td><td>Mismatched</td><td>3fb3c704-c80a-5224-b9ec-27c2f3184f6f</td><td>A destination filename matches, but the downloaded original bytes differ.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;41e5e975204d12db29e29f04d91bfa3417dbecdb053e288775a171ad96af026b&quot;,
+  &quot;source_sha1&quot;: &quot;2713370046d65f93285e1cda7922f550762d3c26&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;3fb3c704-c80a-5224-b9ec-27c2f3184f6f&quot;: &quot;7899d6ced52159786ff083934df42788da01a30b7ed9bb7756d7f3f5a94ef685&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/tampered.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Verified original bytes</td><td>e76a587d-8d87-50e9-b568-b4468afeaf17</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337&quot;,
+  &quot;source_sha1&quot;: &quot;8f00302534a08f3d7d9e6a2aaa1420dbe91ecf08&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;e76a587d-8d87-50e9-b568-b4468afeaf17&quot;: &quot;6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Unresolved</td><td>e76a587d-8d87-50e9-b568-b4468afeaf17</td><td>Multiple source files fit this sidecar; no association was asserted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Date evidence unavailable</td><td>e76a587d-8d87-50e9-b568-b4468afeaf17</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Verified original bytes</td><td>119cb402-9fb1-5a0c-a1d9-b53a4179caf5</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294&quot;,
+  &quot;source_sha1&quot;: &quot;2366ce017b667e7e2ca79360a24dce56af5f7185&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;119cb402-9fb1-5a0c-a1d9-b53a4179caf5&quot;: &quot;27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Unresolved</td><td>119cb402-9fb1-5a0c-a1d9-b53a4179caf5</td><td>Multiple source files fit this sidecar; no association was asserted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Date evidence unavailable</td><td>119cb402-9fb1-5a0c-a1d9-b53a4179caf5</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/live.aae</td><td>Unsupported</td><td></td><td>This file format is outside the supported media list; it remains in the manifest.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;bb76ddac0d398d91af99d8c95f55f097180ac220b5d78bf972b59fe487089f33&quot;,
+  &quot;source_sha1&quot;: &quot;123d581d7a5d783f1576c74d20d1c2cea116c99a&quot;,
+  &quot;size&quot;: 51,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Unsupported/live.aae</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/unknown.bin</td><td>Unsupported</td><td></td><td>This file format is outside the supported media list; it remains in the manifest.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;81354f103381cee4b209dec34b2ab611402e5b89918db90ad5e53d4b40b59dd8&quot;,
+  &quot;source_sha1&quot;: &quot;d0036cdf1123d50f677f38a27fcb03a6bd80909d&quot;,
+  &quot;size&quot;: 28,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Unsupported/unknown.bin</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/clip.avi</td><td>Verified original bytes</td><td>34c6e4cc-525e-565d-8b93-87af75212b3b</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2&quot;,
+  &quot;source_sha1&quot;: &quot;ebfb8394e9e89f958c5fe8837c8ce9ae412ed92d&quot;,
+  &quot;size&quot;: 312,
+  &quot;destination_sha256&quot;: {
+    &quot;34c6e4cc-525e-565d-8b93-87af75212b3b&quot;: &quot;50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/clip.avi.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Verified original bytes</td><td>c5ba7a75-9e6d-5de1-896e-9c670542bf38</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963&quot;,
+  &quot;source_sha1&quot;: &quot;d1d725ce5ec40d792df9fc9ac3b2e3ce7a90a41e&quot;,
+  &quot;size&quot;: 312,
+  &quot;destination_sha256&quot;: {
+    &quot;c5ba7a75-9e6d-5de1-896e-9c670542bf38&quot;: &quot;1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/live.avi.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Unresolved</td><td>c5ba7a75-9e6d-5de1-896e-9c670542bf38</td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Verified original bytes</td><td>8e119b76-7119-5e16-bb2b-949808e80dc2</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f&quot;,
+  &quot;source_sha1&quot;: &quot;fa94133a9f0210410296b497c43bcc75d78625b3&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;8e119b76-7119-5e16-bb2b-949808e80dc2&quot;: &quot;51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/live.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Unresolved</td><td>8e119b76-7119-5e16-bb2b-949808e80dc2</td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Verified original bytes</td><td>5ddb2205-993c-5a65-99db-c20f5cfd3ff8</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481&quot;,
+  &quot;source_sha1&quot;: &quot;3b76ac77287aab6bd05ccd956a65c31f83284a06&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;5ddb2205-993c-5a65-99db-c20f5cfd3ff8&quot;: &quot;6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/clock.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Unresolved</td><td>5ddb2205-993c-5a65-99db-c20f5cfd3ff8</td><td>Capture time has no supported epoch timestamp; formatted text and filesystem dates were not substituted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Timezone uncertain</td><td>5ddb2205-993c-5a65-99db-c20f5cfd3ff8</td><td>Source has a date without a trustworthy UTC instant; timezone conversion was not guessed.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/collision.png</td><td>Verified original bytes</td><td>37f46cb4-3663-592f-8922-f07c76941673</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49&quot;,
+  &quot;source_sha1&quot;: &quot;74672477dd88a37115c40d2f1b4efc856604712a&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;37f46cb4-3663-592f-8922-f07c76941673&quot;: &quot;e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/collision.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Weekend/dated.png</td><td>Verified original bytes</td><td>af7ad851-fb35-58e8-8a02-b09c3c3062b7</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542&quot;,
+  &quot;source_sha1&quot;: &quot;3e5f0df8d1e96631f8cd16d2ca8cb5c8257d4b32&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;af7ad851-fb35-58e8-8a02-b09c3c3062b7&quot;: &quot;5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/dated.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Weekend/dated.png</td><td>Metadata difference</td><td>af7ad851-fb35-58e8-8a02-b09c3c3062b7</td><td>Capture instant differs from Takeout photoTakenTime. Filesystem dates were not used.<details><summary>Evidence</summary><pre>{
+  &quot;source_date&quot;: &quot;2023-11-14T22:13:20Z&quot;,
+  &quot;destination_dates&quot;: {
+    &quot;af7ad851-fb35-58e8-8a02-b09c3c3062b7&quot;: &quot;2023-11-15T22:13:20Z&quot;
+  }
+}</pre></details></td></tr><tr><td>Weekend/sunrise.png</td><td>Verified original bytes</td><td>242ed368-e8d8-550c-9389-0989d7de0f07</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;,
+  &quot;source_sha1&quot;: &quot;1209212d1548dd202101350c2847905e7a0166bd&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;242ed368-e8d8-550c-9389-0989d7de0f07&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/sunrise.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 2
+}</pre></details></td></tr><tr><td>Family/broken.png</td><td>Media type agrees</td><td>16535176-0996-54e8-abba-705d812b6e2d</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;16535176-0996-54e8-abba-705d812b6e2d&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;16535176-0996-54e8-abba-705d812b6e2d&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Family/collision.png</td><td>Media type agrees</td><td>559f60c1-d7b2-54ac-bce1-131fa4c9a100</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;559f60c1-d7b2-54ac-bce1-131fa4c9a100&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;559f60c1-d7b2-54ac-bce1-131fa4c9a100&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Family/sunrise.png</td><td>Media type agrees</td><td>242ed368-e8d8-550c-9389-0989d7de0f07</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;242ed368-e8d8-550c-9389-0989d7de0f07&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;242ed368-e8d8-550c-9389-0989d7de0f07&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Media type agrees</td><td>e76a587d-8d87-50e9-b568-b4468afeaf17</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;e76a587d-8d87-50e9-b568-b4468afeaf17&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;e76a587d-8d87-50e9-b568-b4468afeaf17&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Media type agrees</td><td>119cb402-9fb1-5a0c-a1d9-b53a4179caf5</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;119cb402-9fb1-5a0c-a1d9-b53a4179caf5&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;119cb402-9fb1-5a0c-a1d9-b53a4179caf5&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Videos/clip.avi</td><td>Media type agrees</td><td>34c6e4cc-525e-565d-8b93-87af75212b3b</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/x-msvideo&quot;,
+    &quot;container&quot;: &quot;avi&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;video/x-msvideo&quot;,
+  &quot;destination_types&quot;: {
+    &quot;34c6e4cc-525e-565d-8b93-87af75212b3b&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;34c6e4cc-525e-565d-8b93-87af75212b3b&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/x-msvideo&quot;,
+      &quot;container&quot;: &quot;avi&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Media type agrees</td><td>c5ba7a75-9e6d-5de1-896e-9c670542bf38</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/x-msvideo&quot;,
+    &quot;container&quot;: &quot;avi&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;video/x-msvideo&quot;,
+  &quot;destination_types&quot;: {
+    &quot;c5ba7a75-9e6d-5de1-896e-9c670542bf38&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;c5ba7a75-9e6d-5de1-896e-9c670542bf38&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/x-msvideo&quot;,
+      &quot;container&quot;: &quot;avi&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Media type agrees</td><td>8e119b76-7119-5e16-bb2b-949808e80dc2</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;8e119b76-7119-5e16-bb2b-949808e80dc2&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;8e119b76-7119-5e16-bb2b-949808e80dc2&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Media type agrees</td><td>5ddb2205-993c-5a65-99db-c20f5cfd3ff8</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;5ddb2205-993c-5a65-99db-c20f5cfd3ff8&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;5ddb2205-993c-5a65-99db-c20f5cfd3ff8&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Weekend/collision.png</td><td>Media type agrees</td><td>37f46cb4-3663-592f-8922-f07c76941673</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;37f46cb4-3663-592f-8922-f07c76941673&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;37f46cb4-3663-592f-8922-f07c76941673&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Weekend/dated.png</td><td>Media type agrees</td><td>af7ad851-fb35-58e8-8a02-b09c3c3062b7</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;af7ad851-fb35-58e8-8a02-b09c3c3062b7&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;af7ad851-fb35-58e8-8a02-b09c3c3062b7&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Weekend/sunrise.png</td><td>Media type agrees</td><td>242ed368-e8d8-550c-9389-0989d7de0f07</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/png&quot;,
+    &quot;container&quot;: &quot;png&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/png&quot;,
+  &quot;destination_types&quot;: {
+    &quot;242ed368-e8d8-550c-9389-0989d7de0f07&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;242ed368-e8d8-550c-9389-0989d7de0f07&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/png&quot;,
+      &quot;container&quot;: &quot;png&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Family</td><td>Unresolved</td><td>119cb402-9fb1-5a0c-a1d9-b53a4179caf5, 16535176-0996-54e8-abba-705d812b6e2d, 242ed368-e8d8-550c-9389-0989d7de0f07, 559f60c1-d7b2-54ac-bce1-131fa4c9a100, e76a587d-8d87-50e9-b568-b4468afeaf17</td><td>Duplicate destination album names have no unique exact membership match. Some source content is unresolved, so album coverage is incomplete.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: [
+    &quot;6acdeee4-8827-5aed-bae9-31de3bb1fef9&quot;,
+    &quot;572907e7-ee9b-58af-91ff-0092fecae60a&quot;
+  ]
+}</pre></details></td></tr><tr><td>Weekend</td><td>Unresolved</td><td>242ed368-e8d8-550c-9389-0989d7de0f07, 37f46cb4-3663-592f-8922-f07c76941673, 5ddb2205-993c-5a65-99db-c20f5cfd3ff8, af7ad851-fb35-58e8-8a02-b09c3c3062b7</td><td>Duplicate destination album names have no unique exact membership match.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: [
+    &quot;6acdeee4-8827-5aed-bae9-31de3bb1fef9&quot;,
+    &quot;572907e7-ee9b-58af-91ff-0092fecae60a&quot;
+  ]
+}</pre></details></td></tr><tr><td>Family/broken.png.json</td><td>Unresolved</td><td></td><td>JSON metadata could not be parsed as an object.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/live.aae</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/unknown.bin</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-.json</td><td>Unresolved</td><td></td><td>Multiple source files fit this sidecar; no association was asserted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Unresolved</td><td></td><td>Capture time has no supported epoch timestamp; formatted text and filesystem dates were not substituted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Unresolved</td><td></td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Unresolved</td><td></td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr></tbody></table>
+<footer><ul><li>This verifies only the supplied export; it cannot prove Google exported everything.</li><li>Never use this report as permission to delete originals.</li><li>API visibility excludes locked media and items this key cannot access.</li><li>Re-enumeration detects observable changes, but Immich does not provide an atomic library snapshot.</li><li>Google Motion Photo pairing requires validated XMP layout, an embedded MP4 video track and matching component bytes. Other pairing formats and original camera timezone may remain unresolved.</li><li>Media types use supported container structure, not filename extensions. Container validation does not prove codec decoding or playback.</li><li>Server checksum matches are stored historical SHA-1 evidence, not current-byte verification.</li></ul>
+Report contains relative file paths, album names, asset IDs, dates and content hashes. Treat it as sensitive.</footer></html>

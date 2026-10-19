@@ -1,0 +1,937 @@
+{
+  "status": "passed",
+  "immich_version": "3.3.3",
+  "elapsed_seconds": 6.38,
+  "native_video_metadata_complete": 6,
+  "native_encoded_derivatives": 6,
+  "http_video_mp4_bodies_decoded": 6,
+  "original_assets": 62,
+  "original_bytes_unchanged": true,
+  "original_ids_names_paths_unchanged": true,
+  "source_bytes_mtimes_unchanged": true,
+  "pair_links_preserved": 8,
+  "album_ids_preserved": 7,
+  "album_memberships_preserved": true,
+  "hidden_targets_preserved": 6,
+  "full_config_restored": true,
+  "repair_write_requests_this_verification": 0,
+  "authentication_requests": 1,
+  "checker_write_requests": 0,
+  "playback": [
+    {
+      "status": 200,
+      "content_type": "video/mp4",
+      "size": 848866,
+      "container_valid": true,
+      "response_sha256": "627d1e3e8ac9fdefc3204867c28fdd55b75141d93ae9aa3a6e5efc54b281e1af",
+      "native_ffmpeg_complete_decode": true,
+      "decoded_exact_http_response_body": true,
+      "decoder_output_time_base": "Input/demuxer time base; passthrough frame timing",
+      "decoder_errors": 0
+    },
+    {
+      "status": 200,
+      "content_type": "video/mp4",
+      "size": 987658,
+      "container_valid": true,
+      "response_sha256": "8ce72d87dbe687fd8f1eb2c30f62b719be9ae38a360db00d706c3f89a906ac0a",
+      "native_ffmpeg_complete_decode": true,
+      "decoded_exact_http_response_body": true,
+      "decoder_output_time_base": "Input/demuxer time base; passthrough frame timing",
+      "decoder_errors": 0
+    },
+    {
+      "status": 200,
+      "content_type": "video/mp4",
+      "size": 2174412,
+      "container_valid": true,
+      "response_sha256": "43888cef41358c71a8d256ade750cdd094874c71007e66676568c395e56c4bca",
+      "native_ffmpeg_complete_decode": true,
+      "decoded_exact_http_response_body": true,
+      "decoder_output_time_base": "Input/demuxer time base; passthrough frame timing",
+      "decoder_errors": 0
+    },
+    {
+      "status": 200,
+      "content_type": "video/mp4",
+      "size": 1092859,
+      "container_valid": true,
+      "response_sha256": "df0234c74e084a483470587ff7b269ed049038b947999816e10b0c5e1b0eb240",
+      "native_ffmpeg_complete_decode": true,
+      "decoded_exact_http_response_body": true,
+      "decoder_output_time_base": "Input/demuxer time base; passthrough frame timing",
+      "decoder_errors": 0
+    },
+    {
+      "status": 200,
+      "content_type": "video/mp4",
+      "size": 1151956,
+      "container_valid": true,
+      "response_sha256": "bc437e370547a67650993de9fae856983c3a84e58dca6125421a34d4cc420a9d",
+      "native_ffmpeg_complete_decode": true,
+      "decoded_exact_http_response_body": true,
+      "decoder_output_time_base": "Input/demuxer time base; passthrough frame timing",
+      "decoder_errors": 0
+    },
+    {
+      "status": 200,
+      "content_type": "video/mp4",
+      "size": 3630877,
+      "container_valid": true,
+      "response_sha256": "69618271e57be60b103af12547d3df446b27752c15d460165438b41eabd39a3d",
+      "native_ffmpeg_complete_decode": true,
+      "decoded_exact_http_response_body": true,
+      "decoder_output_time_base": "Input/demuxer time base; passthrough frame timing",
+      "decoder_errors": 0
+    }
+  ],
+  "six_row_changed_field_names": [
+    "duration",
+    "height",
+    "updateId",
+    "updatedAt",
+    "width"
+  ],
+  "previous_processing_attempt": {
+    "status": "failed",
+    "reason": "The default null-output encoder time base rounded variable frame timestamps into duplicate DTS; the exact HTTP bodies now decode with preserved input time base. Native processing/config restoration succeeded before that instrumentation failure."
+  },
+  "setup_job_requests_from_processing": [
+    {
+      "role": "setup",
+      "method": "POST",
+      "path": "/assets/jobs",
+      "status": 204
+    },
+    {
+      "role": "setup",
+      "method": "POST",
+      "path": "/assets/jobs",
+      "status": 204
+    },
+    {
+      "role": "setup",
+      "method": "POST",
+      "path": "/assets/jobs",
+      "status": 204
+    }
+  ],
+  "verification_requests": [
+    {
+      "role": "setup",
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 201
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/system-config",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/queues",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/queues",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/queues",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/793f6067-6b4e-4703-8e37-5e18f00a8f1d",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/793f6067-6b4e-4703-8e37-5e18f00a8f1d/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/c09d5766-23b3-4c97-af14-5801a8c83d69",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/c09d5766-23b3-4c97-af14-5801a8c83d69/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/d11906b1-f578-415e-a96d-3c519a639db4",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/d11906b1-f578-415e-a96d-3c519a639db4/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/ab069a84-be57-4db1-b79a-aad6734617b4",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/ab069a84-be57-4db1-b79a-aad6734617b4/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/16240486-3315-4434-a866-40554981ee14",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/16240486-3315-4434-a866-40554981ee14/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a351a9ed-d129-4cc6-93cf-a34d2b7237c4",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a351a9ed-d129-4cc6-93cf-a34d2b7237c4/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/e011e762-f7f2-4653-8230-f0cac5485839",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/e011e762-f7f2-4653-8230-f0cac5485839/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/0c3353e4-5ab8-4b0a-945d-7cf65fb90a96",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/0c3353e4-5ab8-4b0a-945d-7cf65fb90a96/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/8967d727-7666-4923-ac3f-53ca95e2b34e",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/8967d727-7666-4923-ac3f-53ca95e2b34e/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/58814edb-5a84-42ff-9238-3bf2567e377b",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/58814edb-5a84-42ff-9238-3bf2567e377b/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/3e82a410-ce2e-4db8-ab27-e9005ace1025",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/3e82a410-ce2e-4db8-ab27-e9005ace1025/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/fc540557-4478-46d5-a6c9-8a4f64960eba",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/fc540557-4478-46d5-a6c9-8a4f64960eba/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/148474e8-1c6d-464f-aed5-e6bdb8ba63f1",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/148474e8-1c6d-464f-aed5-e6bdb8ba63f1/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/88a12b10-a799-4a93-a22f-9d155d8b200c",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/88a12b10-a799-4a93-a22f-9d155d8b200c/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/00339393-9675-4106-8ddb-06352f3a607c",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/00339393-9675-4106-8ddb-06352f3a607c/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a4a4dd17-18b5-4083-a398-14e83feffd4b",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a4a4dd17-18b5-4083-a398-14e83feffd4b/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a583fd79-f3c1-4482-a9f1-23274345f7ff",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a583fd79-f3c1-4482-a9f1-23274345f7ff/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/75a09420-61fe-46be-87e3-9323f329b289",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/75a09420-61fe-46be-87e3-9323f329b289/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/be6ed071-e9ab-4512-8aa7-e9b5728f0ad6",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/be6ed071-e9ab-4512-8aa7-e9b5728f0ad6/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/5a14d13d-577d-4b77-9de9-b1c8b504dcdc",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/5a14d13d-577d-4b77-9de9-b1c8b504dcdc/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/caec050f-d2b0-4893-89e3-92d8430a8aab",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/caec050f-d2b0-4893-89e3-92d8430a8aab/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/821b09fa-80ee-4c3b-8a53-7e4a582f528a",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/821b09fa-80ee-4c3b-8a53-7e4a582f528a/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/4f20c7b9-11bf-48e9-9562-ebbfd71ecb70",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/4f20c7b9-11bf-48e9-9562-ebbfd71ecb70/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/4a386496-d311-44c3-93be-b1809400b5aa",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/4a386496-d311-44c3-93be-b1809400b5aa/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/4eae43f9-0919-414d-9a20-e3b8e9169d82",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/4eae43f9-0919-414d-9a20-e3b8e9169d82/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/d28ec272-dc6a-4f69-afdb-e000fb825051",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/d28ec272-dc6a-4f69-afdb-e000fb825051/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/9b22780d-9926-4cf7-a40f-eea1af1e9077",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/9b22780d-9926-4cf7-a40f-eea1af1e9077/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/c0b179a2-de38-43f5-89f3-252de257278c",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/c0b179a2-de38-43f5-89f3-252de257278c/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/558f216f-3c39-4cd4-b775-ff1233479a5f",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/558f216f-3c39-4cd4-b775-ff1233479a5f/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/76322e24-a30d-4e3a-ae31-4c9cd09eccb6",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/76322e24-a30d-4e3a-ae31-4c9cd09eccb6/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/64f18829-0829-4aac-b931-ba4a635cbe35",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/64f18829-0829-4aac-b931-ba4a635cbe35/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/63e66417-f481-4c89-b191-dc862549441c",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/63e66417-f481-4c89-b191-dc862549441c/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/b3d961f5-7af2-4741-8ab3-524ffa547c6a",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/b3d961f5-7af2-4741-8ab3-524ffa547c6a/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/369a1ec8-6674-4c2e-b718-216ef48ead3b",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/369a1ec8-6674-4c2e-b718-216ef48ead3b/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/b5f815db-b391-4ab1-95f4-6f9f8ec1357a",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/b5f815db-b391-4ab1-95f4-6f9f8ec1357a/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/eb7016fc-4a4d-4cd8-b105-0d4bb079c957",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/eb7016fc-4a4d-4cd8-b105-0d4bb079c957/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/05ba1b38-0747-41ba-8dcb-bc0a8eec7427",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/05ba1b38-0747-41ba-8dcb-bc0a8eec7427/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/3a8800f8-8243-4f49-ae3e-adc27fdde439",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/3a8800f8-8243-4f49-ae3e-adc27fdde439/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a3e39a95-ea25-4bd8-b193-752c4f0a9881",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a3e39a95-ea25-4bd8-b193-752c4f0a9881/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/bbf67e38-5fb3-4687-8ec7-9cd445b569ff",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/bbf67e38-5fb3-4687-8ec7-9cd445b569ff/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/d03b8213-870f-4437-83ac-bcd272e177a2",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/d03b8213-870f-4437-83ac-bcd272e177a2/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/cc7c77d5-e66a-49ce-95cb-23e829c65063",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/cc7c77d5-e66a-49ce-95cb-23e829c65063/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/28ad7661-7c4f-4d4d-9afd-70abf01d4f1c",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/28ad7661-7c4f-4d4d-9afd-70abf01d4f1c/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/6cd50cf8-a65b-4a3d-ab71-1115fb9223a5",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/6cd50cf8-a65b-4a3d-ab71-1115fb9223a5/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/71b22cbc-aaa4-4053-93d4-dc8d631f140c",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/71b22cbc-aaa4-4053-93d4-dc8d631f140c/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/dce892a2-64e9-46f1-b55d-d7f8555b3766",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/dce892a2-64e9-46f1-b55d-d7f8555b3766/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/ce64583e-0b96-4711-b965-1632f860cf04",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/ce64583e-0b96-4711-b965-1632f860cf04/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/495b6e5f-bfa3-4adb-87dc-a2532a29e3b2",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/495b6e5f-bfa3-4adb-87dc-a2532a29e3b2/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/28bc9708-aa2a-4554-bcf4-c5bfe9b02376",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/28bc9708-aa2a-4554-bcf4-c5bfe9b02376/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/bf2ead36-8928-4b5a-93cc-04650c019223",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/bf2ead36-8928-4b5a-93cc-04650c019223/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/165d487a-2ffe-4a83-8f75-3fc6a9ff3acf",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/165d487a-2ffe-4a83-8f75-3fc6a9ff3acf/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/1a2df691-b300-45fb-bfbd-e1e2992933d9",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/1a2df691-b300-45fb-bfbd-e1e2992933d9/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/f6681ac0-2bd4-49a5-9778-3621e8c2ceb4",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/f6681ac0-2bd4-49a5-9778-3621e8c2ceb4/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/61f7e733-ab0c-4488-b7d7-cb462d59d816",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/61f7e733-ab0c-4488-b7d7-cb462d59d816/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/a90e451c-e368-46dc-96f3-dd17a42ded69",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a90e451c-e368-46dc-96f3-dd17a42ded69/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/e6e643b7-71aa-48ff-ab2a-435c3905e079",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/e6e643b7-71aa-48ff-ab2a-435c3905e079/original",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/assets/4810d7ea-65e7-4123-98e7-ae62beb8734f",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/4810d7ea-65e7-4123-98e7-ae62beb8734f/original",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/cc7c77d5-e66a-49ce-95cb-23e829c65063/video/playback",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/eb7016fc-4a4d-4cd8-b105-0d4bb079c957/video/playback",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/f6681ac0-2bd4-49a5-9778-3621e8c2ceb4/video/playback",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/6cd50cf8-a65b-4a3d-ab71-1115fb9223a5/video/playback",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4/video/playback",
+      "status": 200
+    },
+    {
+      "role": "setup-audit",
+      "method": "GET",
+      "path": "/assets/dce892a2-64e9-46f1-b55d-d7f8555b3766/video/playback",
+      "status": 200
+    },
+    {
+      "role": "setup",
+      "method": "GET",
+      "path": "/system-config",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checker_requests_observed": 2019,
+  "write_attempts": 0,
+  "completed_original_responses": 520,
+  "interrupted_original_responses": 4,
+  "pending_records": 0,
+  "ledger_write_failures": 0,
+  "originals_unchanged_across_repair_and_checks": 356,
+  "original_bytes_unchanged": 401456805,
+  "media_album_table_fingerprints_unchanged_after_repair": 13,
+  "repair_vs_verification": "Explicit six-record maintenance, two membership additions and targeted processing precede the stable post-repair baseline. Only the subsequent checker requests are counted as read-only verification.",
+  "observed_run_scope": "Backend, ten isolated pair-fault scans, preview, and two installed-wheel browser attempts. Final browser receipt identifies its own observed cancellation and interruption streams."
+}

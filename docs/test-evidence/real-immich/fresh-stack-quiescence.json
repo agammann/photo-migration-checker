@@ -1,0 +1,3248 @@
+[
+  [
+    {
+      "elapsed_seconds": 0.203,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 1.281,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 2.375,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 3.484,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 4.578,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 5.656,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 6.75,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 7.828,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 8.922,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "cc19812ad92d9b6ab78a2ab8ec006d712554eac9413f40daa8f0b14f85c4e264",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 7,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 10.031,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "b6f0d58c2a1f8949188ab2382d23f76ecaa8f86c678e7dac2d4bd5e5a44d6bf6",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 1,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 1,
+          "waiting": 5,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 11.125,
+      "queues_idle": true,
+      "stable_repetitions": 1,
+      "inventory_fingerprint": "03896af872d60baf83c4157682b2d737ea1c418c3c45c7579d8bb4b328d4786a",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 12.266,
+      "queues_idle": true,
+      "stable_repetitions": 2,
+      "inventory_fingerprint": "03896af872d60baf83c4157682b2d737ea1c418c3c45c7579d8bb4b328d4786a",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 13.344,
+      "queues_idle": true,
+      "stable_repetitions": 3,
+      "inventory_fingerprint": "03896af872d60baf83c4157682b2d737ea1c418c3c45c7579d8bb4b328d4786a",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 14.422,
+      "queues_idle": true,
+      "stable_repetitions": 4,
+      "inventory_fingerprint": "03896af872d60baf83c4157682b2d737ea1c418c3c45c7579d8bb4b328d4786a",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 15.484,
+      "queues_idle": true,
+      "stable_repetitions": 5,
+      "inventory_fingerprint": "03896af872d60baf83c4157682b2d737ea1c418c3c45c7579d8bb4b328d4786a",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    }
+  ],
+  [
+    {
+      "elapsed_seconds": 0.11,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "727657d6db2b41a44e59f0a034f6768cf7ebc3473cd561adb21cc130061a26f0",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 2,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 1.219,
+      "queues_idle": false,
+      "stable_repetitions": 0,
+      "inventory_fingerprint": "a93cb4632cc8e1351fd3e05867cd1d1d201aa1e1e1706b64f6f77b6964fb0423",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 1,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 2.344,
+      "queues_idle": true,
+      "stable_repetitions": 1,
+      "inventory_fingerprint": "b10967dc99349b8bc85375aba413e02ca977a482e3bb6a5c406bd951edceef74",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 3.438,
+      "queues_idle": true,
+      "stable_repetitions": 2,
+      "inventory_fingerprint": "b10967dc99349b8bc85375aba413e02ca977a482e3bb6a5c406bd951edceef74",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 4.547,
+      "queues_idle": true,
+      "stable_repetitions": 3,
+      "inventory_fingerprint": "b10967dc99349b8bc85375aba413e02ca977a482e3bb6a5c406bd951edceef74",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 5.672,
+      "queues_idle": true,
+      "stable_repetitions": 4,
+      "inventory_fingerprint": "b10967dc99349b8bc85375aba413e02ca977a482e3bb6a5c406bd951edceef74",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 6.781,
+      "queues_idle": true,
+      "stable_repetitions": 5,
+      "inventory_fingerprint": "b10967dc99349b8bc85375aba413e02ca977a482e3bb6a5c406bd951edceef74",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    }
+  ],
+  [
+    {
+      "elapsed_seconds": 0.063,
+      "queues_idle": true,
+      "stable_repetitions": 1,
+      "inventory_fingerprint": "feded62b70ae29fe1e963c06798531479aea3f0bd5f2379394404f15cbe2290f",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 1.109,
+      "queues_idle": true,
+      "stable_repetitions": 2,
+      "inventory_fingerprint": "feded62b70ae29fe1e963c06798531479aea3f0bd5f2379394404f15cbe2290f",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 2.156,
+      "queues_idle": true,
+      "stable_repetitions": 3,
+      "inventory_fingerprint": "feded62b70ae29fe1e963c06798531479aea3f0bd5f2379394404f15cbe2290f",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 3.219,
+      "queues_idle": true,
+      "stable_repetitions": 4,
+      "inventory_fingerprint": "feded62b70ae29fe1e963c06798531479aea3f0bd5f2379394404f15cbe2290f",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 4.266,
+      "queues_idle": true,
+      "stable_repetitions": 5,
+      "inventory_fingerprint": "feded62b70ae29fe1e963c06798531479aea3f0bd5f2379394404f15cbe2290f",
+      "queues": {
+        "thumbnailGeneration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "metadataExtraction": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "videoConversion": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "faceDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "facialRecognition": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "smartSearch": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "duplicateDetection": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "backgroundTask": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "storageTemplateMigration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "migration": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "search": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "sidecar": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "library": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "ocr": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "workflow": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        },
+        "editor": {
+          "active": 0,
+          "waiting": 0,
+          "delayed": 0,
+          "paused": 0,
+          "failed": 0
+        }
+      }
+    }
+  ]
+]

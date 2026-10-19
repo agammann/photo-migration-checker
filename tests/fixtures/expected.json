@@ -1,0 +1,199 @@
+{
+  "correct": {
+    "ambiguous_sidecars": [],
+    "destination_assets": 7,
+    "duplicate_album_titles": {
+      "Trips": [
+        "Family",
+        "Weekend"
+      ]
+    },
+    "duplicate_occurrences": [
+      [
+        "Family/sunrise.png",
+        "Weekend/sunrise.png"
+      ]
+    ],
+    "hashes": {
+      "Family/collision.png": {
+        "sha1": "98e7cbcd006e2f0b66682fa84bf9a91f8af9bbb8",
+        "sha256": "d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2",
+        "size": 73
+      },
+      "Family/portrait-edited.png": {
+        "sha1": "f2d33ac33fd76d046b6813a3c6d3c3972e6f1fc3",
+        "sha256": "c56738addcde0a7eebfa5f8698cab747edb236134d70b72c3b96cca98f881b5a",
+        "size": 73
+      },
+      "Family/portrait.png": {
+        "sha1": "77fdd9f02a773079fa308c12bd928a343d15bc46",
+        "sha256": "8d8d44043ee8e8aa759800683be2355dcbc15e3ce7042038b5403c0536fe3cab",
+        "size": 73
+      },
+      "Family/sunrise.png": {
+        "sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+        "sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+        "size": 73
+      },
+      "Videos/clip.avi": {
+        "sha1": "ebfb8394e9e89f958c5fe8837c8ce9ae412ed92d",
+        "sha256": "50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2",
+        "size": 312
+      },
+      "Weekend/collision.png": {
+        "sha1": "74672477dd88a37115c40d2f1b4efc856604712a",
+        "sha256": "e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49",
+        "size": 73
+      },
+      "Weekend/dated.png": {
+        "sha1": "3e5f0df8d1e96631f8cd16d2ca8cb5c8257d4b32",
+        "sha256": "5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542",
+        "size": 73
+      },
+      "Weekend/sunrise.png": {
+        "sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+        "sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+        "size": 73
+      }
+    },
+    "malformed_sidecars": [],
+    "metadata_changed_paths": [],
+    "mismatched_original_paths": [],
+    "missing_memberships": [],
+    "omitted_paths": [],
+    "paired_paths": [],
+    "scenario": "correct",
+    "source_media_occurrences": 8,
+    "source_unique_media": 7,
+    "uncertain_capture_paths": [],
+    "unsupported_paths": []
+  },
+  "problems": {
+    "ambiguous_sidecars": [
+      "Family/this-is-a-very-long-takeout-filename-.json"
+    ],
+    "destination_assets": 12,
+    "duplicate_album_titles": {
+      "Trips": [
+        "Family",
+        "Weekend"
+      ]
+    },
+    "duplicate_occurrences": [
+      [
+        "Family/sunrise.png",
+        "Weekend/sunrise.png"
+      ]
+    ],
+    "hashes": {
+      "Family/broken.png": {
+        "sha1": "c1f1c50479dcfe24bdb7a1c3ef57a105de06bd4c",
+        "sha256": "96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea",
+        "size": 73
+      },
+      "Family/collision.png": {
+        "sha1": "98e7cbcd006e2f0b66682fa84bf9a91f8af9bbb8",
+        "sha256": "d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2",
+        "size": 73
+      },
+      "Family/portrait-edited.png": {
+        "sha1": "f2d33ac33fd76d046b6813a3c6d3c3972e6f1fc3",
+        "sha256": "c56738addcde0a7eebfa5f8698cab747edb236134d70b72c3b96cca98f881b5a",
+        "size": 73
+      },
+      "Family/portrait.png": {
+        "sha1": "77fdd9f02a773079fa308c12bd928a343d15bc46",
+        "sha256": "8d8d44043ee8e8aa759800683be2355dcbc15e3ce7042038b5403c0536fe3cab",
+        "size": 73
+      },
+      "Family/sunrise.png": {
+        "sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+        "sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+        "size": 73
+      },
+      "Family/tampered.png": {
+        "sha1": "2713370046d65f93285e1cda7922f550762d3c26",
+        "sha256": "41e5e975204d12db29e29f04d91bfa3417dbecdb053e288775a171ad96af026b",
+        "size": 73
+      },
+      "Family/this-is-a-very-long-takeout-filename-alpha.png": {
+        "sha1": "8f00302534a08f3d7d9e6a2aaa1420dbe91ecf08",
+        "sha256": "6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337",
+        "size": 73
+      },
+      "Family/this-is-a-very-long-takeout-filename-beta.png": {
+        "sha1": "2366ce017b667e7e2ca79360a24dce56af5f7185",
+        "sha256": "27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294",
+        "size": 73
+      },
+      "Videos/clip.avi": {
+        "sha1": "ebfb8394e9e89f958c5fe8837c8ce9ae412ed92d",
+        "sha256": "50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2",
+        "size": 312
+      },
+      "Videos/live.avi": {
+        "sha1": "d1d725ce5ec40d792df9fc9ac3b2e3ce7a90a41e",
+        "sha256": "1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963",
+        "size": 312
+      },
+      "Videos/live.png": {
+        "sha1": "fa94133a9f0210410296b497c43bcc75d78625b3",
+        "sha256": "51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f",
+        "size": 73
+      },
+      "Weekend/clock.png": {
+        "sha1": "3b76ac77287aab6bd05ccd956a65c31f83284a06",
+        "sha256": "6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481",
+        "size": 73
+      },
+      "Weekend/collision.png": {
+        "sha1": "74672477dd88a37115c40d2f1b4efc856604712a",
+        "sha256": "e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49",
+        "size": 73
+      },
+      "Weekend/dated.png": {
+        "sha1": "3e5f0df8d1e96631f8cd16d2ca8cb5c8257d4b32",
+        "sha256": "5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542",
+        "size": 73
+      },
+      "Weekend/sunrise.png": {
+        "sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+        "sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+        "size": 73
+      }
+    },
+    "malformed_sidecars": [
+      "Family/broken.png.json"
+    ],
+    "metadata_changed_paths": [
+      "Weekend/dated.png"
+    ],
+    "mismatched_original_paths": [
+      "Family/tampered.png"
+    ],
+    "missing_memberships": [
+      {
+        "album": "Weekend",
+        "path": "Weekend/sunrise.png"
+      }
+    ],
+    "omitted_paths": [
+      "Family/portrait-edited.png",
+      "Family/portrait.png"
+    ],
+    "paired_paths": [
+      "Videos/live.avi",
+      "Videos/live.png"
+    ],
+    "scenario": "problems",
+    "source_media_occurrences": 15,
+    "source_unique_media": 14,
+    "uncertain_capture_paths": [
+      "Weekend/clock.png"
+    ],
+    "unsupported_paths": [
+      "Unsupported/live.aae",
+      "Unsupported/unknown.bin"
+    ]
+  }
+}

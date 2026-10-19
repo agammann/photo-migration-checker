@@ -1,0 +1,3206 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Photo Migration Checker — local report</title><style>
+body{font:16px/1.5 system-ui,sans-serif;color:#182620;background:#fff;max-width:1300px;margin:48px auto;padding:0 24px}
+h1{font-size:32px} .notice{padding:18px;background:#fff3d9;border:1px solid #e8c788} table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{text-align:left;vertical-align:top;border-bottom:1px solid #dce2df;padding:12px;overflow-wrap:anywhere}th{background:#f5f7f6}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} .stats{display:flex;gap:40px;flex-wrap:wrap;margin:24px 0} footer{margin:32px 0;color:#52645a}
+</style><h1>Photo Migration Checker</h1>
+<p>Independent read-only verification report. 2026-10-19T04:19:13.312966+00:00</p>
+<p class="notice">
+Coverage: incomplete — unresolved evidence remains. This verifies only the supplied export. Keep your originals.</p>
+<div class="stats"><span>Source files: <strong>63</strong></span><span>Content matched: <strong>62</strong></span>
+<span>Attention findings: <strong>12</strong></span><span>Level: <strong>Verified original bytes</strong></span></div>
+<p>Supplied extracted folder against API-key-readable active, non-locked assets, including readable shared albums. No server-wide completeness claim.</p><p>Immich version: 3.3.3. Source timezone conversion is never guessed.</p>
+<p>Comparable capture dates: 53 / 63.
+Source occurrences with asserted album membership: 62 / 63.
+Only directories with recognizable album metadata assert membership; ordinary directory names are hints only.</p>
+<p>Paired media: 8 verified original relationships,
+0 stored checksum relationships,
+0 differences, 0 unresolved.
+Media types: 62 agree, 0 differ,
+0 unresolved, 0 unmatched source occurrences.</p>
+<table><thead><tr><th>Source file / scope</th><th>Evidence</th><th>Destination asset IDs</th><th>Explanation</th></tr></thead><tbody><tr><td>2020-03-06-07/IMG_20200306_145457.jpg</td><td>Verified original bytes</td><td>a90e451c-e368-46dc-96f3-dd17a42ded69</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;cad5bb1308641992fcbf87dd8f806116aa1aeec8b07a762927833f84b8c6dff0&quot;,
+  &quot;source_sha1&quot;: &quot;3339a48bb72bcc695129e029b0101590fa893396&quot;,
+  &quot;size&quot;: 4507714,
+  &quot;destination_sha256&quot;: {
+    &quot;a90e451c-e368-46dc-96f3-dd17a42ded69&quot;: &quot;cad5bb1308641992fcbf87dd8f806116aa1aeec8b07a762927833f84b8c6dff0&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200306_145457.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_151653.jpg</td><td>Verified original bytes</td><td>1a2df691-b300-45fb-bfbd-e1e2992933d9</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;463d12343ff3d0a112033e91f7c6eb3646ce980b9dc2f1edc58a33502a91f996&quot;,
+  &quot;source_sha1&quot;: &quot;afd88bc8f2217046fb6361c6bce33518ffbd2e2e&quot;,
+  &quot;size&quot;: 2491187,
+  &quot;destination_sha256&quot;: {
+    &quot;1a2df691-b300-45fb-bfbd-e1e2992933d9&quot;: &quot;463d12343ff3d0a112033e91f7c6eb3646ce980b9dc2f1edc58a33502a91f996&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200306_151653.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_153446.jpg</td><td>Verified original bytes</td><td>165d487a-2ffe-4a83-8f75-3fc6a9ff3acf</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;0b717fecbcd00a6bf688981bb29a79ae9437bf827ad0441a1f69ce3513ce492f&quot;,
+  &quot;source_sha1&quot;: &quot;eb0137bd28f2e1fa720b5acd6570e44fb29a0d3b&quot;,
+  &quot;size&quot;: 3929878,
+  &quot;destination_sha256&quot;: {
+    &quot;165d487a-2ffe-4a83-8f75-3fc6a9ff3acf&quot;: &quot;0b717fecbcd00a6bf688981bb29a79ae9437bf827ad0441a1f69ce3513ce492f&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200306_153446.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_202118.jpg</td><td>Verified original bytes</td><td>bf2ead36-8928-4b5a-93cc-04650c019223</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;e86394d6b1ba5de6e3a0cb1c1441493706f3b9a6d1a5ea4cd1ebfbe20552306c&quot;,
+  &quot;source_sha1&quot;: &quot;da4e6a4a72394d831935933098194069cd103385&quot;,
+  &quot;size&quot;: 4419942,
+  &quot;destination_sha256&quot;: {
+    &quot;bf2ead36-8928-4b5a-93cc-04650c019223&quot;: &quot;e86394d6b1ba5de6e3a0cb1c1441493706f3b9a6d1a5ea4cd1ebfbe20552306c&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200306_202118.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_223642.jpg</td><td>Verified original bytes</td><td>28bc9708-aa2a-4554-bcf4-c5bfe9b02376</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;c15dc4d80c6e8bfbe4f4559c57b204a2359039ae093f7ecb452bd67e7134a666&quot;,
+  &quot;source_sha1&quot;: &quot;9e7e114b2f557903291b727b484be50bfaf13780&quot;,
+  &quot;size&quot;: 4146042,
+  &quot;destination_sha256&quot;: {
+    &quot;28bc9708-aa2a-4554-bcf4-c5bfe9b02376&quot;: &quot;c15dc4d80c6e8bfbe4f4559c57b204a2359039ae093f7ecb452bd67e7134a666&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200306_223642.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_053704.jpg</td><td>Verified original bytes</td><td>495b6e5f-bfa3-4adb-87dc-a2532a29e3b2</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;960693177be8dc6f432082b5908bba5e0c114efb99ac44887aa799b1b1a25f6f&quot;,
+  &quot;source_sha1&quot;: &quot;39db8f36fd54fc1faacd639188a6004785928738&quot;,
+  &quot;size&quot;: 2922118,
+  &quot;destination_sha256&quot;: {
+    &quot;495b6e5f-bfa3-4adb-87dc-a2532a29e3b2&quot;: &quot;960693177be8dc6f432082b5908bba5e0c114efb99ac44887aa799b1b1a25f6f&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_053704.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_185206.jpg</td><td>Verified original bytes</td><td>d03b8213-870f-4437-83ac-bcd272e177a2</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;2185781a10039b087d1c7d537937a147c2be47abbb2256477edacd967ac50fec&quot;,
+  &quot;source_sha1&quot;: &quot;f58d0edfac15ac102209fd9ea6456014bdf47b0f&quot;,
+  &quot;size&quot;: 4827238,
+  &quot;destination_sha256&quot;: {
+    &quot;d03b8213-870f-4437-83ac-bcd272e177a2&quot;: &quot;2185781a10039b087d1c7d537937a147c2be47abbb2256477edacd967ac50fec&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_185206.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_185403.jpg</td><td>Verified original bytes</td><td>a3e39a95-ea25-4bd8-b193-752c4f0a9881</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;1c60ff37556482746457bac33e084137971b05398ce1df33795acfa65ee85b24&quot;,
+  &quot;source_sha1&quot;: &quot;642c8d04c8aba8cee5bd82550d063dc892fadc0a&quot;,
+  &quot;size&quot;: 2798969,
+  &quot;destination_sha256&quot;: {
+    &quot;a3e39a95-ea25-4bd8-b193-752c4f0a9881&quot;: &quot;1c60ff37556482746457bac33e084137971b05398ce1df33795acfa65ee85b24&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_185403.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_200946.jpg</td><td>Verified original bytes</td><td>3a8800f8-8243-4f49-ae3e-adc27fdde439</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;748bf60658684b6a275c90f30d8f8cad62f6b724ae162a5626464f75db4b8c49&quot;,
+  &quot;source_sha1&quot;: &quot;e277ef09dca47289a007dc1a9e155bfa75821ad1&quot;,
+  &quot;size&quot;: 4426645,
+  &quot;destination_sha256&quot;: {
+    &quot;3a8800f8-8243-4f49-ae3e-adc27fdde439&quot;: &quot;748bf60658684b6a275c90f30d8f8cad62f6b724ae162a5626464f75db4b8c49&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_200946.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_201514.jpg</td><td>Verified original bytes</td><td>b5f815db-b391-4ab1-95f4-6f9f8ec1357a</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;80a6deb1a6b9b2d809d084f397fc7b594ae194e86114ec6b6a3c4d22baec11a3&quot;,
+  &quot;source_sha1&quot;: &quot;4b4bd6e681b415eb5542f5885633a137a7c276ef&quot;,
+  &quot;size&quot;: 2716764,
+  &quot;destination_sha256&quot;: {
+    &quot;b5f815db-b391-4ab1-95f4-6f9f8ec1357a&quot;: &quot;80a6deb1a6b9b2d809d084f397fc7b594ae194e86114ec6b6a3c4d22baec11a3&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_201514.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_203958.jpg</td><td>Verified original bytes</td><td>369a1ec8-6674-4c2e-b718-216ef48ead3b</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;ef0e0740012cad29adaca014082035fc63aa8d6922295bb332b298e463a859f2&quot;,
+  &quot;source_sha1&quot;: &quot;f8c1e089ca5f9d720cb93a05161d5f69268585c6&quot;,
+  &quot;size&quot;: 4674986,
+  &quot;destination_sha256&quot;: {
+    &quot;369a1ec8-6674-4c2e-b718-216ef48ead3b&quot;: &quot;ef0e0740012cad29adaca014082035fc63aa8d6922295bb332b298e463a859f2&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_203958.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_204124.jpg</td><td>Verified original bytes</td><td>b3d961f5-7af2-4741-8ab3-524ffa547c6a</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;ff5455c6b01eb4009380fcc3b790360ed827b4611039c66f1a6c390eb958c719&quot;,
+  &quot;source_sha1&quot;: &quot;87a294d584e2e97f425484a6d620ac512a396427&quot;,
+  &quot;size&quot;: 7774963,
+  &quot;destination_sha256&quot;: {
+    &quot;b3d961f5-7af2-4741-8ab3-524ffa547c6a&quot;: &quot;ff5455c6b01eb4009380fcc3b790360ed827b4611039c66f1a6c390eb958c719&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/IMG_20200307_204124.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200306_151636(1).jpg</td><td>Verified original bytes</td><td>f6681ac0-2bd4-49a5-9778-3621e8c2ceb4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57&quot;,
+  &quot;source_sha1&quot;: &quot;7502f29301ae3c85a0ded85f52daeee219d07eb2&quot;,
+  &quot;size&quot;: 2595312,
+  &quot;destination_sha256&quot;: {
+    &quot;f6681ac0-2bd4-49a5-9778-3621e8c2ceb4&quot;: &quot;f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200306_151636(1).jpg</td><td>Date evidence unavailable</td><td>f6681ac0-2bd4-49a5-9778-3621e8c2ceb4</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200306_151636.jpg</td><td>Verified original bytes</td><td>61f7e733-ab0c-4488-b7d7-cb462d59d816</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;0bf9675c2f1c6c8178cb7e87fe75972ebf38a4522dd5596bd232f3b126690cf5&quot;,
+  &quot;source_sha1&quot;: &quot;3243cc16d0f2696a6897686e39059c14d63c56ed&quot;,
+  &quot;size&quot;: 5722178,
+  &quot;destination_sha256&quot;: {
+    &quot;61f7e733-ab0c-4488-b7d7-cb462d59d816&quot;: &quot;0bf9675c2f1c6c8178cb7e87fe75972ebf38a4522dd5596bd232f3b126690cf5&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200306_151636.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130221(1).jpg</td><td>Verified original bytes</td><td>dce892a2-64e9-46f1-b55d-d7f8555b3766</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820&quot;,
+  &quot;source_sha1&quot;: &quot;82dcb1680a957e8dbb2098135ca79734589c695e&quot;,
+  &quot;size&quot;: 3348593,
+  &quot;destination_sha256&quot;: {
+    &quot;dce892a2-64e9-46f1-b55d-d7f8555b3766&quot;: &quot;8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130221(1).jpg</td><td>Date evidence unavailable</td><td>dce892a2-64e9-46f1-b55d-d7f8555b3766</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130221.jpg</td><td>Verified original bytes</td><td>ce64583e-0b96-4711-b965-1632f860cf04</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;0e01a027e3a25d6573cb6d62ea5d97de69d58bf486954543405b4f19a7f46d3b&quot;,
+  &quot;source_sha1&quot;: &quot;95722b8dbd2f20ff82a3b78226b9f0cadb3521f4&quot;,
+  &quot;size&quot;: 7435596,
+  &quot;destination_sha256&quot;: {
+    &quot;ce64583e-0b96-4711-b965-1632f860cf04&quot;: &quot;0e01a027e3a25d6573cb6d62ea5d97de69d58bf486954543405b4f19a7f46d3b&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_130221.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130237(1).jpg</td><td>Verified original bytes</td><td>6cd50cf8-a65b-4a3d-ab71-1115fb9223a5</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5&quot;,
+  &quot;source_sha1&quot;: &quot;0b71e4c14497f2b4de885e08cc4f5d7f4e9b64ec&quot;,
+  &quot;size&quot;: 11447298,
+  &quot;destination_sha256&quot;: {
+    &quot;6cd50cf8-a65b-4a3d-ab71-1115fb9223a5&quot;: &quot;2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130237(1).jpg</td><td>Date evidence unavailable</td><td>6cd50cf8-a65b-4a3d-ab71-1115fb9223a5</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130237.jpg</td><td>Verified original bytes</td><td>71b22cbc-aaa4-4053-93d4-dc8d631f140c</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;ab43a7a0588795116076ad4a626c242ace574d37c6fd9181aea1ceec6ede1f53&quot;,
+  &quot;source_sha1&quot;: &quot;227807fcf8fb235457ca8bffa67f7994b1c275a4&quot;,
+  &quot;size&quot;: 13078897,
+  &quot;destination_sha256&quot;: {
+    &quot;71b22cbc-aaa4-4053-93d4-dc8d631f140c&quot;: &quot;ab43a7a0588795116076ad4a626c242ace574d37c6fd9181aea1ceec6ede1f53&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_130237.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130326(1).jpg</td><td>Verified original bytes</td><td>cc7c77d5-e66a-49ce-95cb-23e829c65063</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c&quot;,
+  &quot;source_sha1&quot;: &quot;d98a8f56e2e41fe81306586d0af41e87744731a4&quot;,
+  &quot;size&quot;: 11277648,
+  &quot;destination_sha256&quot;: {
+    &quot;cc7c77d5-e66a-49ce-95cb-23e829c65063&quot;: &quot;132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130326(1).jpg</td><td>Date evidence unavailable</td><td>cc7c77d5-e66a-49ce-95cb-23e829c65063</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130326.jpg</td><td>Verified original bytes</td><td>28ad7661-7c4f-4d4d-9afd-70abf01d4f1c</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;ffdb9817a47d1d8dda78fb4ed27a87a9a3df5b24a70e27a18597b0217f03efe5&quot;,
+  &quot;source_sha1&quot;: &quot;cc805209cbf01390f78397d7218c383eff80ee4d&quot;,
+  &quot;size&quot;: 12704983,
+  &quot;destination_sha256&quot;: {
+    &quot;28ad7661-7c4f-4d4d-9afd-70abf01d4f1c&quot;: &quot;ffdb9817a47d1d8dda78fb4ed27a87a9a3df5b24a70e27a18597b0217f03efe5&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_130326.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_185225(1).jpg</td><td>Verified original bytes</td><td>a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2&quot;,
+  &quot;source_sha1&quot;: &quot;040d9f3bca18d82b0d3db9b109e69bc4d8d8e892&quot;,
+  &quot;size&quot;: 2561420,
+  &quot;destination_sha256&quot;: {
+    &quot;a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4&quot;: &quot;626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_185225(1).jpg</td><td>Date evidence unavailable</td><td>a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_185225.jpg</td><td>Verified original bytes</td><td>bbf67e38-5fb3-4687-8ec7-9cd445b569ff</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;4ef966e421e8492155298a06f51a714332d966d9c6b3562231d3fbc7a0c3e1d2&quot;,
+  &quot;source_sha1&quot;: &quot;49b01a239d302328c68ef8ac9cbb4ff04ef4c9c0&quot;,
+  &quot;size&quot;: 7536794,
+  &quot;destination_sha256&quot;: {
+    &quot;bbf67e38-5fb3-4687-8ec7-9cd445b569ff&quot;: &quot;4ef966e421e8492155298a06f51a714332d966d9c6b3562231d3fbc7a0c3e1d2&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_185225.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_201453(1).jpg</td><td>Verified original bytes</td><td>eb7016fc-4a4d-4cd8-b105-0d4bb079c957</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b&quot;,
+  &quot;source_sha1&quot;: &quot;308fbf41d32ab7146e5e69a335f0af0e211f6125&quot;,
+  &quot;size&quot;: 2758716,
+  &quot;destination_sha256&quot;: {
+    &quot;eb7016fc-4a4d-4cd8-b105-0d4bb079c957&quot;: &quot;32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_201453(1).jpg</td><td>Date evidence unavailable</td><td>eb7016fc-4a4d-4cd8-b105-0d4bb079c957</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_201453.jpg</td><td>Verified original bytes</td><td>05ba1b38-0747-41ba-8dcb-bc0a8eec7427</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;1efd696b421b81cd79c9ff6e731cdcbec57288c994beb0062e2028556b47857c&quot;,
+  &quot;source_sha1&quot;: &quot;8dc13d7cf404a19a9f1ab9ae2521ba0f09469b0f&quot;,
+  &quot;size&quot;: 5353233,
+  &quot;destination_sha256&quot;: {
+    &quot;05ba1b38-0747-41ba-8dcb-bc0a8eec7427&quot;: &quot;1efd696b421b81cd79c9ff6e731cdcbec57288c994beb0062e2028556b47857c&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_201453.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_102340.jpg</td><td>Verified original bytes</td><td>63e66417-f481-4c89-b191-dc862549441c</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;e88c1c6b154b8a3606faa68e92e43e952b97a10fa4d8bb5274046bff49148770&quot;,
+  &quot;source_sha1&quot;: &quot;37b82b44e2415349ae244836b3f78f79faae7520&quot;,
+  &quot;size&quot;: 4380121,
+  &quot;destination_sha256&quot;: {
+    &quot;63e66417-f481-4c89-b191-dc862549441c&quot;: &quot;e88c1c6b154b8a3606faa68e92e43e952b97a10fa4d8bb5274046bff49148770&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_102340.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123332.jpg</td><td>Verified original bytes</td><td>64f18829-0829-4aac-b931-ba4a635cbe35</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;69cf966d69f68b5f20d1234999fc37bc497e7537b942052b675debbe33a25654&quot;,
+  &quot;source_sha1&quot;: &quot;755433f3b647bdac6a2828b50a9f01a5632b857e&quot;,
+  &quot;size&quot;: 4359893,
+  &quot;destination_sha256&quot;: {
+    &quot;64f18829-0829-4aac-b931-ba4a635cbe35&quot;: &quot;69cf966d69f68b5f20d1234999fc37bc497e7537b942052b675debbe33a25654&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_123332.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123528.jpg</td><td>Verified original bytes</td><td>76322e24-a30d-4e3a-ae31-4c9cd09eccb6</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;aaef3ce741fdc8e347e1450f34fc101d98ebbb78286c766623ac706e7d2aa533&quot;,
+  &quot;source_sha1&quot;: &quot;93a0e671417b66830e79e63487433806ff1b4e00&quot;,
+  &quot;size&quot;: 4327012,
+  &quot;destination_sha256&quot;: {
+    &quot;76322e24-a30d-4e3a-ae31-4c9cd09eccb6&quot;: &quot;aaef3ce741fdc8e347e1450f34fc101d98ebbb78286c766623ac706e7d2aa533&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_123528.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123536.jpg</td><td>Verified original bytes</td><td>558f216f-3c39-4cd4-b775-ff1233479a5f</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;eccfa1d20f1ed997d9a5054c69b4f29d8d8c889639c97c5a8843d1f549e03eb0&quot;,
+  &quot;source_sha1&quot;: &quot;d60a810b8e69a1f6f903576bcfbe276dc0626e53&quot;,
+  &quot;size&quot;: 4046056,
+  &quot;destination_sha256&quot;: {
+    &quot;558f216f-3c39-4cd4-b775-ff1233479a5f&quot;: &quot;eccfa1d20f1ed997d9a5054c69b4f29d8d8c889639c97c5a8843d1f549e03eb0&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_123536.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123802.jpg</td><td>Verified original bytes</td><td>c0b179a2-de38-43f5-89f3-252de257278c</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;55c9df952d9a049810b7c6c010425f59a2a8bfd1c69ea866c19c5958a3151fbb&quot;,
+  &quot;source_sha1&quot;: &quot;ab0b1396da6595c53e2fb46ec5d81b916a2c30c3&quot;,
+  &quot;size&quot;: 4558431,
+  &quot;destination_sha256&quot;: {
+    &quot;c0b179a2-de38-43f5-89f3-252de257278c&quot;: &quot;55c9df952d9a049810b7c6c010425f59a2a8bfd1c69ea866c19c5958a3151fbb&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_123802.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123843.jpg</td><td>Verified original bytes</td><td>9b22780d-9926-4cf7-a40f-eea1af1e9077</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;290214f0ff1dcdcd004f954eac0ccc06de8767afc3384228f95f4399ee346685&quot;,
+  &quot;source_sha1&quot;: &quot;cc4008c71b2fe99591cc1640e40a00c8b16dfbe8&quot;,
+  &quot;size&quot;: 2668867,
+  &quot;destination_sha256&quot;: {
+    &quot;9b22780d-9926-4cf7-a40f-eea1af1e9077&quot;: &quot;290214f0ff1dcdcd004f954eac0ccc06de8767afc3384228f95f4399ee346685&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_123843.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_144240.jpg</td><td>Verified original bytes</td><td>d28ec272-dc6a-4f69-afdb-e000fb825051</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;add4c769908c40a81b98998a33aedc2a3620ae1136c436d71c0cfd2f7a46306a&quot;,
+  &quot;source_sha1&quot;: &quot;f8fdf76e41f92418d62b7c5dc515c465c46fa724&quot;,
+  &quot;size&quot;: 4281064,
+  &quot;destination_sha256&quot;: {
+    &quot;d28ec272-dc6a-4f69-afdb-e000fb825051&quot;: &quot;add4c769908c40a81b98998a33aedc2a3620ae1136c436d71c0cfd2f7a46306a&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_144240.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_203432.jpg</td><td>Verified original bytes</td><td>4eae43f9-0919-414d-9a20-e3b8e9169d82</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;5c5cbdd45748e543a5d4a0e4f4560d6e23467b33e6c70298b901756c235ab961&quot;,
+  &quot;source_sha1&quot;: &quot;3e3eceecca146ead4390e9ddbc0672edb4bcb4d3&quot;,
+  &quot;size&quot;: 4816488,
+  &quot;destination_sha256&quot;: {
+    &quot;4eae43f9-0919-414d-9a20-e3b8e9169d82&quot;: &quot;5c5cbdd45748e543a5d4a0e4f4560d6e23467b33e6c70298b901756c235ab961&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-08/IMG_20200308_203432.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-09/IMG_20200309_172817.jpg</td><td>Verified original bytes</td><td>4a386496-d311-44c3-93be-b1809400b5aa</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;8c9e56353900f4d6e7efec19aaf30c3f5e46102e17c194fcab358e42a0563239&quot;,
+  &quot;source_sha1&quot;: &quot;d96b574b6f8503dec60f5d6f7b338ced97e438fb&quot;,
+  &quot;size&quot;: 4033974,
+  &quot;destination_sha256&quot;: {
+    &quot;4a386496-d311-44c3-93be-b1809400b5aa&quot;: &quot;8c9e56353900f4d6e7efec19aaf30c3f5e46102e17c194fcab358e42a0563239&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-09/IMG_20200309_172817.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121133.jpg</td><td>Verified original bytes</td><td>4f20c7b9-11bf-48e9-9562-ebbfd71ecb70</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;abd7dbd63ef2bbe1aae2db8af2a1d1dbd6edd1b42af1c464a5ac03a3d377481f&quot;,
+  &quot;source_sha1&quot;: &quot;121cde07dadc0825df7b380e30a3df35547e2cd4&quot;,
+  &quot;size&quot;: 3921300,
+  &quot;destination_sha256&quot;: {
+    &quot;4f20c7b9-11bf-48e9-9562-ebbfd71ecb70&quot;: &quot;abd7dbd63ef2bbe1aae2db8af2a1d1dbd6edd1b42af1c464a5ac03a3d377481f&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_121133.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121134.jpg</td><td>Verified original bytes</td><td>caec050f-d2b0-4893-89e3-92d8430a8aab</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;257f67c020560a4685e4806d23795caea27cc833ab81fd398bb95fdb30a6bdff&quot;,
+  &quot;source_sha1&quot;: &quot;efbc1c9444ed181818c5480ea18659d2f8815556&quot;,
+  &quot;size&quot;: 3971478,
+  &quot;destination_sha256&quot;: {
+    &quot;caec050f-d2b0-4893-89e3-92d8430a8aab&quot;: &quot;257f67c020560a4685e4806d23795caea27cc833ab81fd398bb95fdb30a6bdff&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_121134.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121134_1.jpg</td><td>Verified original bytes</td><td>821b09fa-80ee-4c3b-8a53-7e4a582f528a</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;be47a831aa93dd268e103b11a15c97cb2e989fe75751fb739b72376244dd523d&quot;,
+  &quot;source_sha1&quot;: &quot;ddc2062d239ba365d9fc745139842c47d5dde355&quot;,
+  &quot;size&quot;: 2479763,
+  &quot;destination_sha256&quot;: {
+    &quot;821b09fa-80ee-4c3b-8a53-7e4a582f528a&quot;: &quot;be47a831aa93dd268e103b11a15c97cb2e989fe75751fb739b72376244dd523d&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_121134_1.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121137.jpg</td><td>Verified original bytes</td><td>5a14d13d-577d-4b77-9de9-b1c8b504dcdc</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;2c1e4a06726124daa48d3a520e38a52978e321f0d9062b045fa151d413a556bd&quot;,
+  &quot;source_sha1&quot;: &quot;0ee8f9ea06945be8208566316de781b12e90bd2f&quot;,
+  &quot;size&quot;: 2617102,
+  &quot;destination_sha256&quot;: {
+    &quot;5a14d13d-577d-4b77-9de9-b1c8b504dcdc&quot;: &quot;2c1e4a06726124daa48d3a520e38a52978e321f0d9062b045fa151d413a556bd&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_121137.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121139.jpg</td><td>Verified original bytes</td><td>be6ed071-e9ab-4512-8aa7-e9b5728f0ad6</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;27a983488674fff718431488c7404ad7ce001a0cafae9e03203ce962b7f4df91&quot;,
+  &quot;source_sha1&quot;: &quot;c930d93a289ecdc6d89f544e64f32d26f436922a&quot;,
+  &quot;size&quot;: 2540043,
+  &quot;destination_sha256&quot;: {
+    &quot;be6ed071-e9ab-4512-8aa7-e9b5728f0ad6&quot;: &quot;27a983488674fff718431488c7404ad7ce001a0cafae9e03203ce962b7f4df91&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_121139.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133315.jpg</td><td>Verified original bytes</td><td>75a09420-61fe-46be-87e3-9323f329b289</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;94178353c1b74629226288a1ade65ae91049a173e73baf3a50f589f3b67f2ce4&quot;,
+  &quot;source_sha1&quot;: &quot;9329203058605f4d0945c11af876efd076fa8e60&quot;,
+  &quot;size&quot;: 5392652,
+  &quot;destination_sha256&quot;: {
+    &quot;75a09420-61fe-46be-87e3-9323f329b289&quot;: &quot;94178353c1b74629226288a1ade65ae91049a173e73baf3a50f589f3b67f2ce4&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_133315.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133400.jpg</td><td>Verified original bytes</td><td>4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;25dba1c563c1b34ba3f8a0fc7fbd5c7b8cf9a8e30f17f8a223d926d793cb6b57&quot;,
+  &quot;source_sha1&quot;: &quot;5b7aa58b4c251936f390b30cd51d437d1084131b&quot;,
+  &quot;size&quot;: 5332986,
+  &quot;destination_sha256&quot;: {
+    &quot;4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0&quot;: &quot;25dba1c563c1b34ba3f8a0fc7fbd5c7b8cf9a8e30f17f8a223d926d793cb6b57&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_133400.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133708.jpg</td><td>Verified original bytes</td><td>a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;80c6e4d592255ad8818b41d7f00ecc136f996e2d5270a43a568421f6a9ea1eb0&quot;,
+  &quot;source_sha1&quot;: &quot;2adc6dedbad381c8e1bd5787b17ad6501bc5e416&quot;,
+  &quot;size&quot;: 5179441,
+  &quot;destination_sha256&quot;: {
+    &quot;a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589&quot;: &quot;80c6e4d592255ad8818b41d7f00ecc136f996e2d5270a43a568421f6a9ea1eb0&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_133708.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133710.jpg</td><td>Verified original bytes</td><td>00339393-9675-4106-8ddb-06352f3a607c</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;31c7f59db2598be5885b38f12e4257204908f69bed69c794ad12e79807b09dc7&quot;,
+  &quot;source_sha1&quot;: &quot;e1d87ceef76a31d32eb2ffc6d4d663ae7b286046&quot;,
+  &quot;size&quot;: 4657455,
+  &quot;destination_sha256&quot;: {
+    &quot;00339393-9675-4106-8ddb-06352f3a607c&quot;: &quot;31c7f59db2598be5885b38f12e4257204908f69bed69c794ad12e79807b09dc7&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_133710.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133711.jpg</td><td>Verified original bytes</td><td>88a12b10-a799-4a93-a22f-9d155d8b200c</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;50346efd658694541fd4f441712c9ec852184127cefda9c0da36585b6d07f960&quot;,
+  &quot;source_sha1&quot;: &quot;b93a9c81c0eb877569a3ddb7afaab5c37c87105e&quot;,
+  &quot;size&quot;: 4503912,
+  &quot;destination_sha256&quot;: {
+    &quot;88a12b10-a799-4a93-a22f-9d155d8b200c&quot;: &quot;50346efd658694541fd4f441712c9ec852184127cefda9c0da36585b6d07f960&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_133711.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_134516.jpg</td><td>Verified original bytes</td><td>148474e8-1c6d-464f-aed5-e6bdb8ba63f1</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f72d7ba4d1eda57a42902dfc82f0f02e7e57b86bfefe122e5556e12c3d415825&quot;,
+  &quot;source_sha1&quot;: &quot;249da05a57cd6c346113915d7bea472bedfadc1e&quot;,
+  &quot;size&quot;: 5395384,
+  &quot;destination_sha256&quot;: {
+    &quot;148474e8-1c6d-464f-aed5-e6bdb8ba63f1&quot;: &quot;f72d7ba4d1eda57a42902dfc82f0f02e7e57b86bfefe122e5556e12c3d415825&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_134516.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416-EFFECTS-edited.jpg</td><td>Verified original bytes</td><td>58814edb-5a84-42ff-9238-3bf2567e377b</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;59dcd795809f839d2ef60bd1e2619e54ac6abce8e0569bbb3c5595d9fda26799&quot;,
+  &quot;source_sha1&quot;: &quot;855790b48a93b153fafbce5245e5c70ba682dfd1&quot;,
+  &quot;size&quot;: 2612872,
+  &quot;destination_sha256&quot;: {
+    &quot;58814edb-5a84-42ff-9238-3bf2567e377b&quot;: &quot;59dcd795809f839d2ef60bd1e2619e54ac6abce8e0569bbb3c5595d9fda26799&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416-EFFECTS-edited.jpg</td><td>Date evidence unavailable</td><td>58814edb-5a84-42ff-9238-3bf2567e377b</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416-EFFECTS.jpg</td><td>Verified original bytes</td><td>3e82a410-ce2e-4db8-ab27-e9005ace1025</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;65cc26185b4c4854996590eec64f8206fd5b2e6122cf533291b4b7968e196294&quot;,
+  &quot;source_sha1&quot;: &quot;a86130d0e5608e64044a18f7aa4531bd4eab20d2&quot;,
+  &quot;size&quot;: 2511295,
+  &quot;destination_sha256&quot;: {
+    &quot;3e82a410-ce2e-4db8-ab27-e9005ace1025&quot;: &quot;65cc26185b4c4854996590eec64f8206fd5b2e6122cf533291b4b7968e196294&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_140416-EFFECTS.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416.jpg</td><td>Verified original bytes</td><td>fc540557-4478-46d5-a6c9-8a4f64960eba</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;626f4684ab16b414ace55ec2fc1700dc63e6599ba13a3102095c4c999249bb6c&quot;,
+  &quot;source_sha1&quot;: &quot;2aa9ccae4ef7c300a49862ecabe786b7ace98082&quot;,
+  &quot;size&quot;: 4358920,
+  &quot;destination_sha256&quot;: {
+    &quot;fc540557-4478-46d5-a6c9-8a4f64960eba&quot;: &quot;626f4684ab16b414ace55ec2fc1700dc63e6599ba13a3102095c4c999249bb6c&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/IMG_20200310_140416.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/MVIMG_20200310_133405(1).jpg</td><td>Verified original bytes</td><td>a4a4dd17-18b5-4083-a398-14e83feffd4b</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20&quot;,
+  &quot;source_sha1&quot;: &quot;e85f088ab628c036a90090f215a03489b82cb3f6&quot;,
+  &quot;size&quot;: 5225165,
+  &quot;destination_sha256&quot;: {
+    &quot;a4a4dd17-18b5-4083-a398-14e83feffd4b&quot;: &quot;eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-10/MVIMG_20200310_133405(1).jpg</td><td>Date evidence unavailable</td><td>a4a4dd17-18b5-4083-a398-14e83feffd4b</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-10/MVIMG_20200310_133405.jpg</td><td>Verified original bytes</td><td>a583fd79-f3c1-4482-a9f1-23274345f7ff</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;3172ee9b43367a519e34d5c764f6b6a628bf636c18c1289b1fb443bed2222643&quot;,
+  &quot;source_sha1&quot;: &quot;472dde4cca66ae53973064e4ab968323983a5fde&quot;,
+  &quot;size&quot;: 10522152,
+  &quot;destination_sha256&quot;: {
+    &quot;a583fd79-f3c1-4482-a9f1-23274345f7ff&quot;: &quot;3172ee9b43367a519e34d5c764f6b6a628bf636c18c1289b1fb443bed2222643&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-10/MVIMG_20200310_133405.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11 #2/IMG_20200312_032338.jpg</td><td>Verified original bytes</td><td>92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;9e9ece9fd08386966abadba4ec651296b907fc88cbd71129fc240563d9204b7a&quot;,
+  &quot;source_sha1&quot;: &quot;96d141717bb425a5757998cd1e53ec43c60d857c&quot;,
+  &quot;size&quot;: 4375823,
+  &quot;destination_sha256&quot;: {
+    &quot;92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6&quot;: &quot;9e9ece9fd08386966abadba4ec651296b907fc88cbd71129fc240563d9204b7a&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11 #2/IMG_20200312_032338.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_111237.jpg</td><td>Verified original bytes</td><td>8967d727-7666-4923-ac3f-53ca95e2b34e</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;438e12f73e38bb7ed51b6af2575da8307d30572673729db75418634705ac7772&quot;,
+  &quot;source_sha1&quot;: &quot;b9508a5166fe8a0f62cd6413ab900a4a44dceeb1&quot;,
+  &quot;size&quot;: 4617941,
+  &quot;destination_sha256&quot;: {
+    &quot;8967d727-7666-4923-ac3f-53ca95e2b34e&quot;: &quot;438e12f73e38bb7ed51b6af2575da8307d30572673729db75418634705ac7772&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_111237.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_112254.jpg</td><td>Verified original bytes</td><td>0c3353e4-5ab8-4b0a-945d-7cf65fb90a96</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;e3d0bc5ab82f1663178582dfe8bf047c508a01a939f5893e64c0855933bf75ac&quot;,
+  &quot;source_sha1&quot;: &quot;06eea5218fe8dbf4d194d1b2d4e233490194872c&quot;,
+  &quot;size&quot;: 4365887,
+  &quot;destination_sha256&quot;: {
+    &quot;0c3353e4-5ab8-4b0a-945d-7cf65fb90a96&quot;: &quot;e3d0bc5ab82f1663178582dfe8bf047c508a01a939f5893e64c0855933bf75ac&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_112254.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_115838.jpg</td><td>Verified original bytes</td><td>e011e762-f7f2-4653-8230-f0cac5485839</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;e170902e3959cefa88f632c032ba7acd0463ace0a6a8af9aa09497fb35dd6292&quot;,
+  &quot;source_sha1&quot;: &quot;9f81e1ef4ba7222dd773b077ac8a07f9456a15ef&quot;,
+  &quot;size&quot;: 5315141,
+  &quot;destination_sha256&quot;: {
+    &quot;e011e762-f7f2-4653-8230-f0cac5485839&quot;: &quot;e170902e3959cefa88f632c032ba7acd0463ace0a6a8af9aa09497fb35dd6292&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_115838.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_120758.jpg</td><td>Verified original bytes</td><td>a351a9ed-d129-4cc6-93cf-a34d2b7237c4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;7ce7717c69c67728f26414ce9dd410dfa7a6494fa6e962eb547282615f99e797&quot;,
+  &quot;source_sha1&quot;: &quot;6f796818996e981afc4b43e2c2ea85a41c762c56&quot;,
+  &quot;size&quot;: 4202047,
+  &quot;destination_sha256&quot;: {
+    &quot;a351a9ed-d129-4cc6-93cf-a34d2b7237c4&quot;: &quot;7ce7717c69c67728f26414ce9dd410dfa7a6494fa6e962eb547282615f99e797&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_120758.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_124110.jpg</td><td>Verified original bytes</td><td>16240486-3315-4434-a866-40554981ee14</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;321de3f7ccf4c6ffd39464ca0779565131b9727c1510d8e07dce6636cb0203f4&quot;,
+  &quot;source_sha1&quot;: &quot;036ac571b5c8b49b1c80b98f7a9e88638a05a9f7&quot;,
+  &quot;size&quot;: 4268668,
+  &quot;destination_sha256&quot;: {
+    &quot;16240486-3315-4434-a866-40554981ee14&quot;: &quot;321de3f7ccf4c6ffd39464ca0779565131b9727c1510d8e07dce6636cb0203f4&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_124110.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_124116.jpg</td><td>Verified original bytes</td><td>ab069a84-be57-4db1-b79a-aad6734617b4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;063ed8edc8c863cc9d46a3f11a1a01e8dc82506790b2f10dedc0334a67e296a1&quot;,
+  &quot;source_sha1&quot;: &quot;7d4d218d92fff8362fbccd16e472382008bbdeea&quot;,
+  &quot;size&quot;: 4120146,
+  &quot;destination_sha256&quot;: {
+    &quot;ab069a84-be57-4db1-b79a-aad6734617b4&quot;: &quot;063ed8edc8c863cc9d46a3f11a1a01e8dc82506790b2f10dedc0334a67e296a1&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_124116.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_181105.jpg</td><td>Verified original bytes</td><td>c09d5766-23b3-4c97-af14-5801a8c83d69</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f7e61faf3f71bd95e5dc49f3f62ca23a8e721e9ba3ae1ccf11c67cef974d6347&quot;,
+  &quot;source_sha1&quot;: &quot;2a90b595929773c7dedc5c2db7aa2a062176f491&quot;,
+  &quot;size&quot;: 5365536,
+  &quot;destination_sha256&quot;: {
+    &quot;c09d5766-23b3-4c97-af14-5801a8c83d69&quot;: &quot;f7e61faf3f71bd95e5dc49f3f62ca23a8e721e9ba3ae1ccf11c67cef974d6347&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_181105.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_182028.jpg</td><td>Verified original bytes</td><td>793f6067-6b4e-4703-8e37-5e18f00a8f1d</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;46fbbdefffd5ad33817a94435067dbd33f126b3e58575893002de056de056551&quot;,
+  &quot;source_sha1&quot;: &quot;85aa728800b0f97203b601f2f03a138a6ea0cf97&quot;,
+  &quot;size&quot;: 4338738,
+  &quot;destination_sha256&quot;: {
+    &quot;793f6067-6b4e-4703-8e37-5e18f00a8f1d&quot;: &quot;46fbbdefffd5ad33817a94435067dbd33f126b3e58575893002de056de056551&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/IMG_20200311_182028.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/PANO_20200311_124143.vr.jpg</td><td>Verified original bytes</td><td>d11906b1-f578-415e-a96d-3c519a639db4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;d957327ec8cb458b79336a284169a607683e15ed841d2f65cf00b062a7df4d8c&quot;,
+  &quot;source_sha1&quot;: &quot;d04036c4901bdd92b2dd339c64b945158f86f964&quot;,
+  &quot;size&quot;: 2773027,
+  &quot;destination_sha256&quot;: {
+    &quot;d11906b1-f578-415e-a96d-3c519a639db4&quot;: &quot;d957327ec8cb458b79336a284169a607683e15ed841d2f65cf00b062a7df4d8c&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/PANO_20200311_124143.vr.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>2020-03-11/VID_20200311_124137.mp4</td><td>Verified original bytes</td><td>e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;6d43bb1407f88b1f42d79e94b1345d94bd49d1532b8f07a398b04d7adf2109a7&quot;,
+  &quot;source_sha1&quot;: &quot;706c267402a46c50913cf2f04641b774698d049e&quot;,
+  &quot;size&quot;: 34206977,
+  &quot;destination_sha256&quot;: {
+    &quot;e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9&quot;: &quot;6d43bb1407f88b1f42d79e94b1345d94bd49d1532b8f07a398b04d7adf2109a7&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;2020-03-11/VID_20200311_124137.mp4.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Instant Upload/MVIMG_20200305_145544(1).jpg</td><td>Verified original bytes</td><td>e6e643b7-71aa-48ff-ab2a-435c3905e079</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0&quot;,
+  &quot;source_sha1&quot;: &quot;e8028ded5710b32308e15d81c1d9bac490bf1ec1&quot;,
+  &quot;size&quot;: 1697252,
+  &quot;destination_sha256&quot;: {
+    &quot;e6e643b7-71aa-48ff-ab2a-435c3905e079&quot;: &quot;51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Instant Upload/MVIMG_20200305_145544(1).jpg</td><td>Date evidence unavailable</td><td>e6e643b7-71aa-48ff-ab2a-435c3905e079</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Instant Upload/MVIMG_20200305_145544.jpg</td><td>Verified original bytes</td><td>4810d7ea-65e7-4123-98e7-ae62beb8734f</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;cf458d9778286affaeb33e7323babe256f109b9c6290a410d4d90701a1ab73dd&quot;,
+  &quot;source_sha1&quot;: &quot;e2cd1c33a0061a6197488ba8324b07fdbbef6c4b&quot;,
+  &quot;size&quot;: 3246208,
+  &quot;destination_sha256&quot;: {
+    &quot;4810d7ea-65e7-4123-98e7-ae62beb8734f&quot;: &quot;cf458d9778286affaeb33e7323babe256f109b9c6290a410d4d90701a1ab73dd&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Instant Upload/MVIMG_20200305_145544.jpg.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>shared_album_comments.json</td><td>Unsupported</td><td></td><td>This file format is outside the supported media list; it remains in the manifest.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;8eb95bcbc154530931e15fc418c8b1fe991095671409552099ea1aa596999ede&quot;,
+  &quot;source_sha1&quot;: &quot;dff8a1731f59ccad056b346102d1e1d014b843f3&quot;,
+  &quot;size&quot;: 3,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>shared_album_comments.json</td><td>Unresolved</td><td></td><td>JSON was not recognized as album metadata or an associated media sidecar.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200306_151636.jpg</td><td>Verified paired original bytes</td><td>61f7e733-ab0c-4488-b7d7-cb462d59d816, f6681ac0-2bd4-49a5-9778-3621e8c2ceb4</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;61f7e733-ab0c-4488-b7d7-cb462d59d816&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;f6681ac0-2bd4-49a5-9778-3621e8c2ceb4&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200306_151636(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;0bf9675c2f1c6c8178cb7e87fe75972ebf38a4522dd5596bd232f3b126690cf5&quot;,
+  &quot;expected_video_sha256&quot;: &quot;f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57&quot;,
+  &quot;expected_video_sha1&quot;: &quot;7502f29301ae3c85a0ded85f52daeee219d07eb2&quot;,
+  &quot;expected_video_size&quot;: 2595312,
+  &quot;embedded_video_offset&quot;: 3126866,
+  &quot;destination_links&quot;: {
+    &quot;61f7e733-ab0c-4488-b7d7-cb462d59d816&quot;: &quot;f6681ac0-2bd4-49a5-9778-3621e8c2ceb4&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130221.jpg</td><td>Verified paired original bytes</td><td>ce64583e-0b96-4711-b965-1632f860cf04, dce892a2-64e9-46f1-b55d-d7f8555b3766</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;ce64583e-0b96-4711-b965-1632f860cf04&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;dce892a2-64e9-46f1-b55d-d7f8555b3766&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_130221(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;0e01a027e3a25d6573cb6d62ea5d97de69d58bf486954543405b4f19a7f46d3b&quot;,
+  &quot;expected_video_sha256&quot;: &quot;8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820&quot;,
+  &quot;expected_video_sha1&quot;: &quot;82dcb1680a957e8dbb2098135ca79734589c695e&quot;,
+  &quot;expected_video_size&quot;: 3348593,
+  &quot;embedded_video_offset&quot;: 4087003,
+  &quot;destination_links&quot;: {
+    &quot;ce64583e-0b96-4711-b965-1632f860cf04&quot;: &quot;dce892a2-64e9-46f1-b55d-d7f8555b3766&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130237.jpg</td><td>Verified paired original bytes</td><td>6cd50cf8-a65b-4a3d-ab71-1115fb9223a5, 71b22cbc-aaa4-4053-93d4-dc8d631f140c</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;71b22cbc-aaa4-4053-93d4-dc8d631f140c&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;6cd50cf8-a65b-4a3d-ab71-1115fb9223a5&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_130237(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;ab43a7a0588795116076ad4a626c242ace574d37c6fd9181aea1ceec6ede1f53&quot;,
+  &quot;expected_video_sha256&quot;: &quot;2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5&quot;,
+  &quot;expected_video_sha1&quot;: &quot;0b71e4c14497f2b4de885e08cc4f5d7f4e9b64ec&quot;,
+  &quot;expected_video_size&quot;: 11447298,
+  &quot;embedded_video_offset&quot;: 1631599,
+  &quot;destination_links&quot;: {
+    &quot;71b22cbc-aaa4-4053-93d4-dc8d631f140c&quot;: &quot;6cd50cf8-a65b-4a3d-ab71-1115fb9223a5&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130326.jpg</td><td>Verified paired original bytes</td><td>28ad7661-7c4f-4d4d-9afd-70abf01d4f1c, cc7c77d5-e66a-49ce-95cb-23e829c65063</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;28ad7661-7c4f-4d4d-9afd-70abf01d4f1c&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;cc7c77d5-e66a-49ce-95cb-23e829c65063&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_130326(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;ffdb9817a47d1d8dda78fb4ed27a87a9a3df5b24a70e27a18597b0217f03efe5&quot;,
+  &quot;expected_video_sha256&quot;: &quot;132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c&quot;,
+  &quot;expected_video_sha1&quot;: &quot;d98a8f56e2e41fe81306586d0af41e87744731a4&quot;,
+  &quot;expected_video_size&quot;: 11277648,
+  &quot;embedded_video_offset&quot;: 1427335,
+  &quot;destination_links&quot;: {
+    &quot;28ad7661-7c4f-4d4d-9afd-70abf01d4f1c&quot;: &quot;cc7c77d5-e66a-49ce-95cb-23e829c65063&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_185225.jpg</td><td>Verified paired original bytes</td><td>a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4, bbf67e38-5fb3-4687-8ec7-9cd445b569ff</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;bbf67e38-5fb3-4687-8ec7-9cd445b569ff&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_185225(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;4ef966e421e8492155298a06f51a714332d966d9c6b3562231d3fbc7a0c3e1d2&quot;,
+  &quot;expected_video_sha256&quot;: &quot;626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2&quot;,
+  &quot;expected_video_sha1&quot;: &quot;040d9f3bca18d82b0d3db9b109e69bc4d8d8e892&quot;,
+  &quot;expected_video_size&quot;: 2561420,
+  &quot;embedded_video_offset&quot;: 4975374,
+  &quot;destination_links&quot;: {
+    &quot;bbf67e38-5fb3-4687-8ec7-9cd445b569ff&quot;: &quot;a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_201453.jpg</td><td>Verified paired original bytes</td><td>05ba1b38-0747-41ba-8dcb-bc0a8eec7427, eb7016fc-4a4d-4cd8-b105-0d4bb079c957</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;05ba1b38-0747-41ba-8dcb-bc0a8eec7427&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;eb7016fc-4a4d-4cd8-b105-0d4bb079c957&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-06-07/MVIMG_20200307_201453(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;1efd696b421b81cd79c9ff6e731cdcbec57288c994beb0062e2028556b47857c&quot;,
+  &quot;expected_video_sha256&quot;: &quot;32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b&quot;,
+  &quot;expected_video_sha1&quot;: &quot;308fbf41d32ab7146e5e69a335f0af0e211f6125&quot;,
+  &quot;expected_video_size&quot;: 2758716,
+  &quot;embedded_video_offset&quot;: 2594517,
+  &quot;destination_links&quot;: {
+    &quot;05ba1b38-0747-41ba-8dcb-bc0a8eec7427&quot;: &quot;eb7016fc-4a4d-4cd8-b105-0d4bb079c957&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/MVIMG_20200310_133405.jpg</td><td>Verified paired original bytes</td><td>a4a4dd17-18b5-4083-a398-14e83feffd4b, a583fd79-f3c1-4482-a9f1-23274345f7ff</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;a583fd79-f3c1-4482-a9f1-23274345f7ff&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;a4a4dd17-18b5-4083-a398-14e83feffd4b&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;2020-03-10/MVIMG_20200310_133405(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;3172ee9b43367a519e34d5c764f6b6a628bf636c18c1289b1fb443bed2222643&quot;,
+  &quot;expected_video_sha256&quot;: &quot;eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20&quot;,
+  &quot;expected_video_sha1&quot;: &quot;e85f088ab628c036a90090f215a03489b82cb3f6&quot;,
+  &quot;expected_video_size&quot;: 5225165,
+  &quot;embedded_video_offset&quot;: 5296987,
+  &quot;destination_links&quot;: {
+    &quot;a583fd79-f3c1-4482-a9f1-23274345f7ff&quot;: &quot;a4a4dd17-18b5-4083-a398-14e83feffd4b&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>Instant Upload/MVIMG_20200305_145544.jpg</td><td>Verified paired original bytes</td><td>4810d7ea-65e7-4123-98e7-ae62beb8734f, e6e643b7-71aa-48ff-ab2a-435c3905e079</td><td>The independently downloaded image matches the whole source image, and its livePhotoVideoId target&#x27;s current SHA-256 and size match the validated embedded MP4. API media-type labels were not used to pair bytes.<details><summary>Evidence</summary><pre>{
+  &quot;image_asset_ids&quot;: [
+    &quot;4810d7ea-65e7-4123-98e7-ae62beb8734f&quot;
+  ],
+  &quot;video_asset_ids&quot;: [
+    &quot;e6e643b7-71aa-48ff-ab2a-435c3905e079&quot;
+  ],
+  &quot;source_video_paths&quot;: [
+    &quot;Instant Upload/MVIMG_20200305_145544(1).jpg&quot;
+  ],
+  &quot;source_sha256&quot;: &quot;cf458d9778286affaeb33e7323babe256f109b9c6290a410d4d90701a1ab73dd&quot;,
+  &quot;expected_video_sha256&quot;: &quot;51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0&quot;,
+  &quot;expected_video_sha1&quot;: &quot;e8028ded5710b32308e15d81c1d9bac490bf1ec1&quot;,
+  &quot;expected_video_size&quot;: 1697252,
+  &quot;embedded_video_offset&quot;: 1548956,
+  &quot;destination_links&quot;: {
+    &quot;4810d7ea-65e7-4123-98e7-ae62beb8734f&quot;: &quot;e6e643b7-71aa-48ff-ab2a-435c3905e079&quot;
+  },
+  &quot;destination_video_sha256&quot;: &quot;51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0&quot;,
+  &quot;relation&quot;: &quot;verified&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_145457.jpg</td><td>Media type agrees</td><td>a90e451c-e368-46dc-96f3-dd17a42ded69</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a90e451c-e368-46dc-96f3-dd17a42ded69&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a90e451c-e368-46dc-96f3-dd17a42ded69&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_151653.jpg</td><td>Media type agrees</td><td>1a2df691-b300-45fb-bfbd-e1e2992933d9</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;1a2df691-b300-45fb-bfbd-e1e2992933d9&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;1a2df691-b300-45fb-bfbd-e1e2992933d9&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_153446.jpg</td><td>Media type agrees</td><td>165d487a-2ffe-4a83-8f75-3fc6a9ff3acf</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;165d487a-2ffe-4a83-8f75-3fc6a9ff3acf&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;165d487a-2ffe-4a83-8f75-3fc6a9ff3acf&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_202118.jpg</td><td>Media type agrees</td><td>bf2ead36-8928-4b5a-93cc-04650c019223</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;bf2ead36-8928-4b5a-93cc-04650c019223&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;bf2ead36-8928-4b5a-93cc-04650c019223&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200306_223642.jpg</td><td>Media type agrees</td><td>28bc9708-aa2a-4554-bcf4-c5bfe9b02376</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;28bc9708-aa2a-4554-bcf4-c5bfe9b02376&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;28bc9708-aa2a-4554-bcf4-c5bfe9b02376&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_053704.jpg</td><td>Media type agrees</td><td>495b6e5f-bfa3-4adb-87dc-a2532a29e3b2</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;495b6e5f-bfa3-4adb-87dc-a2532a29e3b2&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;495b6e5f-bfa3-4adb-87dc-a2532a29e3b2&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_185206.jpg</td><td>Media type agrees</td><td>d03b8213-870f-4437-83ac-bcd272e177a2</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;d03b8213-870f-4437-83ac-bcd272e177a2&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;d03b8213-870f-4437-83ac-bcd272e177a2&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_185403.jpg</td><td>Media type agrees</td><td>a3e39a95-ea25-4bd8-b193-752c4f0a9881</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a3e39a95-ea25-4bd8-b193-752c4f0a9881&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a3e39a95-ea25-4bd8-b193-752c4f0a9881&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_200946.jpg</td><td>Media type agrees</td><td>3a8800f8-8243-4f49-ae3e-adc27fdde439</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;3a8800f8-8243-4f49-ae3e-adc27fdde439&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;3a8800f8-8243-4f49-ae3e-adc27fdde439&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_201514.jpg</td><td>Media type agrees</td><td>b5f815db-b391-4ab1-95f4-6f9f8ec1357a</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;b5f815db-b391-4ab1-95f4-6f9f8ec1357a&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;b5f815db-b391-4ab1-95f4-6f9f8ec1357a&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_203958.jpg</td><td>Media type agrees</td><td>369a1ec8-6674-4c2e-b718-216ef48ead3b</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;369a1ec8-6674-4c2e-b718-216ef48ead3b&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;369a1ec8-6674-4c2e-b718-216ef48ead3b&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/IMG_20200307_204124.jpg</td><td>Media type agrees</td><td>b3d961f5-7af2-4741-8ab3-524ffa547c6a</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;b3d961f5-7af2-4741-8ab3-524ffa547c6a&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;b3d961f5-7af2-4741-8ab3-524ffa547c6a&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200306_151636(1).jpg</td><td>Media type agrees</td><td>f6681ac0-2bd4-49a5-9778-3621e8c2ceb4</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;f6681ac0-2bd4-49a5-9778-3621e8c2ceb4&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;f6681ac0-2bd4-49a5-9778-3621e8c2ceb4&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200306_151636.jpg</td><td>Media type agrees</td><td>61f7e733-ab0c-4488-b7d7-cb462d59d816</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 3126866,
+      &quot;size&quot;: 2595312,
+      &quot;sha256&quot;: &quot;f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57&quot;,
+      &quot;sha1&quot;: &quot;7502f29301ae3c85a0ded85f52daeee219d07eb2&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;61f7e733-ab0c-4488-b7d7-cb462d59d816&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;61f7e733-ab0c-4488-b7d7-cb462d59d816&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 3126866,
+        &quot;size&quot;: 2595312,
+        &quot;sha256&quot;: &quot;f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57&quot;,
+        &quot;sha1&quot;: &quot;7502f29301ae3c85a0ded85f52daeee219d07eb2&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130221(1).jpg</td><td>Media type agrees</td><td>dce892a2-64e9-46f1-b55d-d7f8555b3766</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;dce892a2-64e9-46f1-b55d-d7f8555b3766&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;dce892a2-64e9-46f1-b55d-d7f8555b3766&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130221.jpg</td><td>Media type agrees</td><td>ce64583e-0b96-4711-b965-1632f860cf04</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 4087003,
+      &quot;size&quot;: 3348593,
+      &quot;sha256&quot;: &quot;8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820&quot;,
+      &quot;sha1&quot;: &quot;82dcb1680a957e8dbb2098135ca79734589c695e&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;ce64583e-0b96-4711-b965-1632f860cf04&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;ce64583e-0b96-4711-b965-1632f860cf04&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 4087003,
+        &quot;size&quot;: 3348593,
+        &quot;sha256&quot;: &quot;8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820&quot;,
+        &quot;sha1&quot;: &quot;82dcb1680a957e8dbb2098135ca79734589c695e&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130237(1).jpg</td><td>Media type agrees</td><td>6cd50cf8-a65b-4a3d-ab71-1115fb9223a5</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;6cd50cf8-a65b-4a3d-ab71-1115fb9223a5&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;6cd50cf8-a65b-4a3d-ab71-1115fb9223a5&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130237.jpg</td><td>Media type agrees</td><td>71b22cbc-aaa4-4053-93d4-dc8d631f140c</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 1631599,
+      &quot;size&quot;: 11447298,
+      &quot;sha256&quot;: &quot;2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5&quot;,
+      &quot;sha1&quot;: &quot;0b71e4c14497f2b4de885e08cc4f5d7f4e9b64ec&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;71b22cbc-aaa4-4053-93d4-dc8d631f140c&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;71b22cbc-aaa4-4053-93d4-dc8d631f140c&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 1631599,
+        &quot;size&quot;: 11447298,
+        &quot;sha256&quot;: &quot;2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5&quot;,
+        &quot;sha1&quot;: &quot;0b71e4c14497f2b4de885e08cc4f5d7f4e9b64ec&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130326(1).jpg</td><td>Media type agrees</td><td>cc7c77d5-e66a-49ce-95cb-23e829c65063</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;cc7c77d5-e66a-49ce-95cb-23e829c65063&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;cc7c77d5-e66a-49ce-95cb-23e829c65063&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_130326.jpg</td><td>Media type agrees</td><td>28ad7661-7c4f-4d4d-9afd-70abf01d4f1c</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 1427335,
+      &quot;size&quot;: 11277648,
+      &quot;sha256&quot;: &quot;132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c&quot;,
+      &quot;sha1&quot;: &quot;d98a8f56e2e41fe81306586d0af41e87744731a4&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;28ad7661-7c4f-4d4d-9afd-70abf01d4f1c&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;28ad7661-7c4f-4d4d-9afd-70abf01d4f1c&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 1427335,
+        &quot;size&quot;: 11277648,
+        &quot;sha256&quot;: &quot;132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c&quot;,
+        &quot;sha1&quot;: &quot;d98a8f56e2e41fe81306586d0af41e87744731a4&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_185225(1).jpg</td><td>Media type agrees</td><td>a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_185225.jpg</td><td>Media type agrees</td><td>bbf67e38-5fb3-4687-8ec7-9cd445b569ff</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 4975374,
+      &quot;size&quot;: 2561420,
+      &quot;sha256&quot;: &quot;626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2&quot;,
+      &quot;sha1&quot;: &quot;040d9f3bca18d82b0d3db9b109e69bc4d8d8e892&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;bbf67e38-5fb3-4687-8ec7-9cd445b569ff&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;bbf67e38-5fb3-4687-8ec7-9cd445b569ff&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 4975374,
+        &quot;size&quot;: 2561420,
+        &quot;sha256&quot;: &quot;626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2&quot;,
+        &quot;sha1&quot;: &quot;040d9f3bca18d82b0d3db9b109e69bc4d8d8e892&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_201453(1).jpg</td><td>Media type agrees</td><td>eb7016fc-4a4d-4cd8-b105-0d4bb079c957</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;eb7016fc-4a4d-4cd8-b105-0d4bb079c957&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;eb7016fc-4a4d-4cd8-b105-0d4bb079c957&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-06-07/MVIMG_20200307_201453.jpg</td><td>Media type agrees</td><td>05ba1b38-0747-41ba-8dcb-bc0a8eec7427</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 2594517,
+      &quot;size&quot;: 2758716,
+      &quot;sha256&quot;: &quot;32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b&quot;,
+      &quot;sha1&quot;: &quot;308fbf41d32ab7146e5e69a335f0af0e211f6125&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;05ba1b38-0747-41ba-8dcb-bc0a8eec7427&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;05ba1b38-0747-41ba-8dcb-bc0a8eec7427&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 2594517,
+        &quot;size&quot;: 2758716,
+        &quot;sha256&quot;: &quot;32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b&quot;,
+        &quot;sha1&quot;: &quot;308fbf41d32ab7146e5e69a335f0af0e211f6125&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_102340.jpg</td><td>Media type agrees</td><td>63e66417-f481-4c89-b191-dc862549441c</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;63e66417-f481-4c89-b191-dc862549441c&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;63e66417-f481-4c89-b191-dc862549441c&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123332.jpg</td><td>Media type agrees</td><td>64f18829-0829-4aac-b931-ba4a635cbe35</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;64f18829-0829-4aac-b931-ba4a635cbe35&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;64f18829-0829-4aac-b931-ba4a635cbe35&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123528.jpg</td><td>Media type agrees</td><td>76322e24-a30d-4e3a-ae31-4c9cd09eccb6</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;76322e24-a30d-4e3a-ae31-4c9cd09eccb6&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;76322e24-a30d-4e3a-ae31-4c9cd09eccb6&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123536.jpg</td><td>Media type agrees</td><td>558f216f-3c39-4cd4-b775-ff1233479a5f</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;558f216f-3c39-4cd4-b775-ff1233479a5f&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;558f216f-3c39-4cd4-b775-ff1233479a5f&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123802.jpg</td><td>Media type agrees</td><td>c0b179a2-de38-43f5-89f3-252de257278c</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;c0b179a2-de38-43f5-89f3-252de257278c&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;c0b179a2-de38-43f5-89f3-252de257278c&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_123843.jpg</td><td>Media type agrees</td><td>9b22780d-9926-4cf7-a40f-eea1af1e9077</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;9b22780d-9926-4cf7-a40f-eea1af1e9077&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;9b22780d-9926-4cf7-a40f-eea1af1e9077&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_144240.jpg</td><td>Media type agrees</td><td>d28ec272-dc6a-4f69-afdb-e000fb825051</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;d28ec272-dc6a-4f69-afdb-e000fb825051&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;d28ec272-dc6a-4f69-afdb-e000fb825051&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-08/IMG_20200308_203432.jpg</td><td>Media type agrees</td><td>4eae43f9-0919-414d-9a20-e3b8e9169d82</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;4eae43f9-0919-414d-9a20-e3b8e9169d82&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;4eae43f9-0919-414d-9a20-e3b8e9169d82&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-09/IMG_20200309_172817.jpg</td><td>Media type agrees</td><td>4a386496-d311-44c3-93be-b1809400b5aa</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;4a386496-d311-44c3-93be-b1809400b5aa&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;4a386496-d311-44c3-93be-b1809400b5aa&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121133.jpg</td><td>Media type agrees</td><td>4f20c7b9-11bf-48e9-9562-ebbfd71ecb70</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;4f20c7b9-11bf-48e9-9562-ebbfd71ecb70&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;4f20c7b9-11bf-48e9-9562-ebbfd71ecb70&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121134.jpg</td><td>Media type agrees</td><td>caec050f-d2b0-4893-89e3-92d8430a8aab</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;caec050f-d2b0-4893-89e3-92d8430a8aab&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;caec050f-d2b0-4893-89e3-92d8430a8aab&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121134_1.jpg</td><td>Media type agrees</td><td>821b09fa-80ee-4c3b-8a53-7e4a582f528a</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;821b09fa-80ee-4c3b-8a53-7e4a582f528a&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;821b09fa-80ee-4c3b-8a53-7e4a582f528a&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121137.jpg</td><td>Media type agrees</td><td>5a14d13d-577d-4b77-9de9-b1c8b504dcdc</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;5a14d13d-577d-4b77-9de9-b1c8b504dcdc&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;5a14d13d-577d-4b77-9de9-b1c8b504dcdc&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_121139.jpg</td><td>Media type agrees</td><td>be6ed071-e9ab-4512-8aa7-e9b5728f0ad6</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;be6ed071-e9ab-4512-8aa7-e9b5728f0ad6&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;be6ed071-e9ab-4512-8aa7-e9b5728f0ad6&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133315.jpg</td><td>Media type agrees</td><td>75a09420-61fe-46be-87e3-9323f329b289</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;75a09420-61fe-46be-87e3-9323f329b289&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;75a09420-61fe-46be-87e3-9323f329b289&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133400.jpg</td><td>Media type agrees</td><td>4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;4b0bafe7-2a5c-449b-bcb3-4bccc7869fa0&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133708.jpg</td><td>Media type agrees</td><td>a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a2b681d5-ec02-4dfb-bd5f-f1b5ab18f589&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133710.jpg</td><td>Media type agrees</td><td>00339393-9675-4106-8ddb-06352f3a607c</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;00339393-9675-4106-8ddb-06352f3a607c&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;00339393-9675-4106-8ddb-06352f3a607c&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_133711.jpg</td><td>Media type agrees</td><td>88a12b10-a799-4a93-a22f-9d155d8b200c</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;88a12b10-a799-4a93-a22f-9d155d8b200c&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;88a12b10-a799-4a93-a22f-9d155d8b200c&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_134516.jpg</td><td>Media type agrees</td><td>148474e8-1c6d-464f-aed5-e6bdb8ba63f1</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;148474e8-1c6d-464f-aed5-e6bdb8ba63f1&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;148474e8-1c6d-464f-aed5-e6bdb8ba63f1&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416-EFFECTS-edited.jpg</td><td>Media type agrees</td><td>58814edb-5a84-42ff-9238-3bf2567e377b</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;58814edb-5a84-42ff-9238-3bf2567e377b&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;58814edb-5a84-42ff-9238-3bf2567e377b&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416-EFFECTS.jpg</td><td>Media type agrees</td><td>3e82a410-ce2e-4db8-ab27-e9005ace1025</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;3e82a410-ce2e-4db8-ab27-e9005ace1025&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;3e82a410-ce2e-4db8-ab27-e9005ace1025&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/IMG_20200310_140416.jpg</td><td>Media type agrees</td><td>fc540557-4478-46d5-a6c9-8a4f64960eba</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;fc540557-4478-46d5-a6c9-8a4f64960eba&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;fc540557-4478-46d5-a6c9-8a4f64960eba&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/MVIMG_20200310_133405(1).jpg</td><td>Media type agrees</td><td>a4a4dd17-18b5-4083-a398-14e83feffd4b</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a4a4dd17-18b5-4083-a398-14e83feffd4b&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a4a4dd17-18b5-4083-a398-14e83feffd4b&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-10/MVIMG_20200310_133405.jpg</td><td>Media type agrees</td><td>a583fd79-f3c1-4482-a9f1-23274345f7ff</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 5296987,
+      &quot;size&quot;: 5225165,
+      &quot;sha256&quot;: &quot;eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20&quot;,
+      &quot;sha1&quot;: &quot;e85f088ab628c036a90090f215a03489b82cb3f6&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a583fd79-f3c1-4482-a9f1-23274345f7ff&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a583fd79-f3c1-4482-a9f1-23274345f7ff&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 5296987,
+        &quot;size&quot;: 5225165,
+        &quot;sha256&quot;: &quot;eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20&quot;,
+        &quot;sha1&quot;: &quot;e85f088ab628c036a90090f215a03489b82cb3f6&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11 #2/IMG_20200312_032338.jpg</td><td>Media type agrees</td><td>92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;92c13ef5-5cc4-4f7b-815b-27e5db3b4ed6&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_111237.jpg</td><td>Media type agrees</td><td>8967d727-7666-4923-ac3f-53ca95e2b34e</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;8967d727-7666-4923-ac3f-53ca95e2b34e&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;8967d727-7666-4923-ac3f-53ca95e2b34e&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_112254.jpg</td><td>Media type agrees</td><td>0c3353e4-5ab8-4b0a-945d-7cf65fb90a96</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;0c3353e4-5ab8-4b0a-945d-7cf65fb90a96&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;0c3353e4-5ab8-4b0a-945d-7cf65fb90a96&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_115838.jpg</td><td>Media type agrees</td><td>e011e762-f7f2-4653-8230-f0cac5485839</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;e011e762-f7f2-4653-8230-f0cac5485839&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;e011e762-f7f2-4653-8230-f0cac5485839&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_120758.jpg</td><td>Media type agrees</td><td>a351a9ed-d129-4cc6-93cf-a34d2b7237c4</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;a351a9ed-d129-4cc6-93cf-a34d2b7237c4&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;a351a9ed-d129-4cc6-93cf-a34d2b7237c4&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_124110.jpg</td><td>Media type agrees</td><td>16240486-3315-4434-a866-40554981ee14</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;16240486-3315-4434-a866-40554981ee14&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;16240486-3315-4434-a866-40554981ee14&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_124116.jpg</td><td>Media type agrees</td><td>ab069a84-be57-4db1-b79a-aad6734617b4</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;ab069a84-be57-4db1-b79a-aad6734617b4&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;ab069a84-be57-4db1-b79a-aad6734617b4&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_181105.jpg</td><td>Media type agrees</td><td>c09d5766-23b3-4c97-af14-5801a8c83d69</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;c09d5766-23b3-4c97-af14-5801a8c83d69&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;c09d5766-23b3-4c97-af14-5801a8c83d69&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/IMG_20200311_182028.jpg</td><td>Media type agrees</td><td>793f6067-6b4e-4703-8e37-5e18f00a8f1d</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;793f6067-6b4e-4703-8e37-5e18f00a8f1d&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;793f6067-6b4e-4703-8e37-5e18f00a8f1d&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/PANO_20200311_124143.vr.jpg</td><td>Media type agrees</td><td>d11906b1-f578-415e-a96d-3c519a639db4</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;d11906b1-f578-415e-a96d-3c519a639db4&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;d11906b1-f578-415e-a96d-3c519a639db4&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>2020-03-11/VID_20200311_124137.mp4</td><td>Media type agrees</td><td>e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;video/mp4&quot;,
+  &quot;destination_types&quot;: {
+    &quot;e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;e01594d2-2bb4-48f0-8850-6c8fb0cbdbe9&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Instant Upload/MVIMG_20200305_145544(1).jpg</td><td>Media type agrees</td><td>e6e643b7-71aa-48ff-ab2a-435c3905e079</td><td>The video family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;VIDEO&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;video&quot;,
+    &quot;mime&quot;: &quot;video/mp4&quot;,
+    &quot;container&quot;: &quot;mp4&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: []
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;e6e643b7-71aa-48ff-ab2a-435c3905e079&quot;: &quot;VIDEO&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;e6e643b7-71aa-48ff-ab2a-435c3905e079&quot;: {
+      &quot;family&quot;: &quot;video&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>Instant Upload/MVIMG_20200305_145544.jpg</td><td>Media type agrees</td><td>4810d7ea-65e7-4123-98e7-ae62beb8734f</td><td>The image family established by source container structure agrees with Immich&#x27;s media type. Current downloaded original containers were inspected alongside their content hashes; this does not verify decoding or playback.<details><summary>Evidence</summary><pre>{
+  &quot;expected_type&quot;: &quot;IMAGE&quot;,
+  &quot;source_media&quot;: {
+    &quot;family&quot;: &quot;image&quot;,
+    &quot;mime&quot;: &quot;image/jpeg&quot;,
+    &quot;container&quot;: &quot;jpeg&quot;,
+    &quot;evidence&quot;: [
+      &quot;Bounded container structure; media payloads were not decoded&quot;
+    ],
+    &quot;valid&quot;: true,
+    &quot;complete&quot;: true,
+    &quot;issues&quot;: [],
+    &quot;embedded_video&quot;: {
+      &quot;offset&quot;: 1548956,
+      &quot;size&quot;: 1697252,
+      &quot;sha256&quot;: &quot;51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0&quot;,
+      &quot;sha1&quot;: &quot;e8028ded5710b32308e15d81c1d9bac490bf1ec1&quot;,
+      &quot;mime&quot;: &quot;video/mp4&quot;,
+      &quot;container&quot;: &quot;mp4&quot;,
+      &quot;validated&quot;: true,
+      &quot;evidence&quot;: [
+        &quot;google-microvideo-legacy&quot;,
+        &quot;Exact appended range, complete box structure and video-track handler&quot;
+      ]
+    },
+    &quot;motion_photo&quot;: {
+      &quot;declared&quot;: true,
+      &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+      &quot;validated&quot;: true,
+      &quot;issues&quot;: []
+    }
+  },
+  &quot;source_filename_mime&quot;: &quot;image/jpeg&quot;,
+  &quot;destination_types&quot;: {
+    &quot;4810d7ea-65e7-4123-98e7-ae62beb8734f&quot;: &quot;IMAGE&quot;
+  },
+  &quot;destination_media&quot;: {
+    &quot;4810d7ea-65e7-4123-98e7-ae62beb8734f&quot;: {
+      &quot;family&quot;: &quot;image&quot;,
+      &quot;mime&quot;: &quot;image/jpeg&quot;,
+      &quot;container&quot;: &quot;jpeg&quot;,
+      &quot;evidence&quot;: [
+        &quot;Bounded container structure; media payloads were not decoded&quot;
+      ],
+      &quot;valid&quot;: true,
+      &quot;complete&quot;: true,
+      &quot;issues&quot;: [],
+      &quot;embedded_video&quot;: {
+        &quot;offset&quot;: 1548956,
+        &quot;size&quot;: 1697252,
+        &quot;sha256&quot;: &quot;51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0&quot;,
+        &quot;sha1&quot;: &quot;e8028ded5710b32308e15d81c1d9bac490bf1ec1&quot;,
+        &quot;mime&quot;: &quot;video/mp4&quot;,
+        &quot;container&quot;: &quot;mp4&quot;,
+        &quot;validated&quot;: true,
+        &quot;evidence&quot;: [
+          &quot;google-microvideo-legacy&quot;,
+          &quot;Exact appended range, complete box structure and video-track handler&quot;
+        ]
+      },
+      &quot;motion_photo&quot;: {
+        &quot;declared&quot;: true,
+        &quot;format&quot;: &quot;google-microvideo-legacy&quot;,
+        &quot;validated&quot;: true,
+        &quot;issues&quot;: []
+      }
+    }
+  },
+  &quot;mismatched_asset_ids&quot;: [],
+  &quot;unknown_asset_ids&quot;: [],
+  &quot;proof_level&quot;: &quot;current_original_container&quot;
+}</pre></details></td></tr><tr><td>shared_album_comments.json</td><td>Unresolved</td><td></td><td>JSON was not recognized as album metadata or an associated media sidecar.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr></tbody></table>
+<footer><ul><li>This verifies only the supplied export; it cannot prove Google exported everything.</li><li>Never use this report as permission to delete originals.</li><li>API visibility excludes locked media and items this key cannot access.</li><li>Re-enumeration detects observable changes, but Immich does not provide an atomic library snapshot.</li><li>Google Motion Photo pairing requires validated XMP layout, an embedded MP4 video track and matching component bytes. Other pairing formats and original camera timezone may remain unresolved.</li><li>Media types use supported container structure, not filename extensions. Container validation does not prove codec decoding or playback.</li><li>Server checksum matches are stored historical SHA-1 evidence, not current-byte verification.</li></ul>
+Report contains relative file paths, album names, asset IDs, dates and content hashes. Treat it as sensitive.</footer></html>

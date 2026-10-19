@@ -1,0 +1,13 @@
+{
+  "importer": "immich-go",
+  "version": "0.32.0",
+  "archive_sha256": "37326f95d6654f7f67a5fde3263e96aa8f9cf288dcbb9a2164aafae0aaa144af",
+  "exit_code": 0,
+  "elapsed_seconds": 6.27,
+  "source_unchanged": true,
+  "source_files": 123,
+  "credentials_in_command_line": false,
+  "source": "Magnet2020CTF Google Photos Takeout",
+  "destination": "Fresh owned disposable Immich 3.3.3, isolated CTF account",
+  "logs_private": true
+}

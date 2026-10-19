@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "version": "0.1.2",
+  "immich_version": "3.3.3",
+  "source": "Published, redacted upstream Takeout-derived corpus; unchanged external files",
+  "preserved_0_1_1_artifacts": [
+    {
+      "original": "upstream-baseline-summary.json",
+      "versioned_copy": "upstream-baseline-summary-0.1.1.json",
+      "sha256": "cfaf3698702448aec969f8d5e465e320c4ddca8f16ba2e3fe990a3f9ee9640b7"
+    },
+    {
+      "original": "upstream-baseline-checksum-report.json",
+      "versioned_copy": "upstream-baseline-checksum-report-0.1.1.json",
+      "sha256": "40463fe561c5a52e8ef50af3c9b9829e68bee265af962807f3f3aabdba69eda6"
+    },
+    {
+      "original": "upstream-baseline-original-report.json",
+      "versioned_copy": "upstream-baseline-original-report-0.1.1.json",
+      "sha256": "1035d45549ba60cd6750c7a1f51d8c19cb8520c837cbacff58005c4416c3da0c"
+    }
+  ],
+  "destination_assets": 9,
+  "destination_albums": 1,
+  "named_source_albums": 1,
+  "named_album_member_occurrences": 8,
+  "named_album_matches_destination_membership": true,
+  "empty_album_title_explicitly_unresolved": true,
+  "zero_byte_media_explicitly_missing": 3,
+  "source_bytes_and_mtimes_unchanged": true,
+  "destination_inventory_unchanged": true,
+  "destination_originals_and_evidence_unchanged": true,
+  "checker_write_requests": 0,
+  "modes": {
+    "checksum": {
+      "source_files": 14,
+      "source_bytes": 2361175,
+      "unique_source_content": 10,
+      "destination_assets": 9,
+      "matched": 11,
+      "attention": 4,
+      "content_counts": {
+        "checksum": 11,
+        "missing": 3
+      },
+      "coverage_complete": false,
+      "verification": "Server-reported checksum match",
+      "source_albums": 1,
+      "destination_albums": 1
+    },
+    "original": {
+      "source_files": 14,
+      "source_bytes": 2361175,
+      "unique_source_content": 10,
+      "destination_assets": 9,
+      "matched": 11,
+      "attention": 4,
+      "content_counts": {
+        "original": 11,
+        "missing": 3
+      },
+      "coverage_complete": false,
+      "verification": "Verified original bytes",
+      "source_albums": 1,
+      "destination_albums": 1
+    }
+  }
+}

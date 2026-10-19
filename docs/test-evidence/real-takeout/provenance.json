@@ -1,0 +1,16 @@
+{
+  "url": "https://digitalcorpora.s3.amazonaws.com/corpora/scenarios/magnet/2020%20CTF%20-%20Takeout.zip",
+  "archive_bytes": 356764506,
+  "archive_sha256": "0cff235410a2475d71aca69bde9c4f6e8835fe8aaca3f87b6a35dd6184b4b59d",
+  "etag": "\"007d1e866fde95fafdbd85296345187f-43\"",
+  "exact_extracted_prefix": "Takeout/Google Photos/",
+  "publisher": "Magnet Forensics, hosted by Digital Corpora",
+  "permission_sources": [
+    "https://digitalcorpora.org/about-digitalcorpora/terms-of-use/",
+    "https://www.magnetforensics.com/blog/magnet-weekly-ctf-2020-images-and-questions/",
+    "https://www.magnetforensics.com/blog/android-motion-photos-in-magnet-axiom/"
+  ],
+  "corpus_description": "https://digitalcorpora.s3.amazonaws.com/corpora/scenarios/magnet/README.md",
+  "permission_scope": "Published forensic corpus for learning, testing and tool validation. Digital Corpora default CC0 applies to original scenario data, with an exception for independently copyrighted embedded material. No third-party-media redistribution claim.",
+  "retrieved_at": "2026-10-19T03:13:12.663Z"
+}

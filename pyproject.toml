@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photo-migration-checker"
+version = "0.1.5rc1"
+description = "Local, read-only evidence for Google Takeout to Immich migrations"
+readme = "README.md"
+authors = [{name = "agammann"}]
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1", "httpx>=0.28,<0.29", "pillow>=11,<14"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+photo-migration-checker = "pmc.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["pmc*"]
+
+[tool.setuptools.package-data]
+pmc = ["web/*", "web/assets/*", "web/licenses/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

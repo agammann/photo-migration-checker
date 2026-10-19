@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Final backend, browser and preview verification after restored fault-test baseline; observer additionally includes earlier read-only checks",
+  "checker_requests_observed": 1547,
+  "upstream_statuses": {
+    "200": 1547
+  },
+  "write_attempts": 0,
+  "completed_original_responses": 394,
+  "interrupted_original_responses": 2,
+  "pending_records": 0,
+  "ledger_write_failures": 0,
+  "all_disposable_originals_unchanged": 356,
+  "original_bytes_unchanged": 401456805,
+  "media_album_table_fingerprints_unchanged": 13,
+  "tables_and_originals_equal_baseline": true,
+  "observer_stopped": true
+}

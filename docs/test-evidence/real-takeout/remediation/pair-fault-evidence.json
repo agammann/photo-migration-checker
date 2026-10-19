@@ -1,0 +1,865 @@
+{
+  "status": "passed",
+  "immich_version": "3.3.3",
+  "scenarios": {
+    "baseline": {
+      "checksum": {
+        "status": "passed",
+        "mode": "checksum",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 6,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      },
+      "original": {
+        "status": "passed",
+        "mode": "original",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "original",
+            "relation": "verified"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "original",
+            "relation": "verified"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 18,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6/original"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97/original"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6/original"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa/original"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      }
+    },
+    "missing": {
+      "checksum": {
+        "status": "passed",
+        "mode": "checksum",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "difference",
+            "relation": "missing_link"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 6,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      },
+      "original": {
+        "status": "passed",
+        "mode": "original",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "difference",
+            "relation": "missing_link"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "original",
+            "relation": "verified"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 18,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6/original"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97/original"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6/original"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa/original"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      }
+    },
+    "wrong": {
+      "checksum": {
+        "status": "passed",
+        "mode": "checksum",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "difference",
+            "relation": "wrong_stored_link"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 6,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      },
+      "original": {
+        "status": "passed",
+        "mode": "original",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "difference",
+            "relation": "wrong_link"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "original",
+            "relation": "verified"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 18,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6/original"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97/original"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6/original"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa/original"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      }
+    },
+    "reversed-rejected": {
+      "checksum": {
+        "status": "passed",
+        "mode": "checksum",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 6,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      },
+      "original": {
+        "status": "passed",
+        "mode": "original",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "original",
+            "relation": "verified"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "original",
+            "relation": "verified"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 18,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6/original"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97/original"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6/original"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa/original"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      }
+    },
+    "restored": {
+      "checksum": {
+        "status": "passed",
+        "mode": "checksum",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "checksum",
+            "relation": "stored_supported"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 6,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      },
+      "original": {
+        "status": "passed",
+        "mode": "original",
+        "pair_findings": [
+          {
+            "path": "MVIMG_20200306_151636.jpg",
+            "status": "original",
+            "relation": "verified"
+          },
+          {
+            "path": "MVIMG_20200307_130221.jpg",
+            "status": "original",
+            "relation": "verified"
+          }
+        ],
+        "source_unchanged": true,
+        "inventory_unchanged_during_scan": true,
+        "original_bytes_unchanged": true,
+        "observed_requests": 18,
+        "observed_write_requests": 0,
+        "checker_requests": [
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6/original"
+          ],
+          [
+            "GET",
+            "/assets/ebae2fd3-ad23-442f-8309-1c9a0462a8c6"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97/original"
+          ],
+          [
+            "GET",
+            "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6/original"
+          ],
+          [
+            "GET",
+            "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa/original"
+          ],
+          [
+            "GET",
+            "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa"
+          ],
+          [
+            "GET",
+            "/server/version"
+          ],
+          [
+            "POST",
+            "/search/metadata"
+          ],
+          [
+            "GET",
+            "/albums"
+          ]
+        ]
+      }
+    }
+  },
+  "setup_requests": [
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 201
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/288628b4-621a-43e8-8d39-39fcd74f06a6",
+      "status": 400,
+      "purpose": "Deliberately invalid reversed relationship"
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/assets/b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "status": 200
+    }
+  ],
+  "reversed_link_api_rejected_http400": true,
+  "baseline_restored": true,
+  "destination_originals_unchanged": true,
+  "source_unchanged": true,
+  "allowed_setup_metadata_drift": "updatedAt timestamps for explicit setup link operations only",
+  "final_inventory": [
+    {
+      "id": "288628b4-621a-43e8-8d39-39fcd74f06a6",
+      "originalFileName": "component-0.mp4",
+      "type": "VIDEO",
+      "livePhotoVideoId": null,
+      "visibility": "hidden",
+      "fileCreatedAt": "2020-03-06T20:16:37.000Z",
+      "checksum": "dQLykwGuPIWg3thfUtru4hnQfrI=",
+      "libraryId": null,
+      "updatedAt": "2026-10-19T04:10:42.792Z"
+    },
+    {
+      "id": "b1a49800-f56b-455e-8000-2fc3191b76fa",
+      "originalFileName": "MVIMG_20200306_151636.jpg",
+      "type": "IMAGE",
+      "livePhotoVideoId": "288628b4-621a-43e8-8d39-39fcd74f06a6",
+      "visibility": "timeline",
+      "fileCreatedAt": "2020-03-06T20:16:36.040Z",
+      "checksum": "MkPMFtDyaWpol2huOQWcFNY8Vu0=",
+      "libraryId": null,
+      "updatedAt": "2026-10-19T04:11:05.531Z"
+    },
+    {
+      "id": "b7c66c6e-4556-4bb4-904b-0fe50f102f97",
+      "originalFileName": "MVIMG_20200307_130221.jpg",
+      "type": "IMAGE",
+      "livePhotoVideoId": "ebae2fd3-ad23-442f-8309-1c9a0462a8c6",
+      "visibility": "timeline",
+      "fileCreatedAt": "2020-03-07T12:02:21.331Z",
+      "checksum": "lXIrjb0vIP+Co7eCJrnwyts1IfQ=",
+      "libraryId": null,
+      "updatedAt": "2026-10-19T04:11:05.547Z"
+    },
+    {
+      "id": "ebae2fd3-ad23-442f-8309-1c9a0462a8c6",
+      "originalFileName": "component-1.mp4",
+      "type": "VIDEO",
+      "livePhotoVideoId": null,
+      "visibility": "hidden",
+      "fileCreatedAt": "2020-03-07T12:02:24.000Z",
+      "checksum": "gtyxaAqVfo27IJgTXKeXNFicaV4=",
+      "libraryId": null,
+      "updatedAt": "2026-10-19T03:49:20.143Z"
+    }
+  ]
+}

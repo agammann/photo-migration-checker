@@ -1,0 +1,260 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Photo Migration Checker — local report</title><style>
+body{font:16px/1.5 system-ui,sans-serif;color:#182620;background:#fff;max-width:1300px;margin:48px auto;padding:0 24px}
+h1{font-size:32px} .notice{padding:18px;background:#fff3d9;border:1px solid #e8c788} table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{text-align:left;vertical-align:top;border-bottom:1px solid #dce2df;padding:12px;overflow-wrap:anywhere}th{background:#f5f7f6}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} .stats{display:flex;gap:40px;flex-wrap:wrap;margin:24px 0} footer{margin:32px 0;color:#52645a}
+</style><h1>Photo Migration Checker</h1>
+<p>Independent read-only verification report. 2026-10-19T02:46:37.690007+00:00</p>
+<p class="notice">
+Coverage: incomplete — unresolved evidence remains. This verifies only the supplied export. Keep your originals.</p>
+<div class="stats"><span>Source files: <strong>21</strong></span><span>Content matched: <strong>16</strong></span>
+<span>Attention findings: <strong>30</strong></span><span>Level: <strong>Verified original bytes</strong></span></div>
+<p>Supplied extracted folder against API-key-readable active, non-locked assets, including readable shared albums. No server-wide completeness claim.</p><p>Immich version: 3.3.3. Source timezone conversion is never guessed.</p>
+<p>Comparable capture dates: 12 / 21.
+Source occurrences with asserted album membership: 18 / 21.
+Only directories with recognizable album metadata assert membership; ordinary directory names are hints only.</p>
+<table><thead><tr><th>Source file / scope</th><th>Evidence</th><th>Destination asset IDs</th><th>Explanation</th></tr></thead><tbody><tr><td>Family/broken.png</td><td>Verified original bytes</td><td>52addbef-093d-46ee-a396-2f0f248f05eb</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea&quot;,
+  &quot;source_sha1&quot;: &quot;c1f1c50479dcfe24bdb7a1c3ef57a105de06bd4c&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;52addbef-093d-46ee-a396-2f0f248f05eb&quot;: &quot;96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/broken.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/broken.png</td><td>Unresolved</td><td>52addbef-093d-46ee-a396-2f0f248f05eb</td><td>JSON metadata could not be parsed as an object.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/broken.png</td><td>Date evidence unavailable</td><td>52addbef-093d-46ee-a396-2f0f248f05eb</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/collision.png</td><td>Verified original bytes</td><td>71d90c45-7df2-45a2-be44-002608c265de</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2&quot;,
+  &quot;source_sha1&quot;: &quot;98e7cbcd006e2f0b66682fa84bf9a91f8af9bbb8&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;71d90c45-7df2-45a2-be44-002608c265de&quot;: &quot;d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/collision.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/portrait-edited.png</td><td>Missing</td><td></td><td>No destination original has matching SHA-256 bytes in the accessible inventory.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;c56738addcde0a7eebfa5f8698cab747edb236134d70b72c3b96cca98f881b5a&quot;,
+  &quot;source_sha1&quot;: &quot;f2d33ac33fd76d046b6813a3c6d3c3972e6f1fc3&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [
+    &quot;Family/portrait-edited.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/portrait.png</td><td>Missing</td><td></td><td>No destination original has matching SHA-256 bytes in the accessible inventory.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;8d8d44043ee8e8aa759800683be2355dcbc15e3ce7042038b5403c0536fe3cab&quot;,
+  &quot;source_sha1&quot;: &quot;77fdd9f02a773079fa308c12bd928a343d15bc46&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [
+    &quot;Family/portrait.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/sunrise.png</td><td>Verified original bytes</td><td>666fe62a-88f5-4d57-a590-051a94aa296f</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;,
+  &quot;source_sha1&quot;: &quot;1209212d1548dd202101350c2847905e7a0166bd&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;666fe62a-88f5-4d57-a590-051a94aa296f&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/sunrise.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 4
+}</pre></details></td></tr><tr><td>Family/tampered.png</td><td>Mismatched</td><td>863efd15-8059-44db-a4f0-b09bcd9b031c</td><td>A destination filename matches, but the downloaded original bytes differ.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;41e5e975204d12db29e29f04d91bfa3417dbecdb053e288775a171ad96af026b&quot;,
+  &quot;source_sha1&quot;: &quot;2713370046d65f93285e1cda7922f550762d3c26&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;863efd15-8059-44db-a4f0-b09bcd9b031c&quot;: &quot;7899d6ced52159786ff083934df42788da01a30b7ed9bb7756d7f3f5a94ef685&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Family/tampered.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Verified original bytes</td><td>f78194c6-8e1b-4612-9062-1bd073b76ef4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337&quot;,
+  &quot;source_sha1&quot;: &quot;8f00302534a08f3d7d9e6a2aaa1420dbe91ecf08&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;f78194c6-8e1b-4612-9062-1bd073b76ef4&quot;: &quot;6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Unresolved</td><td>f78194c6-8e1b-4612-9062-1bd073b76ef4</td><td>Multiple source files fit this sidecar; no association was asserted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-alpha.png</td><td>Date evidence unavailable</td><td>f78194c6-8e1b-4612-9062-1bd073b76ef4</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Verified original bytes</td><td>62a637b6-5f29-4a7d-8dfa-6b92850f764d</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294&quot;,
+  &quot;source_sha1&quot;: &quot;2366ce017b667e7e2ca79360a24dce56af5f7185&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;62a637b6-5f29-4a7d-8dfa-6b92850f764d&quot;: &quot;27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294&quot;
+  },
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Unresolved</td><td>62a637b6-5f29-4a7d-8dfa-6b92850f764d</td><td>Multiple source files fit this sidecar; no association was asserted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-beta.png</td><td>Date evidence unavailable</td><td>62a637b6-5f29-4a7d-8dfa-6b92850f764d</td><td>No trustworthy Takeout capture date evidence; date comparison unavailable.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Identity One/sunrise.png</td><td>Verified original bytes</td><td>666fe62a-88f5-4d57-a590-051a94aa296f</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;,
+  &quot;source_sha1&quot;: &quot;1209212d1548dd202101350c2847905e7a0166bd&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;666fe62a-88f5-4d57-a590-051a94aa296f&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Identity One/sunrise.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 4
+}</pre></details></td></tr><tr><td>Identity Two/sunrise.png</td><td>Verified original bytes</td><td>666fe62a-88f5-4d57-a590-051a94aa296f</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;,
+  &quot;source_sha1&quot;: &quot;1209212d1548dd202101350c2847905e7a0166bd&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;666fe62a-88f5-4d57-a590-051a94aa296f&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Identity Two/sunrise.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 4
+}</pre></details></td></tr><tr><td>Unsupported/live.aae</td><td>Unsupported</td><td></td><td>This file format is outside the supported media list; it remains in the manifest.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;bb76ddac0d398d91af99d8c95f55f097180ac220b5d78bf972b59fe487089f33&quot;,
+  &quot;source_sha1&quot;: &quot;123d581d7a5d783f1576c74d20d1c2cea116c99a&quot;,
+  &quot;size&quot;: 51,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Unsupported/live.aae</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/unknown.bin</td><td>Unsupported</td><td></td><td>This file format is outside the supported media list; it remains in the manifest.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;81354f103381cee4b209dec34b2ab611402e5b89918db90ad5e53d4b40b59dd8&quot;,
+  &quot;source_sha1&quot;: &quot;d0036cdf1123d50f677f38a27fcb03a6bd80909d&quot;,
+  &quot;size&quot;: 28,
+  &quot;destination_sha256&quot;: {},
+  &quot;sidecars&quot;: [],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Unsupported/unknown.bin</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/clip-extra.mp4</td><td>Verified original bytes</td><td>cae647cc-54fe-452f-b386-d8ec16975784</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;a20446de1c5d4f2ed735ba8c30ddd8611537b0230ab6de4c327d5a2380161098&quot;,
+  &quot;source_sha1&quot;: &quot;915b886c5c030307fe19d40fb8622b10b629f874&quot;,
+  &quot;size&quot;: 67945,
+  &quot;destination_sha256&quot;: {
+    &quot;cae647cc-54fe-452f-b386-d8ec16975784&quot;: &quot;a20446de1c5d4f2ed735ba8c30ddd8611537b0230ab6de4c327d5a2380161098&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/clip-extra.mp4.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/clip.avi</td><td>Verified original bytes</td><td>0304c1c0-6024-41e3-b664-c91660bca5a4</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2&quot;,
+  &quot;source_sha1&quot;: &quot;ebfb8394e9e89f958c5fe8837c8ce9ae412ed92d&quot;,
+  &quot;size&quot;: 312,
+  &quot;destination_sha256&quot;: {
+    &quot;0304c1c0-6024-41e3-b664-c91660bca5a4&quot;: &quot;50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/clip.avi.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Verified original bytes</td><td>11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963&quot;,
+  &quot;source_sha1&quot;: &quot;d1d725ce5ec40d792df9fc9ac3b2e3ce7a90a41e&quot;,
+  &quot;size&quot;: 312,
+  &quot;destination_sha256&quot;: {
+    &quot;11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8&quot;: &quot;1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/live.avi.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Unresolved</td><td>11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8</td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Verified original bytes</td><td>3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f&quot;,
+  &quot;source_sha1&quot;: &quot;fa94133a9f0210410296b497c43bcc75d78625b3&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a&quot;: &quot;51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Videos/live.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Unresolved</td><td>3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a</td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Verified original bytes</td><td>b6cabdac-7b9e-4130-8039-4946d16d0051</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481&quot;,
+  &quot;source_sha1&quot;: &quot;3b76ac77287aab6bd05ccd956a65c31f83284a06&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;b6cabdac-7b9e-4130-8039-4946d16d0051&quot;: &quot;6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/clock.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Unresolved</td><td>b6cabdac-7b9e-4130-8039-4946d16d0051</td><td>Capture time has no supported epoch timestamp; formatted text and filesystem dates were not substituted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Timezone uncertain</td><td>b6cabdac-7b9e-4130-8039-4946d16d0051</td><td>Source has a date without a trustworthy UTC instant; timezone conversion was not guessed.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/collision.png</td><td>Verified original bytes</td><td>de418b8a-caf8-4c1c-909d-73fa60bf6e47</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49&quot;,
+  &quot;source_sha1&quot;: &quot;74672477dd88a37115c40d2f1b4efc856604712a&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;de418b8a-caf8-4c1c-909d-73fa60bf6e47&quot;: &quot;e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/collision.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Weekend/dated.png</td><td>Verified original bytes</td><td>0964c384-3660-40d4-9d76-4a3171ddc7d6</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542&quot;,
+  &quot;source_sha1&quot;: &quot;3e5f0df8d1e96631f8cd16d2ca8cb5c8257d4b32&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;0964c384-3660-40d4-9d76-4a3171ddc7d6&quot;: &quot;5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/dated.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Weekend/dated.png</td><td>Metadata difference</td><td>0964c384-3660-40d4-9d76-4a3171ddc7d6</td><td>Capture instant differs from Takeout photoTakenTime. Filesystem dates were not used.<details><summary>Evidence</summary><pre>{
+  &quot;source_date&quot;: &quot;2023-11-14T22:13:20Z&quot;,
+  &quot;destination_dates&quot;: {
+    &quot;0964c384-3660-40d4-9d76-4a3171ddc7d6&quot;: &quot;2023-11-15T22:13:20.000Z&quot;
+  }
+}</pre></details></td></tr><tr><td>Weekend/sunrise.png</td><td>Verified original bytes</td><td>666fe62a-88f5-4d57-a590-051a94aa296f</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;,
+  &quot;source_sha1&quot;: &quot;1209212d1548dd202101350c2847905e7a0166bd&quot;,
+  &quot;size&quot;: 73,
+  &quot;destination_sha256&quot;: {
+    &quot;666fe62a-88f5-4d57-a590-051a94aa296f&quot;: &quot;f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;Weekend/sunrise.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 4
+}</pre></details></td></tr><tr><td>large-transfer.png</td><td>Verified original bytes</td><td>c8a20a02-c85d-4ea2-bc70-cdb490badfaa</td><td>SHA-256 of streamed destination original matches the source bytes.<details><summary>Evidence</summary><pre>{
+  &quot;source_sha256&quot;: &quot;61981cc2face0d7ed003f99a5ee85072d1a6ca5d0110d66337670b5974b474bb&quot;,
+  &quot;source_sha1&quot;: &quot;692104dce0cded05a20dd8a0cc87615fd5f744f3&quot;,
+  &quot;size&quot;: 53102622,
+  &quot;destination_sha256&quot;: {
+    &quot;c8a20a02-c85d-4ea2-bc70-cdb490badfaa&quot;: &quot;61981cc2face0d7ed003f99a5ee85072d1a6ca5d0110d66337670b5974b474bb&quot;
+  },
+  &quot;sidecars&quot;: [
+    &quot;large-transfer.png.json&quot;
+  ],
+  &quot;source_occurrences&quot;: 1
+}</pre></details></td></tr><tr><td>Empty Missing</td><td>Album difference</td><td></td><td>No destination album has the matched source membership or source title.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: []
+}</pre></details></td></tr><tr><td>Family</td><td>Unresolved</td><td>52addbef-093d-46ee-a396-2f0f248f05eb, 62a637b6-5f29-4a7d-8dfa-6b92850f764d, 666fe62a-88f5-4d57-a590-051a94aa296f, 71d90c45-7df2-45a2-be44-002608c265de, f78194c6-8e1b-4612-9062-1bd073b76ef4</td><td>Duplicate destination album names have no unique exact membership match. Some source content is unresolved, so album coverage is incomplete.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: [
+    &quot;dc830e69-72cb-4279-ae0a-2c95419e7d75&quot;,
+    &quot;4262ebd1-2c48-466f-9319-fcb46ff04370&quot;
+  ]
+}</pre></details></td></tr><tr><td>Identity One</td><td>Unresolved</td><td>666fe62a-88f5-4d57-a590-051a94aa296f</td><td>Matched album membership has no unique one-to-one destination identity. Several source albums may be competing for the same destination album, or several destination albums remain indistinguishable.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: [
+    &quot;f03be6f6-10a1-4027-9693-aa836feac441&quot;
+  ]
+}</pre></details></td></tr><tr><td>Identity Two</td><td>Unresolved</td><td>666fe62a-88f5-4d57-a590-051a94aa296f</td><td>Matched album membership has no unique one-to-one destination identity. Several source albums may be competing for the same destination album, or several destination albums remain indistinguishable.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: [
+    &quot;f03be6f6-10a1-4027-9693-aa836feac441&quot;
+  ]
+}</pre></details></td></tr><tr><td>Weekend</td><td>Unresolved</td><td>0964c384-3660-40d4-9d76-4a3171ddc7d6, 666fe62a-88f5-4d57-a590-051a94aa296f, b6cabdac-7b9e-4130-8039-4946d16d0051, de418b8a-caf8-4c1c-909d-73fa60bf6e47</td><td>Duplicate destination album names have no unique exact membership match.<details><summary>Evidence</summary><pre>{
+  &quot;album_ids&quot;: [
+    &quot;dc830e69-72cb-4279-ae0a-2c95419e7d75&quot;,
+    &quot;4262ebd1-2c48-466f-9319-fcb46ff04370&quot;
+  ]
+}</pre></details></td></tr><tr><td>Family/broken.png.json</td><td>Unresolved</td><td></td><td>JSON metadata could not be parsed as an object.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/live.aae</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Unsupported/unknown.bin</td><td>Unresolved</td><td></td><td>Unrecognized file type is included as unsupported; its bytes were inventoried.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Family/this-is-a-very-long-takeout-filename-.json</td><td>Unresolved</td><td></td><td>Multiple source files fit this sidecar; no association was asserted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Weekend/clock.png</td><td>Unresolved</td><td></td><td>Capture time has no supported epoch timestamp; formatted text and filesystem dates were not substituted.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/live.avi</td><td>Unresolved</td><td></td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr><tr><td>Videos/live.png</td><td>Unresolved</td><td></td><td>An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified.<details><summary>Evidence</summary><pre>{}</pre></details></td></tr></tbody></table>
+<footer><ul><li>This verifies only the supplied export; it cannot prove Google exported everything.</li><li>Never use this report as permission to delete originals.</li><li>API visibility excludes locked media and items this key cannot access.</li><li>Re-enumeration detects observable changes, but Immich does not provide an atomic library snapshot.</li><li>Original camera timezone and paired-media relationships may remain unresolved.</li><li>Server checksum matches are stored historical SHA-1 evidence, not current-byte verification.</li></ul>
+Report contains relative file paths, album names, asset IDs, dates and content hashes. Treat it as sensitive.</footer></html>

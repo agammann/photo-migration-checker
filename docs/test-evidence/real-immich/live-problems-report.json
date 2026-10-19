@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "mode": "original",
+  "immich_version": "3.3.3",
+  "coverage": {
+    "capture_dates": {
+      "comparable": 12,
+      "total": 21
+    },
+    "album_membership": {
+      "asserted_occurrences": 18,
+      "total": 21,
+      "policy": "Only directories with recognizable album metadata assert membership; ordinary directory names are hints only."
+    }
+  },
+  "scope": "Supplied extracted folder against API-key-readable active, non-locked assets, including readable shared albums. No server-wide completeness claim.",
+  "summary": {
+    "source_files": 21,
+    "source_bytes": 53172365,
+    "unique_source_content": 18,
+    "destination_assets": 14,
+    "matched": 16,
+    "attention": 30,
+    "content_counts": {
+      "original": 16,
+      "missing": 2,
+      "mismatched": 1,
+      "unsupported": 2
+    },
+    "coverage_complete": false,
+    "verification": "Verified original bytes",
+    "source_albums": 6,
+    "destination_albums": 4
+  },
+  "limitations": [
+    "This verifies only the supplied export; it cannot prove Google exported everything.",
+    "Never use this report as permission to delete originals.",
+    "API visibility excludes locked media and items this key cannot access.",
+    "Re-enumeration detects observable changes, but Immich does not provide an atomic library snapshot.",
+    "Original camera timezone and paired-media relationships may remain unresolved.",
+    "Server checksum matches are stored historical SHA-1 evidence, not current-byte verification."
+  ],
+  "findings": [
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Family/broken.png",
+      "asset_ids": [
+        "52addbef-093d-46ee-a396-2f0f248f05eb"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea",
+      "source_sha1": "c1f1c50479dcfe24bdb7a1c3ef57a105de06bd4c",
+      "size": 73,
+      "destination_sha256": {
+        "52addbef-093d-46ee-a396-2f0f248f05eb": "96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea"
+      },
+      "sidecars": [
+        "Family/broken.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Family/broken.png",
+      "asset_ids": [
+        "52addbef-093d-46ee-a396-2f0f248f05eb"
+      ],
+      "message": "JSON metadata could not be parsed as an object."
+    },
+    {
+      "kind": "metadata",
+      "status": "unresolved",
+      "evidence": "Date evidence unavailable",
+      "path": "Family/broken.png",
+      "asset_ids": [
+        "52addbef-093d-46ee-a396-2f0f248f05eb"
+      ],
+      "message": "No trustworthy Takeout capture date evidence; date comparison unavailable."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Family/collision.png",
+      "asset_ids": [
+        "71d90c45-7df2-45a2-be44-002608c265de"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2",
+      "source_sha1": "98e7cbcd006e2f0b66682fa84bf9a91f8af9bbb8",
+      "size": 73,
+      "destination_sha256": {
+        "71d90c45-7df2-45a2-be44-002608c265de": "d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2"
+      },
+      "sidecars": [
+        "Family/collision.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "missing",
+      "evidence": "Missing",
+      "path": "Family/portrait-edited.png",
+      "asset_ids": [],
+      "message": "No destination original has matching SHA-256 bytes in the accessible inventory.",
+      "source_sha256": "c56738addcde0a7eebfa5f8698cab747edb236134d70b72c3b96cca98f881b5a",
+      "source_sha1": "f2d33ac33fd76d046b6813a3c6d3c3972e6f1fc3",
+      "size": 73,
+      "destination_sha256": {},
+      "sidecars": [
+        "Family/portrait-edited.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "missing",
+      "evidence": "Missing",
+      "path": "Family/portrait.png",
+      "asset_ids": [],
+      "message": "No destination original has matching SHA-256 bytes in the accessible inventory.",
+      "source_sha256": "8d8d44043ee8e8aa759800683be2355dcbc15e3ce7042038b5403c0536fe3cab",
+      "source_sha1": "77fdd9f02a773079fa308c12bd928a343d15bc46",
+      "size": 73,
+      "destination_sha256": {},
+      "sidecars": [
+        "Family/portrait.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Family/sunrise.png",
+      "asset_ids": [
+        "666fe62a-88f5-4d57-a590-051a94aa296f"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+      "source_sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+      "size": 73,
+      "destination_sha256": {
+        "666fe62a-88f5-4d57-a590-051a94aa296f": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999"
+      },
+      "sidecars": [
+        "Family/sunrise.png.json"
+      ],
+      "source_occurrences": 4
+    },
+    {
+      "kind": "content",
+      "status": "mismatched",
+      "evidence": "Mismatched",
+      "path": "Family/tampered.png",
+      "asset_ids": [
+        "863efd15-8059-44db-a4f0-b09bcd9b031c"
+      ],
+      "message": "A destination filename matches, but the downloaded original bytes differ.",
+      "source_sha256": "41e5e975204d12db29e29f04d91bfa3417dbecdb053e288775a171ad96af026b",
+      "source_sha1": "2713370046d65f93285e1cda7922f550762d3c26",
+      "size": 73,
+      "destination_sha256": {
+        "863efd15-8059-44db-a4f0-b09bcd9b031c": "7899d6ced52159786ff083934df42788da01a30b7ed9bb7756d7f3f5a94ef685"
+      },
+      "sidecars": [
+        "Family/tampered.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Family/this-is-a-very-long-takeout-filename-alpha.png",
+      "asset_ids": [
+        "f78194c6-8e1b-4612-9062-1bd073b76ef4"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337",
+      "source_sha1": "8f00302534a08f3d7d9e6a2aaa1420dbe91ecf08",
+      "size": 73,
+      "destination_sha256": {
+        "f78194c6-8e1b-4612-9062-1bd073b76ef4": "6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337"
+      },
+      "sidecars": [],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Family/this-is-a-very-long-takeout-filename-alpha.png",
+      "asset_ids": [
+        "f78194c6-8e1b-4612-9062-1bd073b76ef4"
+      ],
+      "message": "Multiple source files fit this sidecar; no association was asserted."
+    },
+    {
+      "kind": "metadata",
+      "status": "unresolved",
+      "evidence": "Date evidence unavailable",
+      "path": "Family/this-is-a-very-long-takeout-filename-alpha.png",
+      "asset_ids": [
+        "f78194c6-8e1b-4612-9062-1bd073b76ef4"
+      ],
+      "message": "No trustworthy Takeout capture date evidence; date comparison unavailable."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Family/this-is-a-very-long-takeout-filename-beta.png",
+      "asset_ids": [
+        "62a637b6-5f29-4a7d-8dfa-6b92850f764d"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294",
+      "source_sha1": "2366ce017b667e7e2ca79360a24dce56af5f7185",
+      "size": 73,
+      "destination_sha256": {
+        "62a637b6-5f29-4a7d-8dfa-6b92850f764d": "27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294"
+      },
+      "sidecars": [],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Family/this-is-a-very-long-takeout-filename-beta.png",
+      "asset_ids": [
+        "62a637b6-5f29-4a7d-8dfa-6b92850f764d"
+      ],
+      "message": "Multiple source files fit this sidecar; no association was asserted."
+    },
+    {
+      "kind": "metadata",
+      "status": "unresolved",
+      "evidence": "Date evidence unavailable",
+      "path": "Family/this-is-a-very-long-takeout-filename-beta.png",
+      "asset_ids": [
+        "62a637b6-5f29-4a7d-8dfa-6b92850f764d"
+      ],
+      "message": "No trustworthy Takeout capture date evidence; date comparison unavailable."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Identity One/sunrise.png",
+      "asset_ids": [
+        "666fe62a-88f5-4d57-a590-051a94aa296f"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+      "source_sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+      "size": 73,
+      "destination_sha256": {
+        "666fe62a-88f5-4d57-a590-051a94aa296f": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999"
+      },
+      "sidecars": [
+        "Identity One/sunrise.png.json"
+      ],
+      "source_occurrences": 4
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Identity Two/sunrise.png",
+      "asset_ids": [
+        "666fe62a-88f5-4d57-a590-051a94aa296f"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+      "source_sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+      "size": 73,
+      "destination_sha256": {
+        "666fe62a-88f5-4d57-a590-051a94aa296f": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999"
+      },
+      "sidecars": [
+        "Identity Two/sunrise.png.json"
+      ],
+      "source_occurrences": 4
+    },
+    {
+      "kind": "content",
+      "status": "unsupported",
+      "evidence": "Unsupported",
+      "path": "Unsupported/live.aae",
+      "asset_ids": [],
+      "message": "This file format is outside the supported media list; it remains in the manifest.",
+      "source_sha256": "bb76ddac0d398d91af99d8c95f55f097180ac220b5d78bf972b59fe487089f33",
+      "source_sha1": "123d581d7a5d783f1576c74d20d1c2cea116c99a",
+      "size": 51,
+      "destination_sha256": {},
+      "sidecars": [],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Unsupported/live.aae",
+      "asset_ids": [],
+      "message": "Unrecognized file type is included as unsupported; its bytes were inventoried."
+    },
+    {
+      "kind": "content",
+      "status": "unsupported",
+      "evidence": "Unsupported",
+      "path": "Unsupported/unknown.bin",
+      "asset_ids": [],
+      "message": "This file format is outside the supported media list; it remains in the manifest.",
+      "source_sha256": "81354f103381cee4b209dec34b2ab611402e5b89918db90ad5e53d4b40b59dd8",
+      "source_sha1": "d0036cdf1123d50f677f38a27fcb03a6bd80909d",
+      "size": 28,
+      "destination_sha256": {},
+      "sidecars": [],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Unsupported/unknown.bin",
+      "asset_ids": [],
+      "message": "Unrecognized file type is included as unsupported; its bytes were inventoried."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Videos/clip-extra.mp4",
+      "asset_ids": [
+        "cae647cc-54fe-452f-b386-d8ec16975784"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "a20446de1c5d4f2ed735ba8c30ddd8611537b0230ab6de4c327d5a2380161098",
+      "source_sha1": "915b886c5c030307fe19d40fb8622b10b629f874",
+      "size": 67945,
+      "destination_sha256": {
+        "cae647cc-54fe-452f-b386-d8ec16975784": "a20446de1c5d4f2ed735ba8c30ddd8611537b0230ab6de4c327d5a2380161098"
+      },
+      "sidecars": [
+        "Videos/clip-extra.mp4.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Videos/clip.avi",
+      "asset_ids": [
+        "0304c1c0-6024-41e3-b664-c91660bca5a4"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2",
+      "source_sha1": "ebfb8394e9e89f958c5fe8837c8ce9ae412ed92d",
+      "size": 312,
+      "destination_sha256": {
+        "0304c1c0-6024-41e3-b664-c91660bca5a4": "50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2"
+      },
+      "sidecars": [
+        "Videos/clip.avi.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Videos/live.avi",
+      "asset_ids": [
+        "11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963",
+      "source_sha1": "d1d725ce5ec40d792df9fc9ac3b2e3ce7a90a41e",
+      "size": 312,
+      "destination_sha256": {
+        "11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8": "1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963"
+      },
+      "sidecars": [
+        "Videos/live.avi.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Videos/live.avi",
+      "asset_ids": [
+        "11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8"
+      ],
+      "message": "An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Videos/live.png",
+      "asset_ids": [
+        "3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f",
+      "source_sha1": "fa94133a9f0210410296b497c43bcc75d78625b3",
+      "size": 73,
+      "destination_sha256": {
+        "3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a": "51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f"
+      },
+      "sidecars": [
+        "Videos/live.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Videos/live.png",
+      "asset_ids": [
+        "3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a"
+      ],
+      "message": "An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Weekend/clock.png",
+      "asset_ids": [
+        "b6cabdac-7b9e-4130-8039-4946d16d0051"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481",
+      "source_sha1": "3b76ac77287aab6bd05ccd956a65c31f83284a06",
+      "size": 73,
+      "destination_sha256": {
+        "b6cabdac-7b9e-4130-8039-4946d16d0051": "6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481"
+      },
+      "sidecars": [
+        "Weekend/clock.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "source_metadata",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Weekend/clock.png",
+      "asset_ids": [
+        "b6cabdac-7b9e-4130-8039-4946d16d0051"
+      ],
+      "message": "Capture time has no supported epoch timestamp; formatted text and filesystem dates were not substituted."
+    },
+    {
+      "kind": "metadata",
+      "status": "unresolved",
+      "evidence": "Timezone uncertain",
+      "path": "Weekend/clock.png",
+      "asset_ids": [
+        "b6cabdac-7b9e-4130-8039-4946d16d0051"
+      ],
+      "message": "Source has a date without a trustworthy UTC instant; timezone conversion was not guessed."
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Weekend/collision.png",
+      "asset_ids": [
+        "de418b8a-caf8-4c1c-909d-73fa60bf6e47"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49",
+      "source_sha1": "74672477dd88a37115c40d2f1b4efc856604712a",
+      "size": 73,
+      "destination_sha256": {
+        "de418b8a-caf8-4c1c-909d-73fa60bf6e47": "e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49"
+      },
+      "sidecars": [
+        "Weekend/collision.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Weekend/dated.png",
+      "asset_ids": [
+        "0964c384-3660-40d4-9d76-4a3171ddc7d6"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542",
+      "source_sha1": "3e5f0df8d1e96631f8cd16d2ca8cb5c8257d4b32",
+      "size": 73,
+      "destination_sha256": {
+        "0964c384-3660-40d4-9d76-4a3171ddc7d6": "5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542"
+      },
+      "sidecars": [
+        "Weekend/dated.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "metadata",
+      "status": "difference",
+      "evidence": "Metadata difference",
+      "path": "Weekend/dated.png",
+      "asset_ids": [
+        "0964c384-3660-40d4-9d76-4a3171ddc7d6"
+      ],
+      "message": "Capture instant differs from Takeout photoTakenTime. Filesystem dates were not used.",
+      "source_date": "2023-11-14T22:13:20Z",
+      "destination_dates": {
+        "0964c384-3660-40d4-9d76-4a3171ddc7d6": "2023-11-15T22:13:20.000Z"
+      }
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "Weekend/sunrise.png",
+      "asset_ids": [
+        "666fe62a-88f5-4d57-a590-051a94aa296f"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+      "source_sha1": "1209212d1548dd202101350c2847905e7a0166bd",
+      "size": 73,
+      "destination_sha256": {
+        "666fe62a-88f5-4d57-a590-051a94aa296f": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999"
+      },
+      "sidecars": [
+        "Weekend/sunrise.png.json"
+      ],
+      "source_occurrences": 4
+    },
+    {
+      "kind": "content",
+      "status": "original",
+      "evidence": "Verified original bytes",
+      "path": "large-transfer.png",
+      "asset_ids": [
+        "c8a20a02-c85d-4ea2-bc70-cdb490badfaa"
+      ],
+      "message": "SHA-256 of streamed destination original matches the source bytes.",
+      "source_sha256": "61981cc2face0d7ed003f99a5ee85072d1a6ca5d0110d66337670b5974b474bb",
+      "source_sha1": "692104dce0cded05a20dd8a0cc87615fd5f744f3",
+      "size": 53102622,
+      "destination_sha256": {
+        "c8a20a02-c85d-4ea2-bc70-cdb490badfaa": "61981cc2face0d7ed003f99a5ee85072d1a6ca5d0110d66337670b5974b474bb"
+      },
+      "sidecars": [
+        "large-transfer.png.json"
+      ],
+      "source_occurrences": 1
+    },
+    {
+      "kind": "album",
+      "status": "difference",
+      "evidence": "Album difference",
+      "path": "Empty Missing",
+      "asset_ids": [],
+      "album_ids": [],
+      "message": "No destination album has the matched source membership or source title."
+    },
+    {
+      "kind": "album",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Family",
+      "asset_ids": [
+        "52addbef-093d-46ee-a396-2f0f248f05eb",
+        "62a637b6-5f29-4a7d-8dfa-6b92850f764d",
+        "666fe62a-88f5-4d57-a590-051a94aa296f",
+        "71d90c45-7df2-45a2-be44-002608c265de",
+        "f78194c6-8e1b-4612-9062-1bd073b76ef4"
+      ],
+      "album_ids": [
+        "dc830e69-72cb-4279-ae0a-2c95419e7d75",
+        "4262ebd1-2c48-466f-9319-fcb46ff04370"
+      ],
+      "message": "Duplicate destination album names have no unique exact membership match. Some source content is unresolved, so album coverage is incomplete."
+    },
+    {
+      "kind": "album",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Identity One",
+      "asset_ids": [
+        "666fe62a-88f5-4d57-a590-051a94aa296f"
+      ],
+      "album_ids": [
+        "f03be6f6-10a1-4027-9693-aa836feac441"
+      ],
+      "message": "Matched album membership has no unique one-to-one destination identity. Several source albums may be competing for the same destination album, or several destination albums remain indistinguishable."
+    },
+    {
+      "kind": "album",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Identity Two",
+      "asset_ids": [
+        "666fe62a-88f5-4d57-a590-051a94aa296f"
+      ],
+      "album_ids": [
+        "f03be6f6-10a1-4027-9693-aa836feac441"
+      ],
+      "message": "Matched album membership has no unique one-to-one destination identity. Several source albums may be competing for the same destination album, or several destination albums remain indistinguishable."
+    },
+    {
+      "kind": "album",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Weekend",
+      "asset_ids": [
+        "0964c384-3660-40d4-9d76-4a3171ddc7d6",
+        "666fe62a-88f5-4d57-a590-051a94aa296f",
+        "b6cabdac-7b9e-4130-8039-4946d16d0051",
+        "de418b8a-caf8-4c1c-909d-73fa60bf6e47"
+      ],
+      "album_ids": [
+        "dc830e69-72cb-4279-ae0a-2c95419e7d75",
+        "4262ebd1-2c48-466f-9319-fcb46ff04370"
+      ],
+      "message": "Duplicate destination album names have no unique exact membership match."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Family/broken.png.json",
+      "asset_ids": [],
+      "message": "JSON metadata could not be parsed as an object."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Unsupported/live.aae",
+      "asset_ids": [],
+      "message": "Unrecognized file type is included as unsupported; its bytes were inventoried."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Unsupported/unknown.bin",
+      "asset_ids": [],
+      "message": "Unrecognized file type is included as unsupported; its bytes were inventoried."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Family/this-is-a-very-long-takeout-filename-.json",
+      "asset_ids": [],
+      "message": "Multiple source files fit this sidecar; no association was asserted."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Weekend/clock.png",
+      "asset_ids": [],
+      "message": "Capture time has no supported epoch timestamp; formatted text and filesystem dates were not substituted."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Videos/live.avi",
+      "asset_ids": [],
+      "message": "An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified."
+    },
+    {
+      "kind": "coverage",
+      "status": "unresolved",
+      "evidence": "Unresolved",
+      "path": "Videos/live.png",
+      "asset_ids": [],
+      "message": "An image and video share a filename stem. Each component is checked separately; preservation of the pairing is unverified."
+    }
+  ],
+  "created_at": "2026-10-19T02:46:37.690007+00:00",
+  "scan_id": "9b493b02-c110-4723-8ba8-b42f39cde9fa",
+  "demo": false,
+  "bytes_transferred": 53171916
+}

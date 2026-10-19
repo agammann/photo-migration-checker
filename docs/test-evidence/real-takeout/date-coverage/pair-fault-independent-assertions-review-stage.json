@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "method": "Offline independent source hashes, baseline raw HTTP hashes and explicitly authored fault-link expectations; no checker imports",
+  "real_checker_reports": [
+    {
+      "scenario": "baseline",
+      "mode": "checksum",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "baseline",
+      "mode": "original",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "missing",
+      "mode": "checksum",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "missing",
+      "mode": "original",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "wrong",
+      "mode": "checksum",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "wrong",
+      "mode": "original",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "reversed-rejected",
+      "mode": "checksum",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "reversed-rejected",
+      "mode": "original",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "restored",
+      "mode": "checksum",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    },
+    {
+      "scenario": "restored",
+      "mode": "original",
+      "content_proofs_verified": 4,
+      "media_type_agreements_verified": 4,
+      "pair_assertions_verified": 2
+    }
+  ],
+  "reversed_case_scope": "Actual Immich API rejected video-to-IMAGE link with HTTP400; reports verify unchanged baseline. Corrupt reverse-state detection is covered separately by pure tests.",
+  "privacy": "No credentials, GPS, account URLs or original sidecars exported.",
+  "schema_3_date_proofs_verified": 40,
+  "schema_3_date_proof_scope": "Two Takeout capture instants and two distinct nominal container creation times in each of ten actual scans"
+}

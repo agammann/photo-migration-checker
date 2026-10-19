@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checker_requests_observed": 2245,
+  "write_attempts": 0,
+  "completed_original_responses": 582,
+  "interrupted_original_responses": 4,
+  "pending_records": 0,
+  "ledger_write_failures": 0,
+  "all_stored_originals_unchanged": 356,
+  "stored_original_bytes": 401456805,
+  "media_album_tables_unchanged": 13,
+  "storage_scope": "All accounts on this owned disposable server, including CTF, pair-fault, upstream-derived, synthetic and pagination users",
+  "observation_scope": "Backend, pair-fault and installed-wheel browser runs; earlier browser attempt retained separately from final browser receipt"
+}

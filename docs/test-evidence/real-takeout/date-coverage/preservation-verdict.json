@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-19T04:42:37.514494+00:00",
+  "method": "Independent direct HTTP streamed originals, all source hashes/sizes/mtimes, and explicit source capture/container/auxiliary/pair/type expectations; no checker imports",
+  "source_files": 123,
+  "source_paths_sha256_sha1_sizes_mtimes_unchanged": true,
+  "destination_assets": 62,
+  "destination_albums": 7,
+  "destination_original_bytes": 327044331,
+  "destination_inventory_and_all_original_sha256_sha1_sizes_unchanged": true,
+  "inventory_comparison_baseline": "Current date-coverage run raw before observation",
+  "fresh_pair_links_match_independent_embedded_sha256": 8,
+  "fresh_api_type_differences_confirmed": 0,
+  "fresh_api_type_agreements_confirmed": 62,
+  "all_seven_repaired_album_identities_and_memberships_unchanged": true,
+  "takeout_capture_instants_preserved": 53,
+  "nominal_container_creation_times_preserved": 8,
+  "container_date_semantics": "Literal encoded movie/track/media creation fields agree with API fileCreatedAt; no photographic shutter-instant or originating-camera-timezone claim.",
+  "unresolved_edited_capture_date": 1,
+  "edited_date_semantics": "The edited JPEG has no associated Takeout sidecar or cryptographically established parent with trusted capture evidence. Its declared XMP offset is not used to fabricate a capture instant.",
+  "neutral_auxiliary_records": 1,
+  "auxiliary_bytes_inventoried": 3,
+  "all_60_encoded_container_date_fields_per_mode_verified": true,
+  "final_backend_report_assertions": {
+    "checksum": {
+      "status": "passed",
+      "findings": 195,
+      "attention": 1
+    },
+    "original": {
+      "status": "passed",
+      "findings": 195,
+      "attention": 1
+    }
+  },
+  "proofs": [
+    "independent-after-assertions.json",
+    "independent-date-oracle.json",
+    "independent-report-assertions.json"
+  ],
+  "fault_test_stage": "Pairing and controlled source/destination/timeout receipts were executed before the final denominator and finite-number review patch and retained verbatim. Final frozen backend, wheel/browser, and final raw observations are separate evidence stages.",
+  "scope": "Final raw observation follows all final backend, installed preview and clean browser lifecycle checks. Direct inventory re-enumeration brackets the original reads; no atomic snapshot claim.",
+  "privacy": "No credentials, coordinates, account URLs, raw media or raw EXIF/XMP packets included."
+}

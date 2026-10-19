@@ -1,0 +1,143 @@
+{
+  "scenario": "problems",
+  "destination": "Disposable Docker Immich",
+  "immich_version": "3.3.3",
+  "browser": "156.0.8078.4",
+  "viewports": [
+    "1505x1045",
+    "390x844"
+  ],
+  "checks": [
+    {
+      "name": "checksum: local folder → scoped real Immich connection → completed live report",
+      "passed": true,
+      "detail": {
+        "immich_version": "3.3.3",
+        "destination_assets": 14,
+        "bytes_transferred": 0
+      }
+    },
+    {
+      "name": "checksum: actual findings search, category filter, source hash inspector, parsed JSON, offline HTML and mobile rendering",
+      "passed": true,
+      "detail": {
+        "source_files": 21,
+        "matched": 16,
+        "attention": 30,
+        "coverage_complete": false,
+        "findings": 46
+      }
+    },
+    {
+      "name": "checksum: saved live report survives browser reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "original: local folder → scoped real Immich connection → completed live report",
+      "passed": true,
+      "detail": {
+        "immich_version": "3.3.3",
+        "destination_assets": 14,
+        "bytes_transferred": 53171916
+      }
+    },
+    {
+      "name": "original: actual findings search, category filter, source hash inspector, parsed JSON, offline HTML and mobile rendering",
+      "passed": true,
+      "detail": {
+        "source_files": 21,
+        "matched": 16,
+        "attention": 30,
+        "coverage_complete": false,
+        "findings": 46
+      }
+    },
+    {
+      "name": "original: saved live report survives browser reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "actual UI cancellation produces no report; resume recomputes and completes against real Immich",
+      "passed": true,
+      "detail": {
+        "active_original_stream": {
+          "observed": true,
+          "ledger_index": 445,
+          "method": "GET",
+          "path": "/api/assets/c8a20a02-c85d-4ea2-bc70-cdb490badfaa/original",
+          "bytes": 1048576,
+          "status": 200
+        },
+        "before_cancel_phase": "Hashing destination originals",
+        "before_cancel_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 4,
+          "assets_total": 14,
+          "bytes_transferred": 68091,
+          "checkpoints_reused": 0
+        },
+        "stopped_phase": "Cancelled; reconnect to resume",
+        "stopped_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 4,
+          "assets_total": 14,
+          "bytes_transferred": 68091,
+          "checkpoints_reused": 0
+        },
+        "resumed_bytes_transferred": 53171916
+      }
+    },
+    {
+      "name": "owned preview process restart preserves interrupted checkpoint, requires key reconnection and resumes live original verification",
+      "passed": true,
+      "detail": {
+        "active_original_stream": {
+          "observed": true,
+          "ledger_index": 529,
+          "method": "GET",
+          "path": "/api/assets/c8a20a02-c85d-4ea2-bc70-cdb490badfaa/original",
+          "bytes": 1048576,
+          "status": 200
+        },
+        "before_interruption_phase": "Hashing destination originals",
+        "before_interruption_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 4,
+          "assets_total": 14,
+          "bytes_transferred": 68164,
+          "checkpoints_reused": 0
+        },
+        "interrupted_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 4,
+          "assets_total": 14,
+          "bytes_transferred": 68164,
+          "checkpoints_reused": 0
+        },
+        "recovered_bytes_transferred": 53171916
+      }
+    },
+    {
+      "name": "all source bytes, sizes and modification times unchanged",
+      "passed": true,
+      "detail": {
+        "files": 45,
+        "snapshot_sha256": "483a5f50d7b85492662f3dedf1a9d53cfab2bf5dc329ec9edeaeb4feed6fa417"
+      }
+    },
+    {
+      "name": "no browser-storage persistence, credential URLs, external browser requests or unexpected console/page errors",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "errors": [],
+  "expected_restart_network_events": [
+    "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "limitations": [
+    "Controlled synthetic media and disposable users; no permissioned real Takeout sample was used."
+  ]
+}

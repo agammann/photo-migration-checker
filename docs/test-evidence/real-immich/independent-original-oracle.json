@@ -1,0 +1,274 @@
+{
+  "status": "passed",
+  "oracle": "Independent httpx streaming without checker adapter imports",
+  "immich_version": "3.3.3",
+  "scenarios": {
+    "correct": {
+      "assets": 7,
+      "verified": [
+        {
+          "method": "GET",
+          "path": "/api/assets/0200218a-5702-4908-8674-4b79a0414a94/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/27772b1e-9186-42b8-9246-8763f48ba8a4/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "c56738addcde0a7eebfa5f8698cab747edb236134d70b72c3b96cca98f881b5a",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/4cb9a2a7-a422-422b-a253-237197d676df/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "8d8d44043ee8e8aa759800683be2355dcbc15e3ce7042038b5403c0536fe3cab",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/1c60e7b2-40b2-4d96-a7c2-0c6378150262/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/abc01798-73af-4bca-aa2e-c6d101a04fcf/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2",
+          "size": 312,
+          "content_type": "video/avi",
+          "reference_suffix": ".avi",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/8c227ebc-f43e-4a15-8298-77b010936ef0/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/356a6724-a7ff-4304-9b8b-df20cd595195/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        }
+      ],
+      "bytes_streamed": 750,
+      "video_originals": 1
+    },
+    "problems": {
+      "assets": 14,
+      "verified": [
+        {
+          "method": "GET",
+          "path": "/api/assets/52addbef-093d-46ee-a396-2f0f248f05eb/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "96c6bdb34094721d389c586783720d4785ec7e921c5bde9eb081465b67226eea",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/71d90c45-7df2-45a2-be44-002608c265de/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "d21f572295dfffedb273d941589b301b5b6ca1fdc665b5a7b650fe2043947fc2",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/666fe62a-88f5-4d57-a590-051a94aa296f/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "f9dc683c68b2bf0c9149b765af8481de80916ce9a11cf99c6a0a3234f37e2999",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/863efd15-8059-44db-a4f0-b09bcd9b031c/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "7899d6ced52159786ff083934df42788da01a30b7ed9bb7756d7f3f5a94ef685",
+          "size": 68,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/f78194c6-8e1b-4612-9062-1bd073b76ef4/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "6618cfc6cbae01df0a79ce50deb3f5e6f306d53bc52e2dbc8dabf1f329a4b337",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/62a637b6-5f29-4a7d-8dfa-6b92850f764d/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "27d99dd4ea644910c1b03335b0667f5b86a63c513304866fa3c966ee2330e294",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/0304c1c0-6024-41e3-b664-c91660bca5a4/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "50aee1058ca47be9725b18a1f380990fbc3e5f98db4f1e67d684153bddbf2de2",
+          "size": 312,
+          "content_type": "video/avi",
+          "reference_suffix": ".avi",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/11ca5904-83fd-4a7c-b92a-07ebe7ac4ee8/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "1ea0d6944b9b38a8aeddb5f2868cbdbaa4b85fc1c87dd90e7cc19fce87830963",
+          "size": 312,
+          "content_type": "video/avi",
+          "reference_suffix": ".avi",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/3f2ba0be-de21-437a-b84f-3bf9c3f8ad7a/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "51a7b00d359aee9a1ccbb990fd0e47bf194cd10413c8650bafb301d921be814f",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/b6cabdac-7b9e-4130-8039-4946d16d0051/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "6b995e704164d6abf93b66fa5196e9c9426d3ecf4be10e4d2f9d9f5d74b79481",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/de418b8a-caf8-4c1c-909d-73fa60bf6e47/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "e63694fa869b2a78d697e908ab6f84dea773214bcc74afc80e012595d749bc49",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/0964c384-3660-40d4-9d76-4a3171ddc7d6/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "5be33f2362eee37f7e1298d15d8fe26b09ff770000814fece07c6d222f255542",
+          "size": 73,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/c8a20a02-c85d-4ea2-bc70-cdb490badfaa/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "61981cc2face0d7ed003f99a5ee85072d1a6ca5d0110d66337670b5974b474bb",
+          "size": 53102622,
+          "content_type": "image/png",
+          "reference_suffix": ".png",
+          "matches_uploaded_bytes": true
+        },
+        {
+          "method": "GET",
+          "path": "/api/assets/cae647cc-54fe-452f-b386-d8ec16975784/original",
+          "query": {
+            "edited": "false"
+          },
+          "sha256": "a20446de1c5d4f2ed735ba8c30ddd8611537b0230ab6de4c327d5a2380161098",
+          "size": 67945,
+          "content_type": "video/mp4",
+          "reference_suffix": ".mp4",
+          "matches_uploaded_bytes": true
+        }
+      ],
+      "bytes_streamed": 53171916,
+      "video_originals": 3
+    }
+  },
+  "write_requests": 0
+}

@@ -1,0 +1,258 @@
+{
+  "status": "passed",
+  "immich_version": "3.3.3",
+  "method": "Reports checked against explicit reviewed source oracle and independent raw HTTP original hashes, capture instants and album member hashes; no checker imports",
+  "modes": {
+    "checksum": {
+      "status": "passed",
+      "every_media_hash_and_destination_id_verified": true,
+      "media_matches": 62,
+      "own_sidecar_capture_instants_match": 53,
+      "unavailable_source_dates": [
+        "2020-03-06-07/MVIMG_20200306_151636(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_130221(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_130237(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_130326(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_185225(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_201453(1).jpg",
+        "2020-03-10/IMG_20200310_140416-EFFECTS-edited.jpg",
+        "2020-03-10/MVIMG_20200310_133405(1).jpg",
+        "Instant Upload/MVIMG_20200305_145544(1).jpg"
+      ],
+      "verified_pair_relationship_paths": [
+        "2020-03-06-07/MVIMG_20200306_151636.jpg",
+        "2020-03-06-07/MVIMG_20200307_130221.jpg",
+        "2020-03-06-07/MVIMG_20200307_130237.jpg",
+        "2020-03-06-07/MVIMG_20200307_130326.jpg",
+        "2020-03-06-07/MVIMG_20200307_185225.jpg",
+        "2020-03-06-07/MVIMG_20200307_201453.jpg",
+        "2020-03-10/MVIMG_20200310_133405.jpg",
+        "Instant Upload/MVIMG_20200305_145544.jpg"
+      ],
+      "album_membership_differences": [
+        {
+          "source_album": "2020-03-10",
+          "missing_source_paths": [
+            "2020-03-10/MVIMG_20200310_133405(1).jpg"
+          ]
+        },
+        {
+          "source_album": "Instant Upload",
+          "missing_source_paths": [
+            "Instant Upload/MVIMG_20200305_145544(1).jpg"
+          ]
+        }
+      ],
+      "auxiliary_json_rows": 3,
+      "attention_rows": 20,
+      "finding_rows": 146,
+      "coverage_complete": false,
+      "typed_findings": [
+        {
+          "kind": "album",
+          "status": "difference",
+          "count": 2
+        },
+        {
+          "kind": "content",
+          "status": "checksum",
+          "count": 62
+        },
+        {
+          "kind": "content",
+          "status": "unsupported",
+          "count": 1
+        },
+        {
+          "kind": "coverage",
+          "status": "unresolved",
+          "count": 1
+        },
+        {
+          "kind": "media_type",
+          "status": "checksum",
+          "count": 56
+        },
+        {
+          "kind": "media_type",
+          "status": "difference",
+          "count": 6
+        },
+        {
+          "kind": "metadata",
+          "status": "unresolved",
+          "count": 9
+        },
+        {
+          "kind": "paired_media",
+          "status": "checksum",
+          "count": 8
+        },
+        {
+          "kind": "source_metadata",
+          "status": "unresolved",
+          "count": 1
+        }
+      ]
+    },
+    "original": {
+      "status": "passed",
+      "every_media_hash_and_destination_id_verified": true,
+      "media_matches": 62,
+      "own_sidecar_capture_instants_match": 53,
+      "unavailable_source_dates": [
+        "2020-03-06-07/MVIMG_20200306_151636(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_130221(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_130237(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_130326(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_185225(1).jpg",
+        "2020-03-06-07/MVIMG_20200307_201453(1).jpg",
+        "2020-03-10/IMG_20200310_140416-EFFECTS-edited.jpg",
+        "2020-03-10/MVIMG_20200310_133405(1).jpg",
+        "Instant Upload/MVIMG_20200305_145544(1).jpg"
+      ],
+      "verified_pair_relationship_paths": [
+        "2020-03-06-07/MVIMG_20200306_151636.jpg",
+        "2020-03-06-07/MVIMG_20200307_130221.jpg",
+        "2020-03-06-07/MVIMG_20200307_130237.jpg",
+        "2020-03-06-07/MVIMG_20200307_130326.jpg",
+        "2020-03-06-07/MVIMG_20200307_185225.jpg",
+        "2020-03-06-07/MVIMG_20200307_201453.jpg",
+        "2020-03-10/MVIMG_20200310_133405.jpg",
+        "Instant Upload/MVIMG_20200305_145544.jpg"
+      ],
+      "album_membership_differences": [
+        {
+          "source_album": "2020-03-10",
+          "missing_source_paths": [
+            "2020-03-10/MVIMG_20200310_133405(1).jpg"
+          ]
+        },
+        {
+          "source_album": "Instant Upload",
+          "missing_source_paths": [
+            "Instant Upload/MVIMG_20200305_145544(1).jpg"
+          ]
+        }
+      ],
+      "auxiliary_json_rows": 3,
+      "attention_rows": 20,
+      "finding_rows": 146,
+      "coverage_complete": false,
+      "typed_findings": [
+        {
+          "kind": "album",
+          "status": "difference",
+          "count": 2
+        },
+        {
+          "kind": "content",
+          "status": "original",
+          "count": 62
+        },
+        {
+          "kind": "content",
+          "status": "unsupported",
+          "count": 1
+        },
+        {
+          "kind": "coverage",
+          "status": "unresolved",
+          "count": 1
+        },
+        {
+          "kind": "media_type",
+          "status": "difference",
+          "count": 6
+        },
+        {
+          "kind": "media_type",
+          "status": "original",
+          "count": 56
+        },
+        {
+          "kind": "metadata",
+          "status": "unresolved",
+          "count": 9
+        },
+        {
+          "kind": "paired_media",
+          "status": "original",
+          "count": 8
+        },
+        {
+          "kind": "source_metadata",
+          "status": "unresolved",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "media_container_observations": [
+    {
+      "path": "2020-03-06-07/MVIMG_20200306_151636(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "IMAGE"
+      ]
+    },
+    {
+      "path": "2020-03-06-07/MVIMG_20200307_130221(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "IMAGE"
+      ]
+    },
+    {
+      "path": "2020-03-06-07/MVIMG_20200307_130237(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "IMAGE"
+      ]
+    },
+    {
+      "path": "2020-03-06-07/MVIMG_20200307_130326(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "IMAGE"
+      ]
+    },
+    {
+      "path": "2020-03-06-07/MVIMG_20200307_185225(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "IMAGE"
+      ]
+    },
+    {
+      "path": "2020-03-06-07/MVIMG_20200307_201453(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "IMAGE"
+      ]
+    },
+    {
+      "path": "2020-03-10/MVIMG_20200310_133405(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "VIDEO"
+      ]
+    },
+    {
+      "path": "2020-03-11/VID_20200311_124137.mp4",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "VIDEO"
+      ]
+    },
+    {
+      "path": "Instant Upload/MVIMG_20200305_145544(1).jpg",
+      "source_container_signature": "MP4_ftyp",
+      "api_types": [
+        "VIDEO"
+      ]
+    }
+  ],
+  "caveat": "Six structurally proven MP4 originals with .jpg filenames are classified IMAGE by the destination API and now have explicit type-difference findings. Pair byte relationships are verified separately. No playback claim.",
+  "privacy": "No GPS, account URLs, raw sidecars or credentials included."
+}

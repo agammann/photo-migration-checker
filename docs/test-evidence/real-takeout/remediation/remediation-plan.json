@@ -1,0 +1,101 @@
+{
+  "scope": "Owned disposable CTF account only; six media-type metadata changes and two album membership insertions",
+  "immich_version": "3.3.3",
+  "type_changes": [
+    {
+      "asset_id": "f6681ac0-2bd4-49a5-9778-3621e8c2ceb4",
+      "source_path": "2020-03-06-07/MVIMG_20200306_151636(1).jpg",
+      "sha256": "f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57",
+      "expected_before": "IMAGE",
+      "set_type": "VIDEO",
+      "proof": "Exact byte hash and structurally bounded MP4 video-track handler"
+    },
+    {
+      "asset_id": "dce892a2-64e9-46f1-b55d-d7f8555b3766",
+      "source_path": "2020-03-06-07/MVIMG_20200307_130221(1).jpg",
+      "sha256": "8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820",
+      "expected_before": "IMAGE",
+      "set_type": "VIDEO",
+      "proof": "Exact byte hash and structurally bounded MP4 video-track handler"
+    },
+    {
+      "asset_id": "6cd50cf8-a65b-4a3d-ab71-1115fb9223a5",
+      "source_path": "2020-03-06-07/MVIMG_20200307_130237(1).jpg",
+      "sha256": "2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5",
+      "expected_before": "IMAGE",
+      "set_type": "VIDEO",
+      "proof": "Exact byte hash and structurally bounded MP4 video-track handler"
+    },
+    {
+      "asset_id": "cc7c77d5-e66a-49ce-95cb-23e829c65063",
+      "source_path": "2020-03-06-07/MVIMG_20200307_130326(1).jpg",
+      "sha256": "132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c",
+      "expected_before": "IMAGE",
+      "set_type": "VIDEO",
+      "proof": "Exact byte hash and structurally bounded MP4 video-track handler"
+    },
+    {
+      "asset_id": "a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4",
+      "source_path": "2020-03-06-07/MVIMG_20200307_185225(1).jpg",
+      "sha256": "626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2",
+      "expected_before": "IMAGE",
+      "set_type": "VIDEO",
+      "proof": "Exact byte hash and structurally bounded MP4 video-track handler"
+    },
+    {
+      "asset_id": "eb7016fc-4a4d-4cd8-b105-0d4bb079c957",
+      "source_path": "2020-03-06-07/MVIMG_20200307_201453(1).jpg",
+      "sha256": "32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b",
+      "expected_before": "IMAGE",
+      "set_type": "VIDEO",
+      "proof": "Exact byte hash and structurally bounded MP4 video-track handler"
+    }
+  ],
+  "album_membership_additions": [
+    {
+      "album_id": "66953858-5a5e-4ff0-ac31-6f66e9cdc36b",
+      "album_title": "2020/03/10",
+      "asset_id": "a4a4dd17-18b5-4083-a398-14e83feffd4b",
+      "source_path": "2020-03-10/MVIMG_20200310_133405(1).jpg",
+      "sha256": "eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20",
+      "before_members": 15,
+      "after_members": 16
+    },
+    {
+      "album_id": "f40989ae-cfa3-4101-bfb6-fadf9df3d5d1",
+      "album_title": "Instant Upload",
+      "asset_id": "e6e643b7-71aa-48ff-ab2a-435c3905e079",
+      "source_path": "Instant Upload/MVIMG_20200305_145544(1).jpg",
+      "sha256": "51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0",
+      "before_members": 1,
+      "after_members": 2
+    }
+  ],
+  "preserve": {
+    "source_files": 123,
+    "original_assets": 62,
+    "original_bytes": 327044331,
+    "album_identities": 7,
+    "pair_links": 8,
+    "requirements": [
+      "All source paths, hashes, sizes and modification times",
+      "All original bytes and asset identities",
+      "All existing album identities, titles and memberships except the two authorized additions",
+      "All eight livePhotoVideoId relationships",
+      "Capture instants, upload checksums, library provenance and original filenames"
+    ]
+  },
+  "expected_checker": {
+    "content_matches": 62,
+    "pair_matches": 8,
+    "media_type_agreements": 62,
+    "media_type_differences": 0,
+    "album_differences": 0,
+    "unavailable_source_dates": 9,
+    "auxiliary_json_attention_rows": 3,
+    "attention_rows": 12,
+    "finding_rows": 144,
+    "coverage_complete": false
+  },
+  "privacy": "No credentials, GPS, account URLs or absolute private paths included"
+}

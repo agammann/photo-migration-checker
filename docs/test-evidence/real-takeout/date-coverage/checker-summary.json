@@ -1,0 +1,56 @@
+{
+  "version": "0.1.4",
+  "sample": "Magnet2020CTF Google Photos Takeout",
+  "destination_assets": 62,
+  "destination_albums": 7,
+  "modes": {
+    "checksum": {
+      "source_files": 62,
+      "source_bytes": 327044331,
+      "inventory_files": 123,
+      "inventory_bytes": 327085591,
+      "media_files": 62,
+      "auxiliary_files": 1,
+      "auxiliary_bytes": 3,
+      "sidecar_files": 53,
+      "album_metadata_files": 7,
+      "unique_source_content": 62,
+      "destination_assets": 62,
+      "matched": 62,
+      "attention": 1,
+      "content_counts": {
+        "checksum": 62
+      },
+      "coverage_complete": false,
+      "verification": "Server-reported checksum match",
+      "source_albums": 7,
+      "destination_albums": 7
+    },
+    "original": {
+      "source_files": 62,
+      "source_bytes": 327044331,
+      "inventory_files": 123,
+      "inventory_bytes": 327085591,
+      "media_files": 62,
+      "auxiliary_files": 1,
+      "auxiliary_bytes": 3,
+      "sidecar_files": 53,
+      "album_metadata_files": 7,
+      "unique_source_content": 62,
+      "destination_assets": 62,
+      "matched": 62,
+      "attention": 1,
+      "content_counts": {
+        "original": 62
+      },
+      "coverage_complete": false,
+      "verification": "Verified original bytes",
+      "source_albums": 7,
+      "destination_albums": 7
+    }
+  },
+  "status": "passed",
+  "source_unchanged": true,
+  "destination_inventory_unchanged": true,
+  "checker_write_requests": 0
+}

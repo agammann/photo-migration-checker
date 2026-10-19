@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-19T03:32:12.170523+00:00",
+  "method": "Independent raw HTTP streamed originals plus complete source streamed hash and mtime audit; no checker imports",
+  "source_files": 123,
+  "source_file_set_unchanged": true,
+  "source_sha256_sha1_sizes_mtimes_unchanged": true,
+  "destination_assets": 62,
+  "destination_original_bytes": 327044331,
+  "destination_asset_and_album_inventory_unchanged": true,
+  "destination_all_original_sha256_sha1_sizes_unchanged": true,
+  "scope": "Initial independent observation began while backend read-only checks were active; final observation follows all backend, browser, preview checks and the final clean browser rerun after the observer atomic-rename retry fix. No atomic snapshot claim.",
+  "privacy": "No credentials, GPS, account URLs or raw sidecars included."
+}

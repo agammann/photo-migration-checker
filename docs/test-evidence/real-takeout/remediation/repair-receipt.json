@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "repair_scope": "Only owned disposable CTF account",
+  "database_backup": "Full custom-format backup retained privately",
+  "type_repairs": [
+    {
+      "asset_id": "6cd50cf8-a65b-4a3d-ab71-1115fb9223a5",
+      "changed_fields": [
+        "type",
+        "updateId",
+        "updatedAt"
+      ],
+      "before_type": "IMAGE",
+      "after_type": "VIDEO"
+    },
+    {
+      "asset_id": "a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4",
+      "changed_fields": [
+        "type",
+        "updateId",
+        "updatedAt"
+      ],
+      "before_type": "IMAGE",
+      "after_type": "VIDEO"
+    },
+    {
+      "asset_id": "cc7c77d5-e66a-49ce-95cb-23e829c65063",
+      "changed_fields": [
+        "type",
+        "updateId",
+        "updatedAt"
+      ],
+      "before_type": "IMAGE",
+      "after_type": "VIDEO"
+    },
+    {
+      "asset_id": "dce892a2-64e9-46f1-b55d-d7f8555b3766",
+      "changed_fields": [
+        "type",
+        "updateId",
+        "updatedAt"
+      ],
+      "before_type": "IMAGE",
+      "after_type": "VIDEO"
+    },
+    {
+      "asset_id": "eb7016fc-4a4d-4cd8-b105-0d4bb079c957",
+      "changed_fields": [
+        "type",
+        "updateId",
+        "updatedAt"
+      ],
+      "before_type": "IMAGE",
+      "after_type": "VIDEO"
+    },
+    {
+      "asset_id": "f6681ac0-2bd4-49a5-9778-3621e8c2ceb4",
+      "changed_fields": [
+        "type",
+        "updateId",
+        "updatedAt"
+      ],
+      "before_type": "IMAGE",
+      "after_type": "VIDEO"
+    }
+  ],
+  "original_path_filename_checksum_and_all_other_asset_fields_unchanged": true,
+  "other_350_asset_rows_unchanged": true,
+  "album_api_repairs": [
+    {
+      "method": "PUT",
+      "path": "/albums/66953858-5a5e-4ff0-ac31-6f66e9cdc36b/assets",
+      "status": 200,
+      "asset_id": "a4a4dd17-18b5-4083-a398-14e83feffd4b",
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/albums/f40989ae-cfa3-4101-bfb6-fadf9df3d5d1/assets",
+      "status": 200,
+      "asset_id": "e6e643b7-71aa-48ff-ab2a-435c3905e079",
+      "success": true
+    }
+  ],
+  "checker_writes": "None; this separate one-time maintenance script performed the explicit repair",
+  "processing": "Not yet requested"
+}

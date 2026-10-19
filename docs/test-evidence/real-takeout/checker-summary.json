@@ -1,0 +1,44 @@
+{
+  "version": "0.1.2",
+  "sample": "Magnet2020CTF Google Photos Takeout",
+  "destination_assets": 62,
+  "destination_albums": 7,
+  "modes": {
+    "checksum": {
+      "source_files": 63,
+      "source_bytes": 327044334,
+      "unique_source_content": 63,
+      "destination_assets": 62,
+      "matched": 62,
+      "attention": 22,
+      "content_counts": {
+        "checksum": 62,
+        "unsupported": 1
+      },
+      "coverage_complete": false,
+      "verification": "Server-reported checksum match",
+      "source_albums": 7,
+      "destination_albums": 7
+    },
+    "original": {
+      "source_files": 63,
+      "source_bytes": 327044334,
+      "unique_source_content": 63,
+      "destination_assets": 62,
+      "matched": 62,
+      "attention": 22,
+      "content_counts": {
+        "original": 62,
+        "unsupported": 1
+      },
+      "coverage_complete": false,
+      "verification": "Verified original bytes",
+      "source_albums": 7,
+      "destination_albums": 7
+    }
+  },
+  "status": "passed",
+  "source_unchanged": true,
+  "destination_inventory_unchanged": true,
+  "checker_write_requests": 0
+}

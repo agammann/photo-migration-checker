@@ -1,0 +1,149 @@
+{
+  "scenario": "ctf",
+  "stage": "after authorized destination metadata and album repair",
+  "repaired_media_assets": 6,
+  "package": "0.1.3 installed wheel",
+  "browser_availability": "Browser plugin not available; regular Playwright used as permitted.",
+  "source": "Unmodified published Magnet 2020 CTF Google Photos Takeout",
+  "oracle_comparison": "Complete report equality with only top-level scan_id and created_at omitted",
+  "destination": "Disposable Docker Immich after authorized metadata and album repair",
+  "immich_version": "3.3.3",
+  "browser": "156.0.8078.4",
+  "viewports": [
+    "1505x1045",
+    "390x844"
+  ],
+  "checks": [
+    {
+      "name": "page identity, meaningful entry screen and no framework error overlay",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "checksum: local folder  ->  scoped real Immich connection  ->  completed live report",
+      "passed": true,
+      "detail": {
+        "immich_version": "3.3.3",
+        "destination_assets": 62,
+        "bytes_transferred": 0
+      }
+    },
+    {
+      "name": "checksum: repaired six media types and absent album differences, pair/media filters and inspector, content-only matched filter, source hash inspector, parsed JSON, offline HTML and mobile rendering",
+      "passed": true,
+      "detail": {
+        "source_files": 63,
+        "matched": 62,
+        "attention": 12,
+        "coverage_complete": false,
+        "findings": 144
+      }
+    },
+    {
+      "name": "checksum: saved live report survives browser reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "original: local folder  ->  scoped real Immich connection  ->  completed live report",
+      "passed": true,
+      "detail": {
+        "immich_version": "3.3.3",
+        "destination_assets": 62,
+        "bytes_transferred": 327044331
+      }
+    },
+    {
+      "name": "original: repaired six media types and absent album differences, pair/media filters and inspector, content-only matched filter, source hash inspector, parsed JSON, offline HTML and mobile rendering",
+      "passed": true,
+      "detail": {
+        "source_files": 63,
+        "matched": 62,
+        "attention": 12,
+        "coverage_complete": false,
+        "findings": 144
+      }
+    },
+    {
+      "name": "original: saved live report survives browser reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "actual UI cancellation produces no report; reload requires reconnection and resume freshly verifies real Immich originals",
+      "passed": true,
+      "detail": {
+        "active_original_stream": {
+          "observed": true,
+          "ledger_index": 1561,
+          "method": "GET",
+          "path": "/api/assets/793f6067-6b4e-4703-8e37-5e18f00a8f1d/original",
+          "bytes": 1048576,
+          "status": 200
+        },
+        "before_cancel_phase": "Hashing destination originals",
+        "before_cancel_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 1,
+          "assets_total": 62,
+          "bytes_transferred": 4375823,
+          "checkpoints_reused": 0
+        },
+        "stopped_phase": "Cancelled; reconnect to resume",
+        "stopped_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 1,
+          "assets_total": 62,
+          "bytes_transferred": 4375823,
+          "checkpoints_reused": 0
+        },
+        "resumed_bytes_transferred": 327044331
+      }
+    },
+    {
+      "name": "owned process interruption preserves an explicit checkpoint; reconnection and resume freshly verify all originals",
+      "passed": true,
+      "detail": {
+        "active_original_stream": {
+          "observed": true,
+          "ledger_index": 1802,
+          "method": "GET",
+          "path": "/api/assets/793f6067-6b4e-4703-8e37-5e18f00a8f1d/original",
+          "bytes": 1048576,
+          "status": 200
+        },
+        "before_interruption_progress": {
+          "phase": "Hashing destination originals",
+          "assets_scanned": 1,
+          "assets_total": 62,
+          "bytes_transferred": 4375823,
+          "checkpoints_reused": 0
+        },
+        "recovered_bytes_transferred": 327044331
+      }
+    },
+    {
+      "name": "all source bytes, sizes and modification times unchanged",
+      "passed": true,
+      "detail": {
+        "files": 123,
+        "snapshot_sha256": "3e4cc018812307622a145ce073cb9ea64f2b9782fcb932808832601d0aff3bf5"
+      }
+    },
+    {
+      "name": "no browser-storage persistence, credential URLs, external browser requests or unexpected console/page errors",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "expected_restart_network_events": [
+    "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "limitations": [
+    "One published 2020 forensic Takeout corpus, imported by immich-go 0.32.0 into disposable Immich 3.3.3; no universal personal-export compatibility claim.",
+    "Original downloads were byte-preserved by a local transparent observer, throttled for cancellation timing.",
+    "The original shared_album_comments.json is retained as unsupported non-media JSON; metadata and album findings also preserve incomplete coverage."
+  ]
+}

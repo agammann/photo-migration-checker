@@ -1,0 +1,15 @@
+{
+  "immich_version": "3.3.3",
+  "image": "ghcr.io/immich-app/immich-server:v3.3.3",
+  "image_id": "sha256:bae7664ff3aa4c2c1fcbdcdd86b40b105643c5f861f3e6a770fc760089f25862",
+  "repository_digests": [
+    "ghcr.io/immich-app/immich-server@sha256:bae7664ff3aa4c2c1fcbdcdd86b40b105643c5f861f3e6a770fc760089f25862"
+  ],
+  "source_revision": "d2dac658fe1c67e8bbd08aa18200a32e5d45b9e4",
+  "docker_desktop": "Docker Desktop 4.94.0 (241994)",
+  "docker_engine": "29.8.2",
+  "engine_os": "linux",
+  "engine_arch": "amd64",
+  "binding": "127.0.0.1:22839",
+  "scope": "Controlled synthetic media in disposable project-owned Docker volumes"
+}

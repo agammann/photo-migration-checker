@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "schema_version": 3,
+  "immich_version": "3.3.3",
+  "method": "Explicit reviewed source sidecars, independent encoded date/header segment inspection, and direct raw HTTP byte hashes/metadata; no checker imports",
+  "modes": {
+    "checksum": {
+      "status": "passed",
+      "finding_rows": 195,
+      "attention_rows": 1,
+      "content_proofs_verified": 62,
+      "media_type_agreements": 62,
+      "verified_pair_links": 8,
+      "takeout_capture_instant_agreements": 53,
+      "nominal_container_creation_agreements": 8,
+      "unresolved_edited_capture_date": 1,
+      "container_header_fields_verified": 60,
+      "neutral_empty_auxiliary_records": 1,
+      "all_seven_album_memberships_match": true,
+      "content_hash_proof_level": "stored historical SHA-1 association",
+      "typed_findings": [
+        {
+          "kind": "auxiliary",
+          "status": "not_applicable",
+          "count": 1
+        },
+        {
+          "kind": "content",
+          "status": "checksum",
+          "count": 62
+        },
+        {
+          "kind": "media_type",
+          "status": "checksum",
+          "count": 62
+        },
+        {
+          "kind": "metadata",
+          "status": "checksum",
+          "count": 61
+        },
+        {
+          "kind": "metadata",
+          "status": "unresolved",
+          "count": 1
+        },
+        {
+          "kind": "paired_media",
+          "status": "checksum",
+          "count": 8
+        }
+      ]
+    },
+    "original": {
+      "status": "passed",
+      "finding_rows": 195,
+      "attention_rows": 1,
+      "content_proofs_verified": 62,
+      "media_type_agreements": 62,
+      "verified_pair_links": 8,
+      "takeout_capture_instant_agreements": 53,
+      "nominal_container_creation_agreements": 8,
+      "unresolved_edited_capture_date": 1,
+      "container_header_fields_verified": 60,
+      "neutral_empty_auxiliary_records": 1,
+      "all_seven_album_memberships_match": true,
+      "content_hash_proof_level": "fresh streamed SHA-256 originals",
+      "typed_findings": [
+        {
+          "kind": "auxiliary",
+          "status": "not_applicable",
+          "count": 1
+        },
+        {
+          "kind": "content",
+          "status": "original",
+          "count": 62
+        },
+        {
+          "kind": "media_type",
+          "status": "original",
+          "count": 62
+        },
+        {
+          "kind": "metadata",
+          "status": "original",
+          "count": 61
+        },
+        {
+          "kind": "metadata",
+          "status": "unresolved",
+          "count": 1
+        },
+        {
+          "kind": "paired_media",
+          "status": "original",
+          "count": 8
+        }
+      ]
+    }
+  },
+  "source_inventory_files": 123,
+  "edited_source_limitation": "No same-image coding hash or explicit metadata derivation identifies a trusted sidecar parent for this edited file. Similar names and wall-clock values are not parent proof. Its XMP declares a timestamp, but neither its true capture instant nor the destination timestamp can be reconciled from reliable source evidence.",
+  "container_date_semantics": "Eight literal encoded creation times agree nominally with fileCreatedAt. Neither shutter instants nor original camera timezones are established for those components.",
+  "privacy": "No credentials, coordinates, account URLs or raw metadata packets included."
+}

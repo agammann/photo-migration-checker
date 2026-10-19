@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checker_requests_observed": 487,
+  "write_attempts": 0,
+  "completed_original_responses": 125,
+  "interrupted_original_responses": 1,
+  "all_stored_originals_unchanged": 71,
+  "stored_original_bytes": 329163482,
+  "media_album_tables_unchanged": 13,
+  "storage_scope": "All accounts in this disposable server: 62 CTF originals plus 9 upstream-derived originals"
+}

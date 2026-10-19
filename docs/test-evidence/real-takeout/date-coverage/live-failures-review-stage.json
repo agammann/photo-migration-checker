@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "app_version": "0.1.4",
+  "media_source_sha256": "6559e7009f0c2f5e543c8a4fc6c4391ee155df1767651e9b83344cd62042ad04",
+  "checks": [
+    "source_change",
+    "destination_change",
+    "timeout"
+  ],
+  "seconds": 11.36,
+  "destination_inventory_restored": true,
+  "destination_originals_unchanged": true,
+  "original_fixture_unchanged": true,
+  "checker_write_requests": 0
+}

@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-19T04:21:49.294937+00:00",
+  "method": "Independent direct HTTP original hashes and fresh source hashes, sizes and mtimes, with byte-derived pair/type, reviewed sidecar date and album membership assertions; no checker imports",
+  "source_files": 123,
+  "source_paths_sha256_sha1_sizes_mtimes_unchanged": true,
+  "destination_assets": 62,
+  "destination_albums": 7,
+  "destination_original_bytes": 327044331,
+  "all_original_sha256_sha1_sizes_unchanged_across_repair_processing_and_tests": true,
+  "destination_inventory_and_all_original_sha256_sha1_sizes_unchanged": true,
+  "inventory_comparison_baseline": "destination-processed.private.json",
+  "all_seven_repaired_album_identities_and_memberships_unchanged": true,
+  "fresh_pair_links_match_independent_embedded_sha256": 8,
+  "fresh_api_type_differences_confirmed": 0,
+  "fresh_api_type_agreements_confirmed": 62,
+  "source_supported_capture_instants_unchanged": 53,
+  "source_capture_dates_unavailable": 9,
+  "final_backend_report_assertions": {
+    "checksum": {
+      "status": "passed",
+      "findings": 144,
+      "attention": 12
+    },
+    "original": {
+      "status": "passed",
+      "findings": 144,
+      "attention": 12
+    }
+  },
+  "remaining_attention": {
+    "unavailable_source_dates": 9,
+    "auxiliary_json_rows": 3
+  },
+  "configuration_preservation": {
+    "full_config_restored": true,
+    "proof": "video-processing-readonly-verification/video-processing-verification-evidence.json",
+    "method": "References the native processing verification full-configuration equality check; no extra administrator authentication or configuration request by this audit"
+  },
+  "source_byte_pair_type_report_proof": "independent-after-assertions.json",
+  "exact_report_proof": "independent-report-assertions.json",
+  "scope": "Final raw observation follows the completed repaired backend scans, clean 11-check browser run and preview original scan. Metadata and originals equal the fixed post-processing baseline; pre-repair type and membership changes are separately retained in strict phase 1 receipts. No atomic snapshot claim.",
+  "privacy": "No credentials, GPS, account URLs, private absolute paths or raw source metadata included."
+}

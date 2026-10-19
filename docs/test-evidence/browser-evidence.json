@@ -1,0 +1,70 @@
+{
+  "app_version": "0.1.0",
+  "evidence_scope": "Historical installed-package sample and HTTP protocol-fixture run",
+  "browser": "156.0.8078.4",
+  "url": "http://127.0.0.1:8766",
+  "viewports": [
+    "1505x1045",
+    "390x844"
+  ],
+  "browser_plugin": "Browser skill unavailable; local Playwright Chromium used",
+  "protocol_fixture": true,
+  "checks": [
+    {
+      "name": "page identity and meaningful source screen",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source preview and real HTTP protocol-fixture connection",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "cooperative cancellation reaches a resumable stopped state",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "resume finishes original-byte verification through HTTP transport",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "explicit download consent and honest incomplete sample results",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "path search and selected evidence inspector",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "empty search state and metadata category filter",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "downloaded JSON and offline HTML contain expected findings and no key",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "390px mobile viewport without page overflow",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "saved report remains available after browser reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no console errors, runtime overlays or external browser requests",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "errors": []
+}

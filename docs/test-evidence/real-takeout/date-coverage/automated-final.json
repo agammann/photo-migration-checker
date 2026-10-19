@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "application_version": "0.1.4",
+  "command": "python -m pytest -q",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "tests_passed": 247,
+  "subtests_passed": 28,
+  "skipped": 1,
+  "skip_reason": "Symbolic-link creation privilege unavailable; Windows junction no-follow behavior passed",
+  "warnings": [
+    "Existing Starlette TestClient httpx transport deprecation"
+  ],
+  "production_source_sha256": {
+    "source.py": "13806c5c1c13fd39db599751465b2bf530591c4f0aec842d1c2cdcb9716be761",
+    "container_dates.py": "2ee0c3645803e9afa8a1c352fd187e1e71d16314a4faa0f7c9095db77d064d40",
+    "dates_compare.py": "e3b18548cc7e889abc22c35c4eabeb01f4a5dd07ca7888a0b471135aec41c2b5",
+    "compare.py": "a537131b9cc25a0d0a3e274317754dbbd23ce57a39d23386be46bbc975b80c98",
+    "reports.py": "871d6dd7063bd7621f63840fab7df005e289943f665aedfd150a4edb009f6462"
+  },
+  "frontend_build": "TypeScript and Vite passed; eleven bundled web files equal frozen installed wheel",
+  "installed_wheel_sha256": "ed467eb4f37dfe9e00866b612071c8f65f88d8834a84ab6bb8cb888aa6bb98f4"
+}

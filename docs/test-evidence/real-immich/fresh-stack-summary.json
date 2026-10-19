@@ -1,0 +1,163 @@
+{
+  "status": "passed",
+  "immich_version": "3.3.3",
+  "commit": "d2dac658fe1c67e8bbd08aa18200a32e5d45b9e4",
+  "started_from_empty": true,
+  "elapsed_seconds": 126.07,
+  "exit_code": 0,
+  "project": "pmc-test-463eedd049ed",
+  "scenario_results": {
+    "correct": {
+      "status": "passed",
+      "source_unchanged": true,
+      "destination_originals_unchanged": true,
+      "destination_inventory_unchanged": true,
+      "destination_assets": 7,
+      "checker_write_requests": 0,
+      "media_queues_quiescent_before_scan": true,
+      "modes": {
+        "checksum": {
+          "source_files": 10,
+          "source_bytes": 969,
+          "unique_source_content": 7,
+          "destination_assets": 7,
+          "matched": 10,
+          "attention": 0,
+          "content_counts": {
+            "checksum": 10
+          },
+          "coverage_complete": true,
+          "verification": "Server-reported checksum match",
+          "source_albums": 6,
+          "destination_albums": 6
+        },
+        "original": {
+          "source_files": 10,
+          "source_bytes": 969,
+          "unique_source_content": 7,
+          "destination_assets": 7,
+          "matched": 10,
+          "attention": 0,
+          "content_counts": {
+            "original": 10
+          },
+          "coverage_complete": true,
+          "verification": "Verified original bytes",
+          "source_albums": 6,
+          "destination_albums": 6
+        }
+      }
+    },
+    "problems": {
+      "status": "passed",
+      "source_unchanged": true,
+      "destination_originals_unchanged": true,
+      "destination_inventory_unchanged": true,
+      "destination_assets": 14,
+      "checker_write_requests": 0,
+      "media_queues_quiescent_before_scan": true,
+      "modes": {
+        "checksum": {
+          "source_files": 21,
+          "source_bytes": 53172365,
+          "unique_source_content": 18,
+          "destination_assets": 14,
+          "matched": 16,
+          "attention": 30,
+          "content_counts": {
+            "checksum": 16,
+            "missing": 2,
+            "possible": 1,
+            "unsupported": 2
+          },
+          "coverage_complete": false,
+          "verification": "Server-reported checksum match",
+          "source_albums": 6,
+          "destination_albums": 4
+        },
+        "original": {
+          "source_files": 21,
+          "source_bytes": 53172365,
+          "unique_source_content": 18,
+          "destination_assets": 14,
+          "matched": 16,
+          "attention": 30,
+          "content_counts": {
+            "original": 16,
+            "missing": 2,
+            "mismatched": 1,
+            "unsupported": 2
+          },
+          "coverage_complete": false,
+          "verification": "Verified original bytes",
+          "source_albums": 6,
+          "destination_albums": 4
+        }
+      }
+    }
+  },
+  "pagination_and_permissions": {
+    "status": "passed",
+    "assets": 260,
+    "page_size": 250,
+    "source_unchanged": true,
+    "minimum_read_permissions_passed": true,
+    "download_permission_403": true,
+    "missing_album_permission_incomplete": true,
+    "checker_write_requests": 0
+  },
+  "quiescence": [
+    {
+      "case": "correct",
+      "polls": 15,
+      "busy_queue_polls": 10,
+      "elapsed_seconds": 15.484,
+      "stable_idle_inventory_samples": 5
+    },
+    {
+      "case": "problems",
+      "polls": 7,
+      "busy_queue_polls": 2,
+      "elapsed_seconds": 6.781,
+      "stable_idle_inventory_samples": 5
+    },
+    {
+      "case": "pagination",
+      "polls": 5,
+      "busy_queue_polls": 0,
+      "elapsed_seconds": 4.266,
+      "stable_idle_inventory_samples": 5
+    }
+  ],
+  "stop": {
+    "all_owned_containers_stopped": true,
+    "containers": [
+      {
+        "name": "pmc-test-463eedd049ed-server-1",
+        "state": "exited",
+        "status": "Exited (143) 32 seconds ago"
+      },
+      {
+        "name": "pmc-test-463eedd049ed-database-1",
+        "state": "exited",
+        "status": "Exited (0) 30 seconds ago"
+      },
+      {
+        "name": "pmc-test-463eedd049ed-redis-1",
+        "state": "exited",
+        "status": "Exited (0) 31 seconds ago"
+      }
+    ],
+    "volumes_preserved": true,
+    "volume_names": [
+      "pmc-test-463eedd049ed_database",
+      "pmc-test-463eedd049ed_media"
+    ],
+    "unrelated_services_not_modified": true
+  },
+  "limitations": [
+    "Controlled synthetic media, not a permissioned real Takeout sample",
+    "No atomic server snapshot"
+  ],
+  "previous_retry_cause": "Server background media processing changed updatedAt after EXIF size first appeared; harness now waits for media queues and stable inventories."
+}

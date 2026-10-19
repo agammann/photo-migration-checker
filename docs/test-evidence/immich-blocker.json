@@ -1,0 +1,7 @@
+{
+  "evidence_scope": "Historical pre-recovery attempt; superseded by real-immich/fresh-stack-summary.json",
+  "status": "blocked_or_failed",
+  "immich_version": "v3.3.3",
+  "real_integration_passed": false,
+  "reason": "Docker Linux engine is unavailable; no real Immich integration ran."
+}

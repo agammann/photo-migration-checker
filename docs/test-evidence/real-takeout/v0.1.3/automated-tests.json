@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "passed": 190,
+  "skipped": 1,
+  "subtests_passed": 24,
+  "warnings": 1,
+  "skip": "Symbolic-link creation privilege unavailable; Windows junction no-follow passed",
+  "warning": "Starlette TestClient transport deprecation",
+  "media_parser_regressions": 51,
+  "pure_pairing_tests": 30,
+  "application_version": "0.1.3"
+}

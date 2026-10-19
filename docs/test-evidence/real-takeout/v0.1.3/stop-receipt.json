@@ -1,0 +1,19 @@
+{
+  "owned_project": "pmc-test-dcdefa4550fa",
+  "containers": [
+    {
+      "service": "server",
+      "status": "exited"
+    },
+    {
+      "service": "database",
+      "status": "exited"
+    },
+    {
+      "service": "redis",
+      "status": "exited"
+    }
+  ],
+  "volumes_preserved": true,
+  "unrelated_projects_not_modified": true
+}

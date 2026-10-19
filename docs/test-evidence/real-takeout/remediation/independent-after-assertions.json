@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "phase": "after",
+  "checked_at": "2026-10-19T04:21:49.294937+00:00",
+  "method": "Independent standard-library source hashes and reviewed sidecars, encoded video segment hashes, and direct raw HTTP snapshots; no checker imports",
+  "source_files_unchanged": 123,
+  "source_hash_algorithms": [
+    "sha256",
+    "sha1"
+  ],
+  "source_size_and_mtime_ns_unchanged": true,
+  "original_assets_unchanged": 62,
+  "original_bytes_unchanged": 327044331,
+  "media_type_agreements": 62,
+  "media_type_differences": 0,
+  "media_type_counts": {
+    "IMAGE": 53,
+    "VIDEO": 9
+  },
+  "verified_pairs": [
+    {
+      "image_path": "2020-03-06-07/MVIMG_20200306_151636.jpg",
+      "video_path": "2020-03-06-07/MVIMG_20200306_151636(1).jpg",
+      "image_id": "61f7e733-ab0c-4488-b7d7-cb462d59d816",
+      "video_id": "f6681ac0-2bd4-49a5-9778-3621e8c2ceb4",
+      "embedded_video_sha256": "f5794faf06c73b4862800d20cb9e82d4548e1c9eb12eeb62fc6846b16021bb57",
+      "status": "verified"
+    },
+    {
+      "image_path": "2020-03-06-07/MVIMG_20200307_130221.jpg",
+      "video_path": "2020-03-06-07/MVIMG_20200307_130221(1).jpg",
+      "image_id": "ce64583e-0b96-4711-b965-1632f860cf04",
+      "video_id": "dce892a2-64e9-46f1-b55d-d7f8555b3766",
+      "embedded_video_sha256": "8192b4cb6a919865c73c86094fd12e260c400f35dd6380ef43a7fc874be7e820",
+      "status": "verified"
+    },
+    {
+      "image_path": "2020-03-06-07/MVIMG_20200307_130237.jpg",
+      "video_path": "2020-03-06-07/MVIMG_20200307_130237(1).jpg",
+      "image_id": "71b22cbc-aaa4-4053-93d4-dc8d631f140c",
+      "video_id": "6cd50cf8-a65b-4a3d-ab71-1115fb9223a5",
+      "embedded_video_sha256": "2be64abcbfc5323249e64025a0881130ff6572daad69f951ed2152b3cf01a8b5",
+      "status": "verified"
+    },
+    {
+      "image_path": "2020-03-06-07/MVIMG_20200307_130326.jpg",
+      "video_path": "2020-03-06-07/MVIMG_20200307_130326(1).jpg",
+      "image_id": "28ad7661-7c4f-4d4d-9afd-70abf01d4f1c",
+      "video_id": "cc7c77d5-e66a-49ce-95cb-23e829c65063",
+      "embedded_video_sha256": "132633fa62ccb752bef5b911b81ca05f58dd0509b26656db1ee87e8dc2520a4c",
+      "status": "verified"
+    },
+    {
+      "image_path": "2020-03-06-07/MVIMG_20200307_185225.jpg",
+      "video_path": "2020-03-06-07/MVIMG_20200307_185225(1).jpg",
+      "image_id": "bbf67e38-5fb3-4687-8ec7-9cd445b569ff",
+      "video_id": "a67c738f-ee99-4f3b-89ce-a2eb93e0b6c4",
+      "embedded_video_sha256": "626848f54354fd115f471f7f5a9b398d18a5bc8a98b18c4b566c215f6ffce1a2",
+      "status": "verified"
+    },
+    {
+      "image_path": "2020-03-06-07/MVIMG_20200307_201453.jpg",
+      "video_path": "2020-03-06-07/MVIMG_20200307_201453(1).jpg",
+      "image_id": "05ba1b38-0747-41ba-8dcb-bc0a8eec7427",
+      "video_id": "eb7016fc-4a4d-4cd8-b105-0d4bb079c957",
+      "embedded_video_sha256": "32e427507e9f5a27cfe35fc2ff7faa964bcf183888c171850d0d599f8349d04b",
+      "status": "verified"
+    },
+    {
+      "image_path": "2020-03-10/MVIMG_20200310_133405.jpg",
+      "video_path": "2020-03-10/MVIMG_20200310_133405(1).jpg",
+      "image_id": "a583fd79-f3c1-4482-a9f1-23274345f7ff",
+      "video_id": "a4a4dd17-18b5-4083-a398-14e83feffd4b",
+      "embedded_video_sha256": "eb30d7469e8c5ea1adbbec710d95e8ce9592b4fcbfd03283b7753df7d57d4c20",
+      "status": "verified"
+    },
+    {
+      "image_path": "Instant Upload/MVIMG_20200305_145544.jpg",
+      "video_path": "Instant Upload/MVIMG_20200305_145544(1).jpg",
+      "image_id": "4810d7ea-65e7-4123-98e7-ae62beb8734f",
+      "video_id": "e6e643b7-71aa-48ff-ab2a-435c3905e079",
+      "embedded_video_sha256": "51e44e578e4efe4a59a3b084935d7891daa3ab6eed9deb501d121eb0a87298f0",
+      "status": "verified"
+    }
+  ],
+  "source_supported_capture_instants_unchanged": 53,
+  "source_capture_dates_unavailable": 9,
+  "album_identities_preserved": 7,
+  "album_memberships_match_source": 7,
+  "post_processing_inventory_unchanged": true,
+  "preserved_original_pre_repair_bytes": true,
+  "six_targets_have_positive_duration": true,
+  "limits": "The independently verified original/container/link facts do not assert playback. Native video processing and actual playback are verified separately.",
+  "privacy": "No credentials, GPS, account URLs or raw media/sidecar payloads retained in this receipt."
+}
