@@ -15,7 +15,7 @@ jobs:
       - name: Preserve committed file bytes
         run: git config --global core.autocrlf false
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
       - uses: actions/setup-node@v4
