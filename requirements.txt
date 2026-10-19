@@ -1,0 +1,2 @@
+# Discover the existing pinned validation environment without duplicating it.
+-r requirements.lock
