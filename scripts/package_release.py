@@ -9,7 +9,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {".git", ".venv", "node_modules", "__pycache__", ".pytest_cache", ".pmc", "dist", "build", "test-results"}
 ALLOWED_ROOTS = {".github", "docs", "frontend", "pmc", "scripts", "tests"}
-ALLOWED_FILES = {".gitignore", "LICENSE", "README.md", "CHANGELOG.md", "pyproject.toml", "requirements.lock"}
+ALLOWED_FILES = {".gitignore", "LICENSE", "README.md", "CHANGELOG.md", "pyproject.toml", "requirements.lock", "requirements.txt"}
 
 
 def private_or_runtime(relative: Path) -> bool:

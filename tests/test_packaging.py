@@ -13,7 +13,7 @@ def test_release_includes_docs_and_built_notices_but_excludes_private_state():
     spec.loader.exec_module(module)
     with tempfile.TemporaryDirectory() as directory:
         root = Path(directory) / "project"
-        public = {"README.md", "CHANGELOG.md", "LICENSE", "pyproject.toml", "requirements.lock",
+        public = {"README.md", "CHANGELOG.md", "LICENSE", "pyproject.toml", "requirements.lock", "requirements.txt",
                   "pmc/web/index.html", "pmc/web/THIRD-PARTY-NOTICES.txt", "docs/RELEASE.md", "tests/test_example.py"}
         private = {"pmc/connection.private.json", "docs/.env.local", "tests/fixture.private.json",
                    "pmc/scan.sqlite3-wal", "pmc/scan.sqlite-shm", "docs/database.dump",
