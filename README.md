@@ -86,7 +86,7 @@ python -m pytest -q
 python -m pmc
 ```
 
-The frontend build runs TypeScript and Vite, then copies the result into `pmc/web`, including bundled dependency notices. For the pinned validation dependency set, install `requirements.lock` first; the platform-validation table identifies the Python versions actually exercised. CI is configured to build the UI and wheel and run deterministic tests on Windows and Linux; remote CI execution has not been performed. Real-server testing uses `scripts/immich_integration.py --run` and requires a working Docker Linux engine; its explicit setup writes are restricted to a fresh disposable stack. The application never imports that harness. The test-only observer, failure checks and storage audit are described in [the live test notes](docs/TESTING.md).
+The frontend build runs TypeScript and Vite, then copies the result into `pmc/web`, including bundled dependency notices. For the pinned validation dependency set, install `requirements.txt` first; `requirements.lock` remains a compatible entry point to those same pins. The standard manifest lets dependency monitoring inspect the exact transitive versions. The platform-validation table identifies the Python versions actually exercised. CI is configured to build the UI and wheel and run deterministic tests on Windows and Linux. Real-server testing uses `scripts/immich_integration.py --run` and requires a working Docker Linux engine; its explicit setup writes are restricted to a fresh disposable stack. The application never imports that harness. The test-only observer, failure checks and storage audit are described in [the live test notes](docs/TESTING.md).
 
 ## Scope and limitations
 
