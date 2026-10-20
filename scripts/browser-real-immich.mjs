@@ -38,13 +38,13 @@ await Promise.all([mkdir(output, { recursive: true }), mkdir(screenshots, { recu
 
 const checks = [], errors = [], expectedNetworkEvents = [], requestOrigins = new Set();
 let credentialInRequestUrl = false;
-let server, browser, page, restarting = false, originalTransferBytes = null;
+let server, browser, page, launchUrl, restarting = false, originalTransferBytes = null;
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-const redact = value => String(value).replaceAll(key, '[redacted]').replaceAll(source, '[source folder]').replaceAll(process.env.PMC_REAL_STATE, '[private state]');
+const redact = value => String(value).replaceAll(key, '[redacted]').replaceAll(source, '[source folder]').replaceAll(process.env.PMC_REAL_STATE, '[private state]').replace(/#session=[A-Za-z0-9_-]+/g, '#session=[redacted]');
 const check = (name, detail = true) => checks.push({ name, passed: true, detail });
 
 async function reachable() {
-  try { return (await fetch(new URL('/api/bootstrap', preview), { signal: AbortSignal.timeout(500) })).ok; }
+  try { await fetch(new URL('/', preview), { signal: AbortSignal.timeout(500) }); return true; }
   catch { return false; }
 }
 
@@ -53,13 +53,20 @@ async function startPreview() {
   const childEnv = { ...process.env };
   for (const name of Object.keys(childEnv)) if (name.startsWith('PMC_REAL_') || name === 'PMCPYTHON') delete childEnv[name];
   if (process.env.PMC_REAL_APP_CWD) delete childEnv.PYTHONPATH;
+  launchUrl = undefined;
   server = spawn(python, ['-m', 'pmc', '--port', preview.port, '--data-dir', dataDir], {
-    cwd: appCwd, env: childEnv, stdio: 'ignore', windowsHide: true,
+    cwd: appCwd, env: childEnv, stdio: ['ignore', 'pipe', 'ignore'], windowsHide: true,
   });
   let spawnError;
+  let startupOutput = '';
+  server.stdout.on('data', chunk => {
+    startupOutput = (startupOutput + chunk.toString()).slice(-2048);
+    const match = startupOutput.match(/Photo Migration Checker: (http:\/\/127\.0\.0\.1:\d+\/#session=[A-Za-z0-9_-]{43})/);
+    if (match && new URL(match[1]).origin === new URL(`http://127.0.0.1:${preview.port}`).origin) launchUrl = match[1];
+  });
   server.on('error', error => { spawnError = error; });
   const deadline = Date.now() + 30000;
-  while (!await reachable()) {
+  while (!launchUrl || !await reachable()) {
     if (spawnError || server.exitCode !== null) throw new Error('Owned preview process could not start. Check the Python environment.');
     assert(Date.now() < deadline, 'Owned preview did not become ready within 30 seconds.');
     await sleep(150);
@@ -78,12 +85,12 @@ async function stopPreview() {
 }
 
 async function api(route) {
-  return page.evaluate(async route => {
-    const { token } = await (await fetch('/api/bootstrap', { cache: 'no-store' })).json();
+  const token = new URL(launchUrl).hash.slice('#session='.length);
+  return page.evaluate(async ({ route, token }) => {
     const response = await fetch(`/api${route}`, { headers: { 'X-PMC-Token': token }, cache: 'no-store' });
     if (!response.ok) throw new Error(`Local status request failed (${response.status}).`);
     return response.json();
-  }, route);
+  }, { route, token });
 }
 
 async function sourceSnapshot() {
@@ -112,7 +119,7 @@ async function capture(name, target = page) {
 async function connectSource() {
   const startAnother = page.getByRole('button', { name: 'Start another check', exact: true });
   if (await startAnother.count()) await startAnother.click();
-  else await page.goto(preview.href);
+  else await page.goto(launchUrl);
   await page.getByRole('heading', { name: 'Start with your Takeout.', exact: true }).waitFor();
   await page.getByLabel('Extracted folder path').fill(source);
   await page.getByRole('button', { name: 'Preview source', exact: true }).click();
@@ -126,7 +133,7 @@ async function connectDestination() {
   await page.getByRole('button', { name: 'Connect to Immich', exact: true }).click();
   await page.getByRole('heading', { name: /Choose your evidence\.|Your scan is paused\./ }).waitFor({ timeout: 60000 });
   assert.equal(await page.locator('#api-key').count(), 0, 'Connection key field must be removed after connecting.');
-  assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length]), [0, 0], 'Credentials or scan state were persisted in browser storage.');
+  assert.equal(await page.evaluate(() => localStorage.length === 0 && sessionStorage.length === 1 && /^[A-Za-z0-9_-]{43}$/.test(sessionStorage.getItem('pmc-session') ?? '')), true, 'Only the current session capability may be retained for tab reloads.');
 }
 
 async function startScan(mode) {
@@ -273,7 +280,7 @@ try {
     requestOrigins.add(address.origin);
     if (request.url().includes(key)) credentialInRequestUrl = true;
   });
-  await page.goto(preview.href);
+  await page.goto(launchUrl);
   await page.getByRole('heading', { name: 'Start with your Takeout.', exact: true }).waitFor();
   await capture('source-desktop');
   for (const mode of ['checksum', 'original']) {
@@ -316,7 +323,7 @@ try {
     restarting = true;
     await stopPreview();
     await startPreview();
-    await page.reload();
+    await page.goto(launchUrl);
     restarting = false;
     const persisted = await api(`/scans/${interrupted.id}`);
     assert.equal(persisted.status, 'interrupted', 'Process interruption must remain explicit after restart.');

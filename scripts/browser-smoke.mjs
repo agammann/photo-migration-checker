@@ -1,4 +1,5 @@
-// Run with the app already listening: node scripts/browser-smoke.mjs URL ARTIFACT_DIR
+// Run with the app already listening; URL is its current private launch link.
+// node scripts/browser-smoke.mjs URL ARTIFACT_DIR
 // Optional PMC_FIXTURE_SOURCE/URL/KEY exercise a local protocol fixture, not real Immich.
 import assert from 'node:assert/strict';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
@@ -7,6 +8,9 @@ import { createRequire } from 'node:module';
 const require = createRequire(new URL('../frontend/package.json', import.meta.url));
 const { chromium } = require('playwright');
 const url = process.argv[2] ?? 'http://127.0.0.1:8765';
+const publicUrl = new URL(url);
+assert.match(publicUrl.hash, /^#session=[A-Za-z0-9_-]{43}$/, 'Pass the current private link printed by the app terminal.');
+publicUrl.hash = '';
 const output = path.resolve(process.argv[3] ?? 'browser-evidence');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true });
@@ -19,8 +23,11 @@ const check = (name, detail = true) => checks.push({ name, passed: true, detail 
 
 try {
   await page.goto(url);
+  await page.waitForFunction(() => location.hash === '');
   assert.equal(await page.title(), 'Photo Migration Checker');
   await page.getByRole('heading', { name: 'Start with your Takeout.' }).waitFor();
+  assert.equal((await page.request.get(new URL('/api/bootstrap', publicUrl).href)).status(), 403);
+  check('private launch fragment removed; unrelated bootstrap cannot obtain a token');
   check('page identity and meaningful source screen');
   await page.screenshot({ path: path.join(output, 'source-desktop.png'), fullPage: true });
 
@@ -109,7 +116,7 @@ try {
   assert.equal(requests.every(r => new URL(r.url).origin === new URL(url).origin), true, 'Unexpected external browser request');
   check('no console errors, runtime overlays or external browser requests');
   await writeFile(path.join(output, 'browser-evidence.json'), JSON.stringify({
-    browser: await browser.version(), url, viewports: ['1505x1045', '390x844'],
+    browser: await browser.version(), url: publicUrl.href, viewports: ['1505x1045', '390x844'],
     browser_plugin: 'Browser skill unavailable; local Playwright Chromium used',
     protocol_fixture: Boolean(process.env.PMC_FIXTURE_SOURCE), checks, errors,
   }, null, 2));

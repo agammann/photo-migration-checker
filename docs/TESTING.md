@@ -2,6 +2,16 @@
 
 Development evidence recorded on October 18, 2026 (America/Los_Angeles). Release candidate 0.1.5rc1 checks real disposable Immich 3.3.3, controlled migration problems, and a published Google Photos Takeout from Magnet's 2020 forensic-training scenario imported through independent immich-go 0.32.0. A personal collection and other export variants remain outside this evidence. Versioned receipts distinguish the latest pairing/type validation from historical runs below.
 
+## Release candidate 0.1.5rc2
+
+This candidate changes local API authorization and launch behavior. An unrelated loopback HTTP client previously obtained the process token from unauthenticated bootstrap and then read a synthetic saved report. The updated API requires the current launch capability for bootstrap, reads, exports and mutations. The launcher reserves the endpoint before printing its private fragment link; an occupied port emits no link and does not create the checkpoint directory.
+
+The Windows Python 3.12 deterministic suite passes 251 tests and 28 subtests, with one symlink-capability skip and the existing Starlette TestClient warning. Focused actual loopback tests exercise the normal CLI, unauthorized bootstrap, authenticated sample access, occupied-port refusal and a new capability after process restart. The frozen frontend build passes.
+
+Chrome 155.0.8059.85 checks at 1505 by 1045 and 390 by 844 cover private-fragment removal before API requests, sample scan and JSON export, tab reload, stale-capability rejection after restart, opening the new link in an existing tab, and blocked browser storage. An open tab can use an in-memory capability when storage is blocked; a reload then requires the private link again. The successful sample flow had no page or console errors or capability in request URLs. The Browser plugin was unavailable, so these checks used local Playwright with the installed Chrome executable and synthetic data.
+
+The migration-evidence rules are unchanged. The historical real Immich and real Takeout results below were not rerun for this authorization change. They do not establish a fresh real-provider result for this candidate. Native macOS behavior and a compromised account, terminal, browser or process able to read the capability remain outside these checks.
+
 ## Release candidate 0.1.5rc1
 
 The candidate keeps the unresolved edited-photo date flagged. It changes distribution metadata, bundled license notices, source-archive privacy exclusions, documentation and the singular finding label; the migration-evidence rules and schema 3 are unchanged. Python package metadata uses `0.1.5rc1`; the private frontend package uses the equivalent npm spelling `0.1.5-rc.1`.
