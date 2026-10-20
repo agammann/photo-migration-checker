@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5rc2 - Private launch sessions
+
+- Require the current launch capability for every local API endpoint, including bootstrap, so an unrelated loopback client cannot obtain API access by requesting a token.
+- Reserve the loopback endpoint before printing its private launch link. An occupied port exits without exposing a link.
+- Remove the link's private fragment before API requests and keep the capability in tab session storage for reloads. Opening a new launch link also works in an existing tab. If storage is blocked, the current tab works in memory and a reload requires reopening the link.
+- Rotate the capability on each launch while retaining saved reports and reconnecting to Immich as before. Protect terminal output, browser storage and checkpoint files with the account's existing access controls; this is capability access, not operating-system identity authentication.
+- Keep the source and packaged interface aligned at Python `0.1.5rc2` / frontend `0.1.5-rc.2`. Existing release assets remain unchanged.
+
 ## 0.1.5rc1 - Release candidate
 
 - Package the local app for release with installation, upgrade, backup, data-retention and uninstall instructions.

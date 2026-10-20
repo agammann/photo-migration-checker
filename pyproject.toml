@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "photo-migration-checker"
-version = "0.1.5rc1"
+version = "0.1.5rc2"
 description = "Local, read-only evidence for Google Takeout to Immich migrations"
 readme = "README.md"
 authors = [{name = "agammann"}]

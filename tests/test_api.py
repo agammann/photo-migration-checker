@@ -15,6 +15,7 @@ from pmc.reports import export_html
 def app_client(tmp_path):
     app = create_app(tmp_path / "data")
     with TestClient(app, base_url="http://127.0.0.1") as client:
+        client.headers["x-pmc-token"] = app.state.token
         token = client.get("/api/bootstrap").json()["token"]
         client.headers["x-pmc-token"] = token
         yield app, client
@@ -65,6 +66,27 @@ def test_browser_guards(app_client):
     r = client.get("/api/bootstrap")
     assert r.headers["x-frame-options"] == "DENY"
     assert r.headers["cache-control"] == "no-store"
+
+
+def test_local_http_client_cannot_obtain_or_reuse_another_launch_capability(tmp_path):
+    first = create_app(tmp_path / "data")
+    with TestClient(first, base_url="http://127.0.0.1") as owner, TestClient(first, base_url="http://127.0.0.1") as unrelated:
+        owner.headers["x-pmc-token"] = first.state.token
+        demo = owner.post("/api/demo", json={"scenario": "correct"}).json()
+        started = owner.post("/api/scans", json={"source_id": demo["source_id"], "connection_id": demo["connection_id"]}).json()
+        finish(owner, started["id"])
+        for headers in ({}, {"x-pmc-token": "bad"}, {"x-pmc-token": "x" * 43}, {"x-pmc-token": "\u00e9".encode("utf-8")}):
+            assert unrelated.get("/api/bootstrap", headers=headers).status_code == 403
+            assert unrelated.get("/api/scans", headers=headers).status_code == 403
+            assert unrelated.get(f'/api/scans/{started["id"]}/export', headers=headers).status_code == 403
+            assert unrelated.post("/api/demo", json={"scenario": "correct"}, headers=headers).status_code == 403
+        assert first.state.token not in unrelated.get("/").text
+    restarted = create_app(tmp_path / "data")
+    with TestClient(restarted, base_url="http://127.0.0.1") as client:
+        assert client.get("/api/bootstrap", headers={"x-pmc-token": first.state.token}).status_code == 403
+        client.headers["x-pmc-token"] = restarted.state.token
+        assert client.get("/api/bootstrap").status_code == 200
+        assert len(client.get("/api/scans").json()) == 1
 
 
 def test_checkpoint_directory_cannot_be_inside_selected_source(app_client):

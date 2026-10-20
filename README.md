@@ -2,7 +2,7 @@
 
 A free, open-source, local, read-only Google Takeout to Immich verification tool. Compare an extracted export against the assets and albums your Immich API key can read. Inspect the evidence and export an offline HTML or JSON report.
 
-**Release candidate, version 0.1.5rc1.** The app keeps uncertainty visible, including the one edited-photo date that cannot be established reliably from the tested export. See [release notes and installation details](docs/RELEASE.md), [changes](CHANGELOG.md), and [test evidence](docs/TESTING.md).
+**Release candidate, version 0.1.5rc2.** The app keeps uncertainty visible, including the one edited-photo date that cannot be established reliably from the tested export. See [release notes and installation details](docs/RELEASE.md), [changes](CHANGELOG.md), and [test evidence](docs/TESTING.md).
 
 The 0.1.4 verification baseline used real disposable Immich 3.3.3, controlled migration problems, and the Google Photos portion of Magnet's published 2020 forensic-training Takeout, independently migrated with immich-go 0.32.0. Both modes verified 62 content matches, 62 media-type agreements, eight motion-photo relationships, seven matching albums, 53 Takeout capture instants and eight separately labeled nominal container dates. One empty auxiliary JSON remains inventoried. The 195-row report retains one attention finding for the edited photo's source date. These results validate the tested sample and workflow; other export variants remain unvalidated. The release's final validation is recorded separately in the test evidence.
 
@@ -28,13 +28,15 @@ python3 -m venv .venv
 .venv/bin/python -m pmc --data-dir ./private-checkpoints
 ```
 
-Open **http://127.0.0.1:8765**. Leave the terminal open; Ctrl+C stops the app. It binds only to loopback. The explicit data directory above keeps scan history and checkpoints together. Keep it outside the selected Takeout folder. Without `--data-dir` or `PMC_DATA_DIR`, the default is `.pmc` relative to the directory where the app starts. To select another port:
+Open the **private link printed by that terminal**, including its `#session=...` ending. The app reserves its loopback port before printing the link. Leave the terminal open; Ctrl+C stops the app. The explicit data directory above keeps scan history and checkpoints together. Keep it outside the selected Takeout folder. Without `--data-dir` or `PMC_DATA_DIR`, the default is `.pmc` relative to the directory where the app starts. To select another port:
 
 ```sh
 python -m pmc --port 8766 --data-dir ./private-checkpoints
 ```
 
 Use the virtual environment's Python for that command; activating the environment makes `python` available. On Windows you can also run `scripts/run-local.ps1 -Python python` with a working Python command or `-Python C:\path\to\python.exe`. That helper starts from the project directory and uses its default `.pmc` data directory. The Microsoft Store placeholder is not a Python installation. Wheel installation, upgrades, backups and uninstall steps are in the [release guide](docs/RELEASE.md).
+
+The link authorizes this launch's API access. Keep it private and open the newly printed link after restarting. The browser removes its private ending from the address bar before making API requests and keeps the capability in this tab's session storage for reloads. If browser storage is blocked, the open tab still works; reopen the terminal link after a reload. This capability does not identify an operating-system user or protect against a compromised account, browser, or a process that can read its terminal, memory or browser storage. Protect the checkpoint directory with your account's filesystem permissions.
 
 ## First sample scan
 

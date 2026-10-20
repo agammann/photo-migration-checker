@@ -1,10 +1,10 @@
 # Release guide
 
-Version **0.1.5rc1** is a release candidate for Photo Migration Checker. The MIT-licensed application verifies an extracted Google Photos Takeout against the Immich assets and albums visible to a supplied read key. It does not migrate, repair or delete a library. Keep the original export and independent backups.
+Version **0.1.5rc2** is a release candidate for Photo Migration Checker. The MIT-licensed application verifies an extracted Google Photos Takeout against the Immich assets and albums visible to a supplied read key. It does not migrate, repair or delete a library. Keep the original export and independent backups.
 
 The runtime packages contain the built interface, [MIT notices for bundled React, React DOM and scheduler](../pmc/web/THIRD-PARTY-NOTICES.txt), and locally bundled Inter fonts with their [SIL Open Font License](../pmc/web/INTER-LICENSE.txt). Node and Docker are unnecessary for normal use. Docker is used only by the separate real-server test harness. Python 3.11 or newer is required. The [platform-validation table](TESTING.md#platform-validation) records the exact operating systems, interpreter versions and checks exercised for the final candidate; macOS remains unvalidated.
 
-This candidate aligns Python's `0.1.5rc1` version with the frontend's `0.1.5-rc.1` metadata, corrects the singular attention label, and excludes private state, SQLite databases and sidecars, database dumps, keys and logs from source archives. A regression check covers private files accidentally placed within otherwise allowed source directories. These exclusions supplement the final package-content and credential audit.
+This candidate requires a private launch capability for every local API request, including bootstrap. The launcher reserves its endpoint before printing the link, the browser removes its private fragment before API requests, and a new process requires its new link. Saved report history remains available after authorization. The source and bundled interface retain the existing read-only scan behavior and package exclusions for private state.
 
 ## What this candidate covers
 
@@ -23,7 +23,7 @@ Use the SHA-256 value delivered with the specific release artifact. Check the wh
 Windows PowerShell, replacing the filename with the artifact being checked:
 
 ```powershell
-Get-FileHash -LiteralPath .\photo_migration_checker-0.1.5rc1-py3-none-any.whl -Algorithm SHA256
+Get-FileHash -LiteralPath .\photo_migration_checker-0.1.5rc2-py3-none-any.whl -Algorithm SHA256
 ```
 
 On macOS use `shasum -a 256 <artifact>`; on Linux use `sha256sum <artifact>`. Compare the complete digest before installation. Do not install from the private test workspace or copy its credentials, media or checkpoint directories into a release.
@@ -34,7 +34,7 @@ Create a dedicated application directory outside the Takeout source tree. Place 
 
 ```powershell
 py -3 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install .\photo_migration_checker-0.1.5rc1-py3-none-any.whl
+.\.venv\Scripts\python.exe -m pip install .\photo_migration_checker-0.1.5rc2-py3-none-any.whl
 .\.venv\Scripts\python.exe -m pmc --data-dir .\private-checkpoints
 ```
 
@@ -44,11 +44,11 @@ The equivalent macOS / Linux commands are below. Consult the platform-validation
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install ./photo_migration_checker-0.1.5rc1-py3-none-any.whl
+.venv/bin/python -m pip install ./photo_migration_checker-0.1.5rc2-py3-none-any.whl
 .venv/bin/python -m pmc --data-dir ./private-checkpoints
 ```
 
-Open **http://127.0.0.1:8765/**. Leave the terminal open while using the app. Ctrl+C stops it; no startup service or scheduled task is installed. To use another port, add `--port 8766` to the launch command. Refresh the browser after restarting because each process has a new local session token.
+Open the **private link printed by the terminal**, including its `#session=...` ending. Leave the terminal open while using the app. Ctrl+C stops it; no startup service or scheduled task is installed. To use another port, add `--port 8766` to the launch command. Each process has a new session capability, so open its new link after restarting. Keep the link private. The browser removes the fragment before API requests and keeps the capability in this tab's session storage for reloads; if storage is blocked, reopen the link after reloading. A plain loopback URL cannot authorize API access. The capability does not authenticate an operating-system identity or protect against a process that can read the user's terminal, memory or browser storage.
 
 For the source release, extract the bundle, open a terminal in its `photo-migration-checker` directory, and replace the wheel-install command with the following:
 
@@ -77,8 +77,8 @@ Downloads made through the report-export buttons are separate files at the brows
 For an existing installation using the example directory names:
 
 ```powershell
-Copy-Item -LiteralPath .\private-checkpoints -Destination .\private-checkpoints-backup-before-0.1.5rc1 -Recurse
-.\.venv\Scripts\python.exe -m pip install --upgrade .\photo_migration_checker-0.1.5rc1-py3-none-any.whl
+Copy-Item -LiteralPath .\private-checkpoints -Destination .\private-checkpoints-backup-before-0.1.5rc2 -Recurse
+.\.venv\Scripts\python.exe -m pip install --upgrade .\photo_migration_checker-0.1.5rc2-py3-none-any.whl
 .\.venv\Scripts\python.exe -m pmc --data-dir .\private-checkpoints
 ```
 

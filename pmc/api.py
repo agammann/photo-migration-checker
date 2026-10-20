@@ -93,10 +93,10 @@ def create_app(data_dir: Path | None = None):
         expected_origin = str(request.base_url).rstrip("/")
         if (origin and origin != expected_origin) or request.headers.get("sec-fetch-site") == "cross-site":
             return JSONResponse({"detail": "Cross-origin browser request blocked."}, 403)
-        if request.url.path.startswith("/api/") and request.url.path != "/api/bootstrap":
+        if request.url.path.startswith("/api/"):
             supplied = request.headers.get("x-pmc-token", "")
-            if not secrets.compare_digest(supplied, token):
-                return JSONResponse({"detail": "Local session token required. Reload the app."}, 403)
+            if not secrets.compare_digest(supplied.encode("utf-8"), token.encode("ascii")):
+                return JSONResponse({"detail": "Open the private link printed by the current app terminal."}, 403)
         response = await call_next(request)
         response.headers.update({"Cache-Control": "no-store", "X-Content-Type-Options": "nosniff",
                                  "Referrer-Policy": "no-referrer", "X-Frame-Options": "DENY",
