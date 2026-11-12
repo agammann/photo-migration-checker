@@ -70,7 +70,7 @@ jobs:
                   'client.close()',
               ])
               subprocess.run([str(python), '-c', smoke, expected_fastapi], cwd=root, env=env, check=True)
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: wheel-${{ matrix.os }}-py${{ matrix.python }}
           path: dist/*.whl
