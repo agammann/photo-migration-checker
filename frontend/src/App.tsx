@@ -70,7 +70,13 @@ export default function App() {
     return () => { live = false; clearTimeout(timer); };
   }, [job?.id, job?.status, acceptJob]);
 
+  function clearConnection() {
+    setDestination(null);
+    setConnectionId(null);
+  }
+
   function onSource(selected: Source) {
+    clearConnection();
     setSource(selected); setSourceId(selected.source_id ?? null); setDemo(false); setJob(null); setResuming(false); setMode('checksum'); setConsent(false); setStep(1);
   }
   function onConnect(connected: Destination) {
@@ -89,7 +95,25 @@ export default function App() {
     void run(async () => acceptJob(await request<Job>('/scans', { source_id: sourceId, connection_id: connectionId, mode, download_consent: consent })));
   }
   function onNew() {
+    clearConnection();
     setStep(0); setJob(null); setSource(null); setSourceId(null); setDemo(false); setMode('checksum'); setConsent(false); setResuming(false); setError('');
+  }
+  function onOpenHistory(selected: Job) {
+    void run(async () => {
+      const saved = await request<Job>(`/scans/${encodeURIComponent(selected.id)}`);
+      setSource(null);
+      setSourceId(null);
+      clearConnection();
+      setConsent(false);
+      setResuming(false);
+      acceptJob(saved);
+    });
+  }
+  function onReconnect() {
+    clearConnection();
+    setError('');
+    setResuming(true);
+    setStep(1);
   }
   function onResume() {
     void run(async () => {
@@ -108,13 +132,13 @@ export default function App() {
   return <>
     <header className="app-header"><div className="header-inner"><a href="/" onClick={(event) => { if (job?.status === 'running') { event.preventDefault(); return; } event.preventDefault(); onNew(); }} className="wordmark">Photo Migration Checker</a><span>Local session</span></div></header>
     <main className="app-main">
-      <nav className="step-rail" aria-label="Check progress">{steps.map((name, index) => <div className="step-item" key={name}><button className={`step-button ${index === step ? 'active' : ''}`} disabled={index > maxStep || busy || job?.status === 'running' || (index === 1 && !sourceId) || (index === 2 && Boolean(job?.report) && !sourceId)} aria-current={step === index ? 'step' : undefined} onClick={() => { setStep(index as Step); setError(''); }}><span className="step-number">{index + 1}</span><span>{name}</span></button>{index < 3 ? <span className="step-line" /> : null}</div>)}</nav>
+      <nav className="step-rail" aria-label="Check progress">{steps.map((name, index) => <div className="step-item" key={name}><button className={`step-button ${index === step ? 'active' : ''}`} disabled={index > maxStep || busy || job?.status === 'running' || (index === 1 && (!sourceId || demo)) || (index === 2 && Boolean(job?.report) && !sourceId)} aria-current={step === index ? 'step' : undefined} onClick={() => { setStep(index as Step); setError(''); }}><span className="step-number">{index + 1}</span><span>{name}</span></button>{index < 3 ? <span className="step-line" /> : null}</div>)}</nav>
       {error ? <div role="alert" className="error-message"><strong>Could not complete this step.</strong><span>{error}</span><button type="button" onClick={() => setError('')} aria-label="Dismiss error">Dismiss</button></div> : null}
       {step === 0 ? <SourceStep busy={busy} run={run} onSource={onSource} onDemo={onDemo} /> : null}
-      {step === 1 ? <DestinationStep source={source} busy={busy} run={run} onConnect={onConnect} /> : null}
-      {step === 2 ? <ScanStep source={source} destination={destination} busy={busy} job={job && !job.report ? job : null} mode={mode} consent={consent} onMode={(next) => { setMode(next); setConsent(false); }} onConsent={setConsent} onStart={onStart} onCancel={() => void run(async () => { if (job) acceptJob(await request<Job>(`/scans/${encodeURIComponent(job.id)}/cancel`, {})); })} onResume={onResume} onReconnect={() => { setResuming(true); setStep(1); }} connectionReady={Boolean(connectionId)} demo={demo} /> : null}
+      {step === 1 ? <DestinationStep source={source} busy={busy} run={run} onConnect={onConnect} reconnecting={resuming} /> : null}
+      {step === 2 ? <ScanStep source={source} destination={destination} busy={busy} job={job && !job.report ? job : null} mode={mode} consent={consent} onMode={(next) => { setMode(next); setConsent(false); }} onConsent={setConsent} onStart={onStart} onCancel={() => void run(async () => { if (job) acceptJob(await request<Job>(`/scans/${encodeURIComponent(job.id)}/cancel`, {})); })} onResume={onResume} onReconnect={onReconnect} connectionReady={Boolean(connectionId)} demo={demo} /> : null}
       {step === 3 && job?.report ? <Results job={job as Job & { report: Report }} busy={busy} onExport={(format) => void run(async () => exportReport(job.id, format))} onNew={onNew} /> : null}
-      {step === 0 ? <ScanHistory jobs={jobs} busy={busy} onOpen={(selected) => void run(async () => { const saved = await request<Job>(`/scans/${encodeURIComponent(selected.id)}`); setSource(null); acceptJob(saved); })} /> : null}
+      {step === 0 ? <ScanHistory jobs={jobs} busy={busy} onOpen={onOpenHistory} /> : null}
       <footer className="app-footer">This check cannot prove Google exported everything. Keep your originals.</footer>
     </main>
   </>;

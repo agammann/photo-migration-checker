@@ -46,6 +46,8 @@ try {
     await page.getByRole('button', { name: 'Start read-only scan', exact: true }).click();
     await page.getByRole('button', { name: 'Cancel scan', exact: true }).click();
     await page.getByRole('button', { name: 'Resume scan', exact: true }).waitFor({ timeout: 30000 });
+    await page.getByRole('button', { name: 'Change connection', exact: true }).waitFor();
+    await page.getByText('Original-byte verification downloads all accessible originals again.', { exact: false }).waitFor();
     await page.screenshot({ path: path.join(output, 'cancelled.png'), fullPage: true });
     check('cooperative cancellation reaches a resumable stopped state');
     await page.getByRole('button', { name: 'Resume scan', exact: true }).click();
@@ -56,6 +58,7 @@ try {
   }
 
   await page.getByRole('button', { name: 'Sample with problems', exact: true }).click();
+  assert.equal(await page.getByRole('button', { name: /Destination/ }).isEnabled(), false);
   await page.getByRole('radio', { name: /Verify original bytes/ }).check();
   const start = page.getByRole('button', { name: 'Start read-only scan', exact: true });
   assert.equal(await start.isEnabled(), false);

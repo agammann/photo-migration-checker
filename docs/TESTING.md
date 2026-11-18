@@ -2,6 +2,14 @@
 
 Development evidence recorded on October 18, 2026 (America/Los_Angeles). Release candidate 0.1.5rc1 checks real disposable Immich 3.3.3, controlled migration problems, and a published Google Photos Takeout from Magnet's 2020 forensic-training scenario imported through independent immich-go 0.32.0. A personal collection and other export variants remain outside this evidence. Versioned receipts distinguish the latest pairing/type validation from historical runs below.
 
+## Version 0.1.5
+
+The November 17, 2026 review passed 251 tests and 28 subtests on Windows with Python 3.12.14. One symlink test skipped for lack of Windows privileges. The frozen frontend built with Node 24.19.0, pnpm 11.25.0, Vite 8.3.8 and Rolldown 1.2.19. The prior main commit also passed the [remote Windows and Ubuntu matrix](https://github.com/agammann/photo-migration-checker/actions/runs/43564286892) on Python 3.11 and 3.13.
+
+The browser clean sample matched all eight occurrences of seven distinct originals, with zero attention findings. JSON and offline HTML exported successfully, and the saved report reopened after reload. Two isolated browser regressions with a simulated connection API exercised opening another server's paused scan and correcting a mistaken reconnection. Both reproduced the old recovery problem and passed with the new controls.
+
+The backend reran both verification modes against a disposable Immich 3.3.3 instance using generated media. Clean and seeded-problem cases and the 260-asset pagination check passed. The setup harness created disposable data. The checker recorded zero destination write requests, and source files, destination originals and inventories passed the scoped preservation checks. The older forensic-training export evidence below remains specific to that run.
+
 ## Release candidate 0.1.5rc2
 
 This candidate changes local API authorization and launch behavior. An unrelated loopback HTTP client previously obtained the process token from unauthenticated bootstrap and then read a synthetic saved report. The updated API requires the current launch capability for bootstrap, reads, exports and mutations. The launcher reserves the endpoint before printing its private fragment link; an occupied port emits no link and does not create the checkpoint directory.
@@ -243,10 +251,10 @@ Final raw HTTP observations preserve the complete CTF inventory, all 62 original
 
 Evidence is retained under `docs/test-evidence/real-takeout/date-coverage/`. The main preview runs the installed 0.1.4 wheel and shows its own completed 195-row original-byte report. After observations, only the owned observer and three test containers are stopped; their named volumes and the existing private backup are preserved.
 
-## Remaining release gates
+## Current validation limits
 
 - Expand real-export coverage beyond this 2020 training Takeout: recent supplemental-metadata variants, other languages, personal libraries and other Immich versions remain unvalidated.
-- CI is configured but has not run on a remote repository. Windows is locally tested; Linux is a CI target, not a locally verified platform.
+- The Windows browser and disposable-stack checks used Python 3.12.14. The remote matrix covers packaged installation on Ubuntu and Windows with Python 3.11 and 3.13. Native macOS is outside the verified platform scope.
 - Native folder-picker interaction has not been automated. Path entry is browser-tested. Large-library throughput, HEIC / RAW decoding, other live-photo formats, codec playback and accessibility assistive technologies are unvalidated. The eight legacy Google Motion Photo relationships above are byte-verified; they do not establish support for every pairing format.
 
 Original mode deliberately re-downloads originals when a stopped scan resumes. Checkpoint reuse is not promoted to current byte proof. Cancellation may wait for an in-flight network request to finish or time out. Inventory rechecks do not create an atomic snapshot or detect all disk changes after a hash observation.
