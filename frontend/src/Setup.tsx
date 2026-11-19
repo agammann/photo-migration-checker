@@ -31,7 +31,9 @@ export function SourceStep({ busy, run, onSource, onDemo }: {
   </div>;
 }
 
-export function DestinationStep({ source, busy, run, onConnect }: { source: Source | null; busy: boolean; run: Run; onConnect: (destination: Destination) => void }) {
+export function DestinationStep({ source, busy, run, onConnect, reconnecting }: {
+  source: Source | null; busy: boolean; run: Run; onConnect: (destination: Destination) => void; reconnecting: boolean;
+}) {
   const [url, setUrl] = useState('');
   const [key, setKey] = useState('');
   function submit(event: FormEvent) {
@@ -43,7 +45,7 @@ export function DestinationStep({ source, busy, run, onConnect }: { source: Sour
     });
   }
   return <>
-    <PageHeading title="Connect your destination." subtitle="Give this local session read access to your Immich library." />
+    <PageHeading title="Connect your destination." subtitle={reconnecting ? 'Use the same Immich server you originally scanned.' : 'Give this local session read access to your Immich library.'} />
     {source ? <div className="scope-line"><Icon name="folder" /><strong>{source.root_name}</strong><span>{source.files.toLocaleString()} non-JSON candidates</span><span>{bytes(source.total_bytes)}</span></div> : null}
     <div className="setup-layout">
       <form onSubmit={submit} className="setup-form">
@@ -88,8 +90,12 @@ function ScanProgress({ job, busy, onCancel, onResume, onReconnect, connectionRe
     {running ? <div className="activity-track" role="progressbar" aria-label="Scan is running"><span /></div> : null}
     {entries.length ? <dl className="progress-details">{entries.map(([key, value]) => <div key={key}><dt>{humanize(key)}</dt><dd>{typeof value === 'number' ? value.toLocaleString() : value}</dd></div>)}</dl> : <p>Preparing the source manifest and destination inventory…</p>}
     {job.error ? <Banner title="Scan could not complete" tone="error">{job.error}</Banner> : null}
-    {!running ? <p>The saved checkpoint remains available. Resume checks the source and destination again before producing a report.</p> : null}
-    <div className="button-row">{running ? <button className="button secondary" disabled={busy} onClick={onCancel}>Cancel scan</button> : connectionReady || job.demo ? <button className="button primary" disabled={busy} onClick={onResume}>Resume scan<Icon name="arrow" /></button> : <button className="button primary" disabled={busy} onClick={onReconnect}>Reconnect to resume<Icon name="arrow" /></button>}</div>
+    {!running ? <p>The saved checkpoint remains available. Resume checks the source and destination again before producing a report. {job.mode === 'original' ? 'Original-byte verification downloads all accessible originals again.' : null}</p> : null}
+    <div className="button-row">
+      {running ? <button className="button secondary" disabled={busy} onClick={onCancel}>Cancel scan</button> : null}
+      {!running && (connectionReady || job.demo) ? <button className="button primary" disabled={busy} onClick={onResume}>Resume scan<Icon name="arrow" /></button> : null}
+      {!running && !job.demo ? <button className={`button ${connectionReady ? 'secondary' : 'primary'}`} disabled={busy} onClick={onReconnect}>{connectionReady ? 'Change connection' : 'Reconnect to resume'}<Icon name="arrow" /></button> : null}
+    </div>
   </section>;
 }
 

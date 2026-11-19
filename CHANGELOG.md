@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.5 - Local migration verification
+
+- Open a saved library scan with a fresh connection. Resume against the original Immich server and change the active connection from a stopped scan if needed.
+- Explain the full original-byte transfer before resume. Keep the built-in sample on its simulated destination.
+- Update the release installation guide and upgrade examples. Update Vite and Rolldown to the patched development toolchain published for GHSA-p4f5-76q4-ffq7.
+
 ## 0.1.5rc2 - Private launch sessions
 
 - Require the current launch capability for every local API endpoint, including bootstrap, so an unrelated loopback client cannot obtain API access by requesting a token.

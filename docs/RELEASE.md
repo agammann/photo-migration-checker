@@ -1,18 +1,18 @@
 # Release guide
 
-Version **0.1.5rc2** is a release candidate for Photo Migration Checker. The MIT-licensed application verifies an extracted Google Photos Takeout against the Immich assets and albums visible to a supplied read key. It does not migrate, repair or delete a library. Keep the original export and independent backups.
+Photo Migration Checker **0.1.5** verifies an extracted Google Photos Takeout against the Immich assets and albums visible to a supplied read key. This read-only application is distributed under the MIT license. Keep the original export and independent backups.
 
-The runtime packages contain the built interface, [MIT notices for bundled React, React DOM and scheduler](../pmc/web/THIRD-PARTY-NOTICES.txt), and locally bundled Inter fonts with their [SIL Open Font License](../pmc/web/INTER-LICENSE.txt). Node and Docker are unnecessary for normal use. Docker is used only by the separate real-server test harness. Python 3.11 or newer is required. The [platform-validation table](TESTING.md#platform-validation) records the exact operating systems, interpreter versions and checks exercised for the final candidate; macOS remains unvalidated.
+The runtime packages contain the built interface, [MIT notices for bundled React, React DOM and scheduler](../pmc/web/THIRD-PARTY-NOTICES.txt), and locally bundled Inter fonts with their [SIL Open Font License](../pmc/web/INTER-LICENSE.txt). Normal use requires Python 3.11 or newer. Docker is used by the separate real-server test harness. See the [test evidence](TESTING.md) for tested operating systems and interpreters. macOS remains unvalidated.
 
-This candidate requires a private launch capability for every local API request, including bootstrap. The launcher reserves its endpoint before printing the link, the browser removes its private fragment before API requests, and a new process requires its new link. Saved report history remains available after authorization. The source and bundled interface retain the existing read-only scan behavior and package exclusions for private state.
+The app requires a private launch capability for every local API request, including bootstrap. The launcher reserves its endpoint before printing the link. The browser removes its private fragment before API requests. A new process requires its new link, which also gives access to saved report history.
 
-## What this candidate covers
+## Verification scope
 
 Original mode downloads every accessible active destination original, including unrelated assets. It hashes the current response bytes and discards the buffers. Checksum mode avoids those downloads and uses only compatible stored evidence under the source-reviewed Immich 3.3.3 contract. Checksum proof is disabled outside exactly 3.3.3; other major versions are refused. Review the transfer scope before starting original mode.
 
 The established real-export baseline uses the Google Photos portion of Magnet's published 2020 forensic-training Takeout, imported with immich-go 0.32.0 into a disposable Immich 3.3.3 instance. Both modes produce 195 findings, including 62 content matches, 62 media-type agreements, eight motion-photo relationships, 53 capture-date agreements, eight nominal container-date agreements and one neutral auxiliary record. All seven source albums match. One edited-photo date remains an attention finding because the export supplies no reliable capture instant. A matching container timestamp never establishes shutter time or original camera timezone.
 
-That unresolved finding is expected. It does not indicate missing or changed photo bytes. No capture date is substituted from a filename, filesystem timestamp, uncertain embedded timezone or unproved parent relationship. Final candidate test results and their limits belong in [TESTING.md](TESTING.md); historical results are not a substitute for testing the packaged candidate.
+That unresolved finding concerns the date evidence. The checker leaves the capture instant unresolved when it has only a filename, filesystem timestamp, uncertain embedded timezone or unproved parent relationship. [TESTING.md](TESTING.md) records the version and limits of each run.
 
 Recent supplemental-metadata variants, other languages, personal libraries, other Immich versions, very large libraries, HEIC / RAW decoding and other live-photo formats remain unvalidated. Native folder-picker interaction and assistive technologies are not covered by the automated browser checks. The app performs structural container checks, not general codec or perceptual-equivalence verification. An inventory recheck cannot create an atomic server snapshot.
 
@@ -23,7 +23,7 @@ Use the SHA-256 value delivered with the specific release artifact. Check the wh
 Windows PowerShell, replacing the filename with the artifact being checked:
 
 ```powershell
-Get-FileHash -LiteralPath .\photo_migration_checker-0.1.5rc2-py3-none-any.whl -Algorithm SHA256
+Get-FileHash -LiteralPath .\photo_migration_checker-0.1.5-py3-none-any.whl -Algorithm SHA256
 ```
 
 On macOS use `shasum -a 256 <artifact>`; on Linux use `sha256sum <artifact>`. Compare the complete digest before installation. Do not install from the private test workspace or copy its credentials, media or checkpoint directories into a release.
@@ -34,7 +34,7 @@ Create a dedicated application directory outside the Takeout source tree. Place 
 
 ```powershell
 py -3 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install .\photo_migration_checker-0.1.5rc2-py3-none-any.whl
+.\.venv\Scripts\python.exe -m pip install .\photo_migration_checker-0.1.5-py3-none-any.whl
 .\.venv\Scripts\python.exe -m pmc --data-dir .\private-checkpoints
 ```
 
@@ -44,7 +44,7 @@ The equivalent macOS / Linux commands are below. Consult the platform-validation
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install ./photo_migration_checker-0.1.5rc2-py3-none-any.whl
+.venv/bin/python -m pip install ./photo_migration_checker-0.1.5-py3-none-any.whl
 .venv/bin/python -m pmc --data-dir ./private-checkpoints
 ```
 
@@ -77,8 +77,8 @@ Downloads made through the report-export buttons are separate files at the brows
 For an existing installation using the example directory names:
 
 ```powershell
-Copy-Item -LiteralPath .\private-checkpoints -Destination .\private-checkpoints-backup-before-0.1.5rc2 -Recurse
-.\.venv\Scripts\python.exe -m pip install --upgrade .\photo_migration_checker-0.1.5rc2-py3-none-any.whl
+Copy-Item -LiteralPath .\private-checkpoints -Destination .\private-checkpoints-backup-before-0.1.5 -Recurse
+.\.venv\Scripts\python.exe -m pip install --upgrade .\photo_migration_checker-0.1.5-py3-none-any.whl
 .\.venv\Scripts\python.exe -m pmc --data-dir .\private-checkpoints
 ```
 

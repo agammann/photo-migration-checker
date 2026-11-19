@@ -2,7 +2,7 @@
 
 A free, open-source, local, read-only Google Takeout to Immich verification tool. Compare an extracted export against the assets and albums your Immich API key can read. Inspect the evidence and export an offline HTML or JSON report.
 
-**Release candidate, version 0.1.5rc2.** The app keeps uncertainty visible, including the one edited-photo date that cannot be established reliably from the tested export. See [release notes and installation details](docs/RELEASE.md), [changes](CHANGELOG.md), and [test evidence](docs/TESTING.md).
+This guide covers version **0.1.5**. The app keeps uncertainty visible, including the one edited-photo date that cannot be established reliably from the tested export. See [downloads](https://github.com/agammann/photo-migration-checker/releases), [installation details](docs/RELEASE.md), and [test evidence](docs/TESTING.md).
 
 The 0.1.4 verification baseline used real disposable Immich 3.3.3, controlled migration problems, and the Google Photos portion of Magnet's published 2020 forensic-training Takeout, independently migrated with immich-go 0.32.0. Both modes verified 62 content matches, 62 media-type agreements, eight motion-photo relationships, seven matching albums, 53 Takeout capture instants and eight separately labeled nominal container dates. One empty auxiliary JSON remains inventoried. The 195-row report retains one attention finding for the edited photo's source date. These results validate the tested sample and workflow; other export variants remain unvalidated. The release's final validation is recorded separately in the test evidence.
 
@@ -10,7 +10,7 @@ This checks the supplied export. It cannot prove Google exported everything. **K
 
 ## Quick start
 
-Requires Python 3.11 or newer. See the [platform-validation table](docs/TESTING.md#platform-validation) for the exact operating systems, interpreter versions and checks exercised for this candidate. The source release and wheel include the built interface and local Inter fonts, so running either does not require Node. The bundled code's [third-party notices](pmc/web/THIRD-PARTY-NOTICES.txt) and [Inter font license](pmc/web/INTER-LICENSE.txt) are included. Installing dependencies may require internet access. Runtime requires no paid API or cloud account. There is no telemetry or background startup service.
+Requires Python 3.11 or newer. See [test evidence](docs/TESTING.md) for the exact operating systems, interpreter versions and checks exercised. Choose the wheel or the named source bundle from the release. Both contain the built interface, local Inter fonts, [third-party notices](pmc/web/THIRD-PARTY-NOTICES.txt), and [Inter font license](pmc/web/INTER-LICENSE.txt). A plain checkout and GitHub’s automatically generated source archives require the frontend build. Installing Python dependencies may require internet access. Runtime requires no Node, paid API or cloud account. There is no telemetry or background startup service.
 
 Windows PowerShell, from the extracted project folder:
 
@@ -53,7 +53,7 @@ The clean sample has eight source occurrences and seven distinct originals. One 
 2. In Immich, create a dedicated API key with **asset.read** and **album.read**. Add **asset.download** only for original-byte verification. Enter it in the local password field. Never paste a key into an issue or chat. Keys stay only in the app process and disappear when it stops. Reconnect after restarting.
 3. Enter the server's base HTTP(S) URL. Credentials, queries and fragments in URLs are rejected; redirects are not followed. HTTPS is recommended when traffic leaves the same computer. The adapter targets the source-reviewed 3.3.3 contract; other major versions are refused, and checksum proof is disabled outside exactly 3.3.3.
 4. Review the source and accessible destination scope. **Checksum mode** reads stored server evidence and does not download originals. **Original mode** streams **every accessible active destination original**, including unrelated items, to find matches independently of server checksum provenance. It can transfer the entire accessible collection. The preview shows known total sizes and counts unknown sizes; there is no transfer quota. Choose this mode explicitly before it starts.
-5. Keep both collections stable while scanning. Cancel is cooperative between chunks / requests. An in-flight request can take up to its timeout before cancellation is observed. Reconnect to the same server to resume a cancelled or interrupted scan. The scan ID and durable checkpoints remain; source and destination are re-enumerated. **Originals are downloaded again on resume** because unchanged database metadata cannot prove unchanged disk bytes. This favors evidence quality over transfer savings.
+5. Keep both collections stable while scanning. Cancel is cooperative between chunks / requests. An in-flight request can take up to its timeout before cancellation is observed. Open a stopped library scan in **Previous scans**, choose **Reconnect to resume**, then connect to its original server and choose **Resume scan**. Use **Change connection** if you selected a different server. The scan ID and durable checkpoints remain. Source and destination are re-enumerated, and **originals are downloaded again on resume** to verify current bytes.
 6. Review coverage and unresolved cases before interpreting matches. Exporting creates a local download. Reports contain relative filenames, album names, dates, hashes and destination asset IDs; they may be sensitive. They omit API keys, server URLs, absolute source roots and GPS fields. SQLite checkpoints retain a source root for resume; protect the data directory.
 
 ## Evidence levels
@@ -78,7 +78,7 @@ Pairing checks support Google JPEG Motion Photos with modern `Container:Director
 
 ## Build and test from a checkout
 
-Requires Node 22+ and pnpm (tested with 11.25.0) in addition to Python. A plain Git checkout needs the frontend build before packaging:
+Requires Node 22.13 or newer and pnpm 11.25.0 in addition to Python. A plain Git checkout needs the frontend build before packaging:
 
 ```sh
 pnpm --dir frontend install --frozen-lockfile
